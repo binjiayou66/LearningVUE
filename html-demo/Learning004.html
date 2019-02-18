@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>004</title>
+</head>
+<body>
+    <style>
+        a {
+            display: block;
+        }
+        img {
+            width: 90px;
+            height: 90px;
+            display: block;
+            margin: 20px;
+        }
+    </style>
+    <div id="app">
+        <div>
+            <!-- v-bind -->
+            <a v-bind:href="url" target="blank">这是一个v-bind链接</a>
+            <img v-bind:src="imgURL" v-if="seen">
+            <!-- v-on -->
+            <button v-on:click="toggleImg">{{ tips }}</button>
+
+            <!-- 【语法糖】是指在不影响功能的情况下，添加某种方法实现同样的效果，从而方便程序开发。 -->
+            <!-- img元素代码等同于 <img :src="imgURL" v-if="seen"> -->
+            <!-- button元素代码等同于 <button @click="toggleImg">{{ tips }}</button> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                url: "http://www.4399.com",
+                imgURL: "../image/a.jpg",
+                seen: true,
+                tips: "点击隐藏图片"
+            },
+            // methods属性，它里面的函数被Vue变量代理，可以通过app.toggleImg进行访问，跟data数据相同
+            methods: {
+                toggleImg: function () {
+                    this.seen = !this.seen;
+                    this.tips = this.seen ? "点击隐藏图片" : "点击显示图片";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

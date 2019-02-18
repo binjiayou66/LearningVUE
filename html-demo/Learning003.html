@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>003</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 插值过滤，插值本身作为过滤器的第一个参数传入 -->
+        <div>{{ date | formatDate }}</div>
+        <!-- 链式过滤 -->
+        <div>{{ scores | passedFilter }}</div>
+        <div>{{ scores | passedFilter | excellentFilter }}</div>
+        <!-- 接收参数，70作为函数的第二个参数传入 -->
+        <div>{{ scores | scoreFilter(70) }}</div>
+
+        <!-- 【注】过滤器应当用于处理简单的文本转换，如果要实现更为复杂的数据变换，应该使用计
+算属性，下一章中会详细介绍它的用法， -->
+    </div>
+    <script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script>
+        var padDate = function (value) {
+            return value < 10 ? '0' + value : value;
+        };
+        var app = new Vue({
+            el: "#app",
+            data: {
+                date: new Date(),
+                scores: [45, 66, 77, 99]
+            },
+            mounted: function () {
+                var _this = this;
+                this.timer = setInterval(function () {
+                    _this.date = new Date();
+                }, 1000);
+            },
+            beforeDestroy: function () {
+                if (this.timer) {
+                    clearInterval(this.timer);
+                }
+            },
+            // 过滤器集合
+            filters: {
+                // 单个过滤器函数，函数的第一个参数为插值本身
+                formatDate: function (value) {
+                    var date = new Date(value);
+                    var year = date.getFullYear();
+                    var month= padDate(date.getMonth() + 1) ;
+                    var day= padDate(date .getDate());
+                    var hours= padDate(date .getHours());
+                    var minutes = padDate (date .getMinutes ());
+                    var seconds = padDate (date .getSeconds ());
+
+                    return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+                },
+                passedFilter: function (value) {
+                    var result = [];
+                    if (value instanceof Array) {
+                        for (var i = 0; i < value.length; i++) {
+                            var score = value[i];
+                            if (score < 60) continue;
+                            result.push(score);
+                        }
+                    }
+                    return result;
+                },
+                excellentFilter: function (value) {
+                    var result = [];
+                    if (value instanceof Array) {
+                        for (var i = 0; i < value.length; i++) {
+                            var score = value[i];
+                            if (score < 90) continue;
+                            result.push(score);
+                        }
+                    }
+                    return result;
+                },
+                // 带参数的过滤器函数
+                scoreFilter: function (value, paramScore) {
+                    var result = [];
+                    if (value instanceof Array) {
+                        for (var i = 0; i < value.length; i++) {
+                            var score = value[i];
+                            if (score < paramScore) continue;
+                            result.push(score);
+                        }
+                    }
+                    return result;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

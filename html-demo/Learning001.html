@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>001</title>
+</head>
+<body>
+	<!-- 标签里面的属性值，已经不再是简单的字符串，它也可能是个变量 -->
+	<div id="app">
+		<input type="text" v-model="name" placeholder="你的名字">
+		<!-- 文本插值（Mustache语法），插值可以是一个变量也可以是一个表达式，但是不能是一句语句 -->
+		<h1>你好，{{ name }}</h1>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			// el用于指定一个页面中己存在的DOM元素来挂载Vue 实例，它可以是 HTMLElement ，也可以是 css 选择器
+			// el: document.getElementByld(’app’) //或者是’#app’
+			el: "#app",
+			// 所有会用到的数据都 预先在 data 内声明，这样不至于将数据散落在业务逻辑中
+			data: {
+				name: ""
+			}
+		})
+		// Vue实例本身也代理了 data对象里的所有属性，所以可以这样访问:
+		// console.log(app.name);
+	</script>
+</body>
+</html>

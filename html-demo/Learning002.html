@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>002</title>
+</head>
+<body>
+    <div id="app">
+        <!-- （1）普通插值标签 -->
+        <div>{{ date }}</div>
+        <!-- （2）v-html用于插入HTML文本，v-html作为接收html文本的标志，它的值为link变量，标志+变量的形式 -->
+        <div v-html="link"></div>
+        <!-- （3）v-pre用于输出未编译的内容(pre可理解为编译之前的，这一块内容也不会被编译) ，v-pre标志不需编译，仅标志的形式 -->
+        <div v-pre>{{ date }}</div>
+        <!-- （4）表达式插值 -->
+        <div>{{ number + 10 }}</div>
+        <!-- （5）v-if用于条件控制标签是否显示，标志+表达式的形式 -->
+        <div v-if="number>1">你能看见我吗？</div>
+    </div>
+    <script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                date: new Date(),
+                link: '<a href=”#”>这是一个连接</a>',
+                number: 2
+            },
+            mounted: function () {
+                var _this = this;
+                this.timer = setInterval(function(){
+                    _this.date = new Date();
+                }, 1000);
+            },
+            beforeDestroy: function () {
+                if (this.timer) {
+                    clearInterval(this.timer);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
