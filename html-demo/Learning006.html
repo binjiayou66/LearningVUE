@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+    <div id= "app">
+        总价: {{ prices }}
+    </div>
+    <script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                package1: [
+                    {
+                        name: 'iPhone7',
+                        price: 6288,
+                        count: 1
+                    },
+                    {
+                        name: 'iPad',
+                        price: 2688,
+                        count: 2
+                    }
+                ],
+                package2: [
+                    {
+                        name: 'iPhoneXs',
+                        price: 10888,
+                        count: 1
+                    }
+                ]
+            },
+            computed: {
+                prices: function () {
+                    var totalPrice = 0;
+                    for (var i = 0; i < this.package1.length; i++) {
+                        var item = this.package1[i];
+                        totalPrice += item['price'] * item['count'];
+                    }
+                    for (var i = 0; i < this.package2.length; i++) {
+                        var item = this.package2[i];
+                        totalPrice += item['price'] * item['count'];
+                    }
+                    return totalPrice;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
