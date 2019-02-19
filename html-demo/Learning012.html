@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>012-v-if</title>
+    <style>
+        p, div, input {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+	<div id="app">
+        <!-- 当不设置key值，在切换输入类型时，placeholder属性能够正常切换，但是如果用户已经输入文本内容，并不能被清空 -->
+        <!-- 这是由于Vue复用之前渲染的input导致的，为每个文本框加上key值之后，就可以防止被复用 -->
+        <div v-if="type === 'username'" key="username-input-key">
+            <p>用户名：</p>
+            <input type="text" placeholder="请输入用户名">
+        </div>
+        <div v-else-if="type === 'email'" key="email-input-key">
+            <p>邮 箱：</p>
+            <input type="text" placeholder="请输入邮箱">
+        </div>
+        <div v-else>
+            <p>手 机：</p>
+            <input type="text" placeholder="请输入手机号" key="mobile-input-key">
+        </div>
+        <input @click="toggleType" type="button" value="切换输入类型">
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            data: {
+                type: 'username'
+            },
+            methods: {
+                toggleType: function () {
+                    if (this.type === 'username') {
+                        this.type = 'email';
+                    } else if (this.type === 'email') {
+                        this.type = 'mobile';
+                    } else {
+                        this.type = 'username';
+                    }
+                }
+            }
+		});
+	</script>
+</body>
+</html>

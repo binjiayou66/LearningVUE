@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>010-v-cloak</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+	<div id="app">
+        <!-- js加载完之前，被标记为v-cloak，通过css设置为隐藏 -->
+        <!-- 当js加载完之后，v-cloak标志会被移除，使其显示出来 -->
+        <div v-cloak>{{ message }}</div>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            data: {
+                message: "这是一段文本"
+            }
+		});
+	</script>
+</body>
+</html>

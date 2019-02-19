@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>0</title>
+</head>
+<body>
+	<div id="app">
+        <!-- 阻止单击事件冒泡 -->
+        <a @click.stop="handle" href="http://www.4399.com" target="blank">43999999999999</a>
+        <!-- 提交事件不再重载页面 -->
+        <form @submit.prevent="handle"></form>
+        <!-- 修饰符可以串联 -->
+        <a @click.stop.prevent="handle" href="http://www.4399.com" target="blank">43999999999999</a>
+        <!-- 只有修饰符 -->
+        <form @submit.prevent></form>
+        <!-- 添加事件侦听器时使用事件捕获模式 -->
+        <div @click.capture="handle">这里可以点击</div> 
+        <!-- 只当事件在该元素本身(而不是子元素) 触发时触发回调 -->
+        <div @click.self="handle">这里也可以点击</div> 
+        <!-- 只触发一次，组件同样适用 -->
+        <div @click.once="handle">这里还可以点击</div>
+
+        <div @keyup.enter="handle">aaaaa</div>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            methods: {
+                handle: function () {
+                    alert('In handle.');
+                }
+            }
+		});
+	</script>
+</body>
+</html>

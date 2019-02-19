@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>011-v-show</title>
+</head>
+<body>
+	<div id="app">
+        <input @click="onClickButton(0)" type="button" value="路飞">
+        <input @click="onClickButton(1)" type="button" value="索隆">
+        <input @click="onClickButton(2)" type="button" value="山治">
+        <div v-show="index === 0">{{ lufei }}</div>
+        <div v-show="index === 1">{{ suolong }}</div>
+        <div v-show="index === 2">{{ shanzhi }}</div>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            data: {
+                lufei: "蒙奇·D·路飞，日本漫画《航海王》的主角，外号“草帽”路飞，草帽海贼团、草帽大船团船长，极恶的世代之一。橡胶果实能力者，悬赏金15亿贝里。梦想是找到传说中的One Piece，成为海贼王。",
+                suolong: "罗罗诺亚·索隆。人称：海贼猎人。日本漫画《海贼王》及衍生作品中的角色。“草帽一伙”的战斗员 [1]  ，是使用三把刀战斗的三刀流刀客。两年前集结香波地群岛的被称之为“极恶的世代”的十一超新星之一，在超新星中赏金排名第十位。",
+                shanzhi: "山治，日本漫画《航海王》及衍生作品中的角色。草帽一伙厨师，金发，有着卷曲眉毛，永远遮住半边脸的家伙，香烟不离口，最爱女人，很花心但很有风度，海贼中的绅士。",
+                index: 0
+            },
+            methods: {
+                onClickButton: function (param) {
+                    this.index = param;
+                }
+            }
+		});
+	</script>
+</body>
+</html>

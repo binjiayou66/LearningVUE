@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>009-增强style</title>
+</head>
+<body>
+	<div id="app">
+        <!-- 一些注意点跟增强class相同，不再赘述，这里只备注一下增强style特有的点 -->
+        <!-- 1.常量如100px在增强style中要用引号包括起来，表示它是一个常量 -->
+        <!-- 2.类似font-size这种style属性既可以横线分隔法命名，也可以用驼峰命名法命名，最终的渲染结果都是font-size -->
+        <div style="width: 300px" :style="{'height': '100px', 'fontSize':fontSize+'px'}">Hello Vue!</div>
+        <!-- 更推荐用属性或者计算属性，便于维护 -->
+        <div :style="styles">我的style是通过属性得到的</div>
+        <!-- 增强style还可以是一个集合 -->
+        <div :style="[styleA, styleB]">我的style是通过多个计算属性形成的数组集合得到的</div>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#app",
+            data: {
+                fontSize: 66,
+                styles: {
+                        // 这里的red一定要写成字符串，不能不加引号，这是js中，不是css里
+                        color: 'red',
+                        fontSize: 24 + 'px'
+                    }
+            },
+            computed: {
+                styleA: function () {
+                    return {
+                        color: 'blue'
+                    }
+                },
+                styleB: function () {
+                    return {
+                        fontSize: 20 + 'px'
+                    }
+                }
+            }
+		});
+	</script>
+</body>
+</html>

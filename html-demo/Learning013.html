@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>013-v-for</title>
+</head>
+<body>
+	<div id="app">
+        <!-- v-for for integer -->
+        <div v-for="number in 10">{{ number }}</div>
+        <!-- v-for for array -->
+        <div v-for="friend in friends">{{ friend }}</div>
+        <!-- v-for for object, (value, key), not (key, value) -->
+        <div v-for="(value, key) in me">{{ key }} : {{ value }}</div>
+
+        <!-- todo list demo -->
+        <input v-model="preTodo" type="text" placeholder="请输入一项待办事项">
+        <input @click="submitTodo" type="button" value="提交">
+        <ul>
+            <!-- v-for="todo in todos" || v-for="(todo, index) in todos" -->
+            <li v-for="(todo, index) in todos">{{ index }} - {{ todo }}</li>
+        </ul>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            data: {
+                friends: ["Zhang", "Wang", "Lee", "Lou"],
+                me: { name:"Andy", age:30, height:176.0 },
+                preTodo: "",
+                todos: []
+            },
+            methods: {
+                submitTodo: function () {
+                    if (this.preTodo.length > 0) {
+                        this.todos.push(this.preTodo);
+                        this.preTodo = "";
+                    }
+                }
+            }
+		});
+	</script>
+</body>
+</html>

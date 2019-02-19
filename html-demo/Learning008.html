@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>008-增强class</title>
+    <style>
+        #app > div {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            margin: 20px;
+        }
+        #app > div.red {
+            background-color: red;
+        }
+        #app > div.blue {
+            background-color: blue;
+        }
+        #app > div.higher {
+            height: 150px;
+        }
+        #app > div.wider {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+	<div id="app">
+        <!-- 这里的示例说明，标签属性值不仅可以是常量、单个变量、表达式，还可以是集合变量 -->
+        <div v-bind:class="{'red':isRed, 'wider':isWider}"></div>
+
+        <!-- v-bind:class, :class可以与原生class共存 -->
+        <!-- 当:class中的键值对值为真时，该class值就被渲染到原生class中 -->
+        <!-- 下面这个isBlue为false时，blue这个class值就不会被渲染进原生class中，下面这个div框就不会被渲染为蓝色 -->
+        <div :class="{'blue':isBlue}" class="higher"></div>
+
+        <!-- 当class值很多时，你可以用表达式，甚至计算属性 -->
+        <div :class="computedClass"></div>
+
+        <!-- :class的值还可以是一个数组 -->
+        <div :class="['wider', higherTag, isRed ? 'red' : 'blue']"></div>
+
+        <input @click="toggleState" type="button" value="点击切换状态">
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#app",
+            data: {
+                isRed: true,
+                isWider: true,
+                isBlue: false,
+                higherTag: 'higher'
+            },
+            computed: {
+                computedClass: function () {
+                    return {'red':(this.isRed && this.isBlue), 'blue':!(this.isRed && this.isBlue), 'wider':true, 'higher':true};
+                }
+            },
+            methods: {
+                toggleState: function () {
+                    this.isRed = !this.isRed;
+                }
+            }
+		});
+	</script>
+</body>
+</html>
+
+<!-- Vue.component('my-component', {
+    template: '<p class="article"></p>'
+});
+
+<div id="app">
+    <my-component :class="{'acttive':isActive}"></my-component>
+</div>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            isActive: true
+        }
+    });
+</script>
+
+<p class="article active">一些文本</p> -->
