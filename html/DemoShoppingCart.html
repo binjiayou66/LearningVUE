@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>购物车示例</title>
+    <link rel="stylesheet" type="text/css" href="../css/DemoShoppingCart.css">
+</head>
+<body>
+	<div id="app" v-cloak>
+        <template v-if="list.length > 0">
+            <table>
+                <tr>
+                    <th v-for="columnTitle in columnTitles">{{ columnTitle }}</th>
+                </tr>
+                <tbody>
+                    <tr v-for="(item, index) in list">
+                        <td>{{ index + 1 }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.price }}</td>
+                        <td>
+                            <button @click="handleReduce(index)" :disabled="item.count === 1">-</button>
+                            {{ item.count }}
+                            <button @click="handleAdd(index)">+</button>
+                        </td>
+                        <td>
+                            <button @click="handleDelete(index)">移除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="totalPriceDiv">总价：￥{{ totalPrice }}</div>
+        </template>
+        <div v-else>购物车为空</div>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript" src="../js/DemoShoppingCart.js"></script>
+</body>
+</html>
