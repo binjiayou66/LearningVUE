@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>问卷调查Demo</title>
+    <link rel="stylesheet" type="text/css" href="../css/DemoQuestionnaire.css">
+</head>
+<body>
+	<div id="app">
+        <!-- html不区分大小写，标签名和属性名千万不要用驼峰命名啊，血的教训 -->
+        <question-page 
+            v-for="(question, index) in questions" 
+            v-show="index===currentPage" 
+            :question-data="question"
+            @gonextpage="handleNextPage"
+            @goprepage="handlePrePage"
+            @gosubmit="handleSubmit">
+        </question-page>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript" src="../js/DemoQuestionnaire.js"></script>
+</body>
+</html>
