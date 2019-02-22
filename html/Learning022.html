@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>022-nextTick</title>
+</head>
+<body>
+	<div id="app">
+        <div id="testElement" v-if="isShow">我开始的时候是被隐藏的哦</div>
+        <button @click="handleClick">点击显示被隐藏的内容</button>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            data: {
+                isShow: false
+            },
+            methods: {
+                handleClick: function () {
+                    this.isShow = !this.isShow;
+                    // 直接获取会报错 TypeError: Cannot read property 'innerHTML' of null
+                    // var testElement = document.getElementById("testElement");
+                    // console.log(testElement.innerHTML);
+                    this.$nextTick(function () {
+                        var testElement = document.getElementById("testElement");
+                        console.log(testElement.innerHTML);
+                    });
+                }
+            }
+		});
+	</script>
+</body>
+</html>

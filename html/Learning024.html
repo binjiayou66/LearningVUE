@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>024-自定义指令</title>
+</head>
+<body>
+	<div id="app">
+        <input type="text" placeholder="请输入些什么..." v-my-directive-1>
+        <my-component></my-component>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        // 【1】目的：希望对DOM进行底层的操作
+        // 【2】用法：跟注册组件很类似，分为全局注册和局部注册
+        // （1）全局注册一个指令
+        Vue.directive('my-directive-1', {
+            // 指令配置
+            inserted: function (element) {
+                element.focus();
+            }
+        });
+        Vue.component('my-component', {
+            template: '<div><input type="text" placeholder="组件让你输入些什么..." v-my-directive-2></div>',
+            directives: {
+                // （2）局部注册一个指令，只能在当前作用下使用
+                // 【注】javascript对象的key都是字符串，就算是给的其它类型的值，也会自动通过toString()转换成字符串。
+                // 这里可以不显示的写双引号，但是js里面不支持变量名中包含'-'，可以用驼峰式命名
+                'my-directive-2': {
+                    // 指令配置
+                    inserted: function (element) {
+                        element.focus();
+                    }
+                }
+            }
+        });
+		var app = new Vue({
+            el: "#app"
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>015-v-model与表单</title>
+</head>
+<body>
+	<div id="app">
+        <div>
+            <!-- v-model与value配合使用，实现互斥单选 -->
+            <input type="radio" v-model="checkedUniversity" value="Tsinghua">
+            <label for="Tsinghua">清华</label>
+            <br>
+            <input type="radio" v-model="checkedUniversity" value="Peking">
+            <label for="Peking">北大</label>
+            <br>
+            <input type="radio" v-model="checkedUniversity" value="Zhejiang">
+            <label for="Zhejiang">浙大</label>
+        </div>
+        <div>
+            <!-- v-model与value配合使用，实现复选 -->
+            <input type="checkbox" v-model="foods" value="steak">
+            <label for="steak">牛排</label>
+            <br>
+            <input type="checkbox" v-model="foods" value="soup">
+            <label for="soup">汤</label>
+            <br>
+            <input type="checkbox" v-model="foods" value="vegetable">
+            <label for="vegetable">蔬菜</label>
+        </div>
+        <div>
+            <!-- v-model绑定属性，实现下拉菜单功能 -->
+            <!-- <option>如果含有value属性，v-model会优先匹配value的值；如果没有，就会直接匹配<option>的text。 -->
+            <!-- 比如选中第二项时，selected的值是28，而不是“二十八岁” -->
+            <select v-model="selectedAge">
+                <option>十八岁</option>
+                <option value="28">二十八岁</option>
+                <option>三十八岁</option>
+            </select>
+        </div>
+
+        <!-- 修饰符 -->
+        <!-- .lazy，lazyMessage并不是实时改变的，而是在失焦或按回车时才更新。 -->
+        <div>
+            <input type="text" v-model.lazy="lazyMessage">
+            <p>{{ lazyMessage }}</p>
+        </div>
+        <!-- .trim，可以自动过滤输入的首尾空格（input框中首尾依然可以输入空格，但是trimMessage是去空格的） -->
+        <div>
+            <input type="text" v-model.trim="trimMessage">
+            <p>{{ trimMessage }}</p>
+        </div>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+            el: "#app",
+            data: {
+                checkedUniversity: "Tsinghua",
+                foods: [],
+                selectedAge: 28,
+                lazyMessage: "",
+                trimMessage: ""
+            }
+		});
+        setInterval(function () {
+            console.log(app.checkedUniversity);
+            console.log(app.foods);
+            console.log(app.selectedAge);
+        },3000);
+	</script>
+</body>
+</html>

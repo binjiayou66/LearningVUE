@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>016-组件</title>
+</head>
+<body>
+	<div id="app">
+        <my-component-1></my-component-1>
+        <my-component-2></my-component-2>
+        <!-- 以下这种写法是不可行的，虽然div内容在页面上展示，但是调试可以看到组件内容被渲染到了table标签外层 -->
+        <!-- html规定table标签内规定只允许是<tr>、<td>、<th>等这些表格元素 -->
+        <table>
+            <my-component-1></my-component-1>
+        </table>
+        <!-- 解决办法如下：使用特殊的is属性来挂载组件 -->
+        <!-- tbody在渲染时，会被替换为组件的内容。常见的限制元素还有<ul>、<ol>、<select>  -->
+        <table>
+            <tbody is="my-component-1"></tbody>
+        </table>
+        <my-component-3></my-component-3>
+        <my-component-3></my-component-3>
+        <my-component-3></my-component-3>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        // 【1】全局注册组件
+        Vue.component('my-component-1', {
+            // template的DOM结构必须被一个元素包含，如果直接写成“这里是组件的内容”，不带“<div></div>”是无法渲染的
+            template: "<div>组件内容</div>"
+        });
+		var app = new Vue({
+            el: "#app",
+            components: {
+                // 【2】局部注册组件
+                'my-component-2': {
+                    template: "<div>这是一个局部注册的组件</div>"
+                },
+                'my-component-3': {
+                    template: "<div><button @click='counter++'>{{ counter }}</button></div>",
+                    // data必须是函数，然后将数据return出去
+                    data: function () {
+                        return {
+                            counter: 0
+                        }
+                    }
+                }
+            }
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,2511 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red0\green0\blue0;\red70\green137\blue204;
+\red202\green202\blue202;\red140\green211\blue254;\red194\green126\blue101;\red89\green138\blue67;\red23\green23\blue23;
+\red167\green197\blue152;\red205\green173\blue106;\red109\green109\blue109;\red70\green137\blue204;\red202\green202\blue202;
+\red140\green211\blue254;\red194\green126\blue101;\red89\green138\blue67;\red167\green197\blue152;}
+{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c0\c0\c0;\cssrgb\c33725\c61176\c83922;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;\cssrgb\c41569\c60000\c33333;\cssrgb\c11765\c11765\c11765;
+\cssrgb\c70980\c80784\c65882;\cssrgb\c84314\c72941\c49020;\cssrgb\c50196\c50196\c50196;\cssrgb\c33725\c61176\c83922;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;\cssrgb\c41569\c60000\c33333;\cssrgb\c70980\c80784\c65882;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww38200\viewh20180\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+\'a1\'beTips\'a1\'bf\
+1. Vue\'b5\'c4\'ca\'f4\'d0\'d4\'c4\'bf\'c7\'b0\'d3\'d0el\'a1\'a2data\'a1\'a2computed\'a1\'a2created\'a1\'a2mounted\'a1\'a2beforeDestroy\'a1\'a2methods\'a1\'a2filters\'a3\'ac\'d5\'e2\'d0\'a9\'ca\'f4\'d0\'d4\'d3\'d0\'b5\'c4\'ca\'c7\'b5\'a5\'ca\'fd\'d0\'ce\'ca\'bd\'a3\'ac\'d3\'d0\'b5\'c4\'ca\'c7\'b8\'b4\'ca\'fd\'d0\'ce\'ca\'bd\'a3\'ac\'c4\'bf\'c7\'b0\'bf\'b4\'c0\'b4\'bf\'c9\'d2\'d4\'d5\'e2\'c3\'b4\'c7\'f8\'b7\'d6\'a3\'ba\'a3\'a81\'a3\'a9el\'ca\'f4\'d0\'d4\'bf\'cf\'b6\'a8\'ca\'c7\'b5\'a5\'ca\'fd\'b5\'c4\'a3\'ac\'d6\'bb\'c4\'dc\'d3\'d0\'d2\'bb\'b8\'f6\'a3\'a82\'a3\'a9\'ba\'af\'ca\'fd\'ca\'f4\'d0\'d4\'b6\'bc\'ca\'c7\'b5\'a5\'ca\'fd\'b5\'c4\'a3\'ac\'d2\'bb\'b8\'f6Vue\'b6\'d4\'cf\'f3\'c4\'da\'d6\'bb\'d0\'e8\'d2\'aa\'d2\'bb\'b8\'f6\'cd\'ac\'c3\'fb\'ba\'af\'ca\'fd\'a3\'a83\'a3\'a9\'ca\'f4\'d0\'d4\'cf\'e0\'b9\'d8\'b6\'bc\'ca\'c7\'b5\'a5\'ca\'fd\'b5\'c4\'a3\'ac\'c8\'e7data\'a1\'a2computed\'a3\'a84\'a3\'a9\'ba\'af\'ca\'fd\'bc\'af\'ba\'cf\'ca\'f4\'d0\'d4\'ca\'c7\'b8\'b4\'ca\'fd\'b5\'c4\'a3\'ac\'c8\'e7methods\'a1\'a2filters\'a1\'a3\
+\
+\'d2\'bb\'a1\'a2\'bb\'f9\'b4\'a1\'c6\'aa
+\f1 \
+1. VUE
+\f0 .js\'b5\'c4\'d3\'c5\'b5\'e3\'d3\'d0\'c4\'c4\'d0\'a9\'a3\'bf\'be\'ab\'c7\'c9\'a1\'a2\'bd\'a5\'bd\'f8\'ca\'bd\'a3\'ac\'bd\'e2\'f1\'ee\'c4\'dc\'c1\'a6\'c7\'bf\'b4\'f3\'a3\'ac\'d7\'e9\'bc\'fe\'ca\'bd\'bf\'aa\'b7\'a2\'c4\'dc\'c1\'a6\'c7\'bf\'b4\'f3\'a3\'ac\'c7\'b0\'b6\'cb\'c2\'b7\'d3\'c9\'a3\'ac\'d7\'b4\'cc\'ac\'b9\'dc\'c0\'ed\'a3\'ac\'d0\'e9\'c4\'e2DOM\'a1\'a3
+\f1 \
+2. Hello World\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 001\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf8 <!-- 
+\f0 \'b1\'ea\'c7\'a9\'c0\'ef\'c3\'e6\'b5\'c4\'ca\'f4\'d0\'d4\'d6\'b5\'a3\'ac\'d2\'d1\'be\'ad\'b2\'bb\'d4\'d9\'ca\'c7\'bc\'f2\'b5\'a5\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'a3\'ac\'cb\'fc\'d2\'b2\'bf\'c9\'c4\'dc\'ca\'c7\'b8\'f6\'b1\'e4\'c1\'bf\'a1\'a2\'b1\'ed\'b4\'ef\'ca\'bd
+\f2  -->\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf2 <\cf4 input\cf5  \cf6 type\cf5 =\cf7 "text"\cf5  \cf6 v-model\cf5 =\cf7 "name"\cf5  \cf6 placeholder\cf5 =\cf7 "
+\f0 \'c4\'e3\'b5\'c4\'c3\'fb\'d7\'d6
+\f2 "\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 <!-- 
+\f0 \'ce\'c4\'b1\'be\'b2\'e5\'d6\'b5\'a3\'a8
+\f2 Mustache
+\f0 \'d3\'ef\'b7\'a8\'a3\'a9\'a3\'ac\'b2\'e5\'d6\'b5\'bf\'c9\'d2\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'b1\'e4\'c1\'bf\'d2\'b2\'bf\'c9\'d2\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ac\'b5\'ab\'ca\'c7\'b2\'bb\'c4\'dc\'ca\'c7\'d2\'bb\'be\'e4\'d3\'ef\'be\'e4
+\f2  -->\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf2 <\cf4 h1\cf2 >
+\f0 \cf5 \'c4\'e3\'ba\'c3\'a3\'ac
+\f2 \{\{ name \}\}\cf2 </\cf4 h1\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 // el
+\f0 \'d3\'c3\'d3\'da\'d6\'b8\'b6\'a8\'d2\'bb\'b8\'f6\'d2\'b3\'c3\'e6\'d6\'d0\'bc\'ba\'b4\'e6\'d4\'da\'b5\'c4
+\f2 DOM
+\f0 \'d4\'aa\'cb\'d8\'c0\'b4\'b9\'d2\'d4\'d8
+\f2 Vue 
+\f0 \'ca\'b5\'c0\'fd\'a3\'ac\'cb\'fc\'bf\'c9\'d2\'d4\'ca\'c7
+\f2  HTMLElement 
+\f0 \'a3\'ac\'d2\'b2\'bf\'c9\'d2\'d4\'ca\'c7
+\f2  css 
+\f0 \'d1\'a1\'d4\'f1\'c6\'f7
+\f2 \cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 // el: document.getElementByld(\'92app\'92) //
+\f0 \'bb\'f2\'d5\'df\'ca\'c7
+\f2 \'92#app\'92\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0el: \cf7 "#app"\cf5 ,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 // 
+\f0 \'cb\'f9\'d3\'d0\'bb\'e1\'d3\'c3\'b5\'bd\'b5\'c4\'ca\'fd\'be\'dd\'b6\'bc
+\f2  
+\f0 \'d4\'a4\'cf\'c8\'d4\'da
+\f2  data 
+\f0 \'c4\'da\'c9\'f9\'c3\'f7\'a3\'ac\'d5\'e2\'d1\'f9\'b2\'bb\'d6\'c1\'d3\'da\'bd\'ab\'ca\'fd\'be\'dd\'c9\'a2\'c2\'e4\'d4\'da\'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad\'d6\'d0
+\f2 \cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0data: \{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0name: \cf7 ""\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\})\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 // Vue
+\f0 \'ca\'b5\'c0\'fd\'b1\'be\'c9\'ed\'d2\'b2\'b4\'fa\'c0\'ed\'c1\'cb
+\f2  data
+\f0 \'b6\'d4\'cf\'f3\'c0\'ef\'b5\'c4\'cb\'f9\'d3\'d0\'ca\'f4\'d0\'d4\'a3\'ac\'cb\'f9\'d2\'d4\'bf\'c9\'d2\'d4\'d5\'e2\'d1\'f9\'b7\'c3\'ce\'ca
+\f2 :\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 // console.log(app.name);\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+3. 
+\f0 \'c9\'fa\'c3\'fc\'d6\'dc\'c6\'da & \'b2\'e5\'d6\'b5
+\f1 \
+\'95 created 
+\f0 \'ca\'b5\'c0\'fd\'b4\'b4\'bd\'a8\'cd\'ea\'b3\'c9\'ba\'f3\'b5\'f7\'d3\'c3\'a3\'ac\'b4\'cb\'bd\'d7\'b6\'ce\'cd\'ea\'b3\'c9\'c1\'cb\'ca\'fd\'be\'dd\'b5\'c4\'b9\'db\'b2\'e2\'b5\'c8\'a3\'ac\'b5\'ab\'c9\'d0\'ce\'b4\'b9\'d2\'d4\'d8\'a3\'ac
+\f1  $el 
+\f0 \'bb\'b9\'b2\'bb\'bf\'c9\'d3\'c3\'a1\'a3
+\f1  
+\f0 \'d0\'e8\'d2\'aa\'b3\'f5\'ca\'bc\'bb\'af\'b4\'a6\'c0\'ed\'d2\'bb\'d0\'a9\'ca\'fd\'be\'dd\'ca\'b1\'bb\'e1\'b1\'c8\'bd\'cf\'d3\'d0\'d3\'c3\'a3\'ac\'ba\'f3\'c3\'e6\'d5\'c2\'bd\'da\'bd\'ab\'d3\'d0\'bd\'e9\'c9\'dc\'a1\'a3
+\f1 \
+\'95 mounted el 
+\f0 \'b9\'d2\'d4\'d8\'b5\'bd\'ca\'b5\'c0\'fd\'c9\'cf\'ba\'f3\'b5\'f7\'d3\'c3\'a3\'ac\'d2\'bb\'b0\'e3\'ce\'d2\'c3\'c7\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad\'bb\'e1\'d4\'da\'d5\'e2\'c0\'ef\'bf\'aa\'ca\'bc
+\f1  
+\f0 \'a1\'a3
+\f1 \
+\'95 beforeDestroy 
+\f0 \'ca\'b5\'c0\'fd\'cf\'fa\'bb\'d9\'d6\'ae\'c7\'b0\'b5\'f7\'d3\'c3\'a1\'a3\'d6\'f7\'d2\'aa\'bd\'e2\'b0\'f3\'d2\'bb\'d0\'a9\'ca\'b9\'d3\'c3
+\f1  addEventListener 
+\f0 \'bc\'e0\'cc\'fd\'b5\'c4\'ca\'c2\'bc\'fe\'b5\'c8\'a1\'a3
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 \cb9 002\cf2 \cb3 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+    \cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'a3\'a8
+\f2 1
+\f0 \'a3\'a9\'c6\'d5\'cd\'a8\'b2\'e5\'d6\'b5\'b1\'ea\'c7\'a9
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ date \}\}\cf2 </\cf4 div\cf2 >\
+\cf5         \cf8 <!-- 
+\f0 \'a3\'a8
+\f2 2
+\f0 \'a3\'a9\'b1\'ed\'b4\'ef\'ca\'bd\'b2\'e5\'d6\'b5
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ number + 10 \}\}\cf2 </\cf4 div\cf2 >\
+\cf5         \cf8 <!-- 
+\f0 \'a3\'a8
+\f2 3
+\f0 \'a3\'a9
+\f2 v-pre
+\f0 \'d3\'c3\'d3\'da\'ca\'e4\'b3\'f6\'ce\'b4\'b1\'e0\'d2\'eb\'b5\'c4\'c4\'da\'c8\'dd
+\f2 (pre
+\f0 \'bf\'c9\'c0\'ed\'bd\'e2\'ce\'aa\'b1\'e0\'d2\'eb\'d6\'ae\'c7\'b0\'b5\'c4\'a3\'ac\'d5\'e2\'d2\'bb\'bf\'e9\'c4\'da\'c8\'dd\'d2\'b2\'b2\'bb\'bb\'e1\'b1\'bb\'b1\'e0\'d2\'eb
+\f2 ) 
+\f0 \'a3\'ac
+\f2 v-pre
+\f0 \'b1\'ea\'d6\'be\'b2\'bb\'d0\'e8\'b1\'e0\'d2\'eb\'a3\'ac\'bd\'f6\'b1\'ea\'d6\'be\'b5\'c4\'d0\'ce\'ca\'bd
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-pre\cf2 >\cf5 \{\{ date \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'a3\'a8
+\f2 4
+\f0 \'a3\'a9
+\f2 v-html
+\f0 \'d3\'c3\'d3\'da\'b2\'e5\'c8\'eb
+\f2 HTML
+\f0 \'ce\'c4\'b1\'be\'a3\'ac
+\f2 v-html
+\f0 \'d7\'f7\'ce\'aa\'bd\'d3\'ca\'d5
+\f2 html
+\f0 \'ce\'c4\'b1\'be\'b5\'c4\'b1\'ea\'d6\'be\'a3\'ac\'cb\'fc\'b5\'c4\'d6\'b5\'ce\'aa
+\f2 link
+\f0 \'b1\'e4\'c1\'bf\'a3\'ac\'b1\'ea\'d6\'be
+\f2 +
+\f0 \'b1\'e4\'c1\'bf\'b5\'c4\'d0\'ce\'ca\'bd
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-html\cf5 =\cf7 "link"\cf2 ></\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'a3\'a8
+\f2 5
+\f0 \'a3\'a9
+\f2 v-if
+\f0 \'d3\'c3\'d3\'da\'cc\'f5\'bc\'fe\'bf\'d8\'d6\'c6\'b1\'ea\'c7\'a9\'ca\'c7\'b7\'f1\'cf\'d4\'ca\'be\'a3\'ac\'b1\'ea\'d6\'be
+\f2 +
+\f0 \'b1\'ed\'b4\'ef\'ca\'bd\'b5\'c4\'d0\'ce\'ca\'bd
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-if\cf5 =\cf7 "number>1"\cf2 >
+\f0 \cf5 \'c4\'e3\'c4\'dc\'bf\'b4\'bc\'fb\'ce\'d2\'c2\'f0\'a3\'bf
+\f2 \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+        \cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                date: \cf4 new\cf5  Date(),\
+                link: \cf7 '<a href=\'94#\'94>
+\f0 \'d5\'e2\'ca\'c7\'d2\'bb\'b8\'f6\'c1\'ac\'bd\'d3
+\f2 </a>'\cf5 ,\
+                number: \cf10 2\cf5 \
+            \},\
+            mounted: \cf4 function\cf5  () \{\
+                \cf4 var\cf5  _this = \cf4 this\cf5 ;\
+                \cf4 this\cf5 .timer = setInterval(\cf4 function\cf5 ()\{\
+                    _this.date = \cf4 new\cf5  Date();\
+                \}, \cf10 1000\cf5 );\
+            \},\
+            beforeDestroy: \cf4 function\cf5  () \{\
+                \cf4 if\cf5  (\cf4 this\cf5 .timer) \{\
+                    clearInterval(\cf4 this\cf5 .timer);\
+                \}\
+            \}\
+        \});\
+    \cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+4. 
+\f0 \'b9\'fd\'c2\'cb\'c6\'f7
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 003\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+    \cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'b2\'e5\'d6\'b5\'b9\'fd\'c2\'cb\'a3\'ac\'b2\'e5\'d6\'b5\'b1\'be\'c9\'ed\'d7\'f7\'ce\'aa\'b9\'fd\'c2\'cb\'c6\'f7\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'b2\'ce\'ca\'fd\'b4\'ab\'c8\'eb
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ date | formatDate \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'c1\'b4\'ca\'bd\'b9\'fd\'c2\'cb
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ scores | passedFilter \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ scores | passedFilter | excellentFilter \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'bd\'d3\'ca\'d5\'b2\'ce\'ca\'fd\'a3\'ac
+\f2 70
+\f0 \'d7\'f7\'ce\'aa\'ba\'af\'ca\'fd\'b5\'c4\'b5\'da\'b6\'fe\'b8\'f6\'b2\'ce\'ca\'fd\'b4\'ab\'c8\'eb
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ scores | scoreFilter(70) \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+\
+        \cf8 <!-- 
+\f0 \'a1\'be\'d7\'a2\'a1\'bf\'b9\'fd\'c2\'cb\'c6\'f7\'d3\'a6\'b5\'b1\'d3\'c3\'d3\'da\'b4\'a6\'c0\'ed\'bc\'f2\'b5\'a5\'b5\'c4\'ce\'c4\'b1\'be\'d7\'aa\'bb\'bb\'a3\'ac\'c8\'e7\'b9\'fb\'d2\'aa\'ca\'b5\'cf\'d6\'b8\'fc\'ce\'aa\'b8\'b4\'d4\'d3\'b5\'c4\'ca\'fd\'be\'dd\'b1\'e4\'bb\'bb\'a3\'ac\'d3\'a6\'b8\'c3\'ca\'b9\'d3\'c3\'bc\'c6
+\f2 \cf5 \
+
+\f0 \cf8 \'cb\'e3\'ca\'f4\'d0\'d4\'a3\'ac\'cf\'c2\'d2\'bb\'d5\'c2\'d6\'d0\'bb\'e1\'cf\'ea\'cf\'b8\'bd\'e9\'c9\'dc\'cb\'fc\'b5\'c4\'d3\'c3\'b7\'a8\'a3\'ac
+\f2  -->\cf5 \
+    \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf2 >\cf5 \
+        \cf4 var\cf5  padDate = \cf4 function\cf5  (value) \{\
+            \cf4 return\cf5  value < \cf10 10\cf5  ? \cf7 '0'\cf5  + value : value;\
+        \};\
+        \cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                date: \cf4 new\cf5  Date(),\
+                scores: [\cf10 45\cf5 , \cf10 66\cf5 , \cf10 77\cf5 , \cf10 99\cf5 ]\
+            \},\
+            mounted: \cf4 function\cf5  () \{\
+                \cf4 var\cf5  _this = \cf4 this\cf5 ;\
+                \cf4 this\cf5 .timer = setInterval(\cf4 function\cf5  () \{\
+                    _this.date = \cf4 new\cf5  Date();\
+                \}, \cf10 1000\cf5 );\
+            \},\
+            beforeDestroy: \cf4 function\cf5  () \{\
+                \cf4 if\cf5  (\cf4 this\cf5 .timer) \{\
+                    clearInterval(\cf4 this\cf5 .timer);\
+                \}\
+            \},\
+            \cf8 // 
+\f0 \'b9\'fd\'c2\'cb\'c6\'f7\'bc\'af\'ba\'cf
+\f2 \cf5 \
+            filters: \{\
+                \cf8 // 
+\f0 \'b5\'a5\'b8\'f6\'b9\'fd\'c2\'cb\'c6\'f7\'ba\'af\'ca\'fd\'a3\'ac\'ba\'af\'ca\'fd\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'b2\'ce\'ca\'fd\'ce\'aa\'b2\'e5\'d6\'b5\'b1\'be\'c9\'ed
+\f2 \cf5 \
+                formatDate: \cf4 function\cf5  (value) \{\
+                    \cf4 var\cf5  date = \cf4 new\cf5  Date(value);\
+                    \cf4 var\cf5  year = date.getFullYear();\
+                    \cf4 var\cf5  month= padDate(date.getMonth() + \cf10 1\cf5 ) ;\
+                    \cf4 var\cf5  day= padDate(date .getDate());\
+                    \cf4 var\cf5  hours= padDate(date .getHours());\
+                    \cf4 var\cf5  minutes = padDate (date .getMinutes ());\
+                    \cf4 var\cf5  seconds = padDate (date .getSeconds ());\
+\
+                    \cf4 return\cf5  year + \cf7 '-'\cf5  + month + \cf7 '-'\cf5  + day + \cf7 ' '\cf5  + hours + \cf7 ':'\cf5  + minutes + \cf7 ':'\cf5  + seconds;\
+                \},\
+                passedFilter: \cf4 function\cf5  (value) \{\
+                    \cf4 var\cf5  result = [];\
+                    \cf4 if\cf5  (value \cf4 instanceof\cf5  Array) \{\
+                        \cf4 for\cf5  (\cf4 var\cf5  i = \cf10 0\cf5 ; i < value.length; i++) \{\
+                            \cf4 var\cf5  score = value[i];\
+                            \cf4 if\cf5  (score < \cf10 60\cf5 ) \cf4 continue\cf5 ;\
+                            result.push(score);\
+                        \}\
+                    \}\
+                    \cf4 return\cf5  result;\
+                \},\
+                excellentFilter: \cf4 function\cf5  (value) \{\
+                    \cf4 var\cf5  result = [];\
+                    \cf4 if\cf5  (value \cf4 instanceof\cf5  Array) \{\
+                        \cf4 for\cf5  (\cf4 var\cf5  i = \cf10 0\cf5 ; i < value.length; i++) \{\
+                            \cf4 var\cf5  score = value[i];\
+                            \cf4 if\cf5  (score < \cf10 90\cf5 ) \cf4 continue\cf5 ;\
+                            result.push(score);\
+                        \}\
+                    \}\
+                    \cf4 return\cf5  result;\
+                \},\
+                \cf8 // 
+\f0 \'b4\'f8\'b2\'ce\'ca\'fd\'b5\'c4\'b9\'fd\'c2\'cb\'c6\'f7\'ba\'af\'ca\'fd
+\f2 \cf5 \
+                scoreFilter: \cf4 function\cf5  (value, paramScore) \{\
+                    \cf4 var\cf5  result = [];\
+                    \cf4 if\cf5  (value \cf4 instanceof\cf5  Array) \{\
+                        \cf4 for\cf5  (\cf4 var\cf5  i = \cf10 0\cf5 ; i < value.length; i++) \{\
+                            \cf4 var\cf5  score = value[i];\
+                            \cf4 if\cf5  (score < paramScore) \cf4 continue\cf5 ;\
+                            result.push(score);\
+                        \}\
+                    \}\
+                    \cf4 return\cf5  result;\
+                \}\
+            \}\
+        \});\
+    \cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+5. 
+\f0 \'d6\'b8\'c1\'ee
+\f1 \
+
+\f0 \'d6\'b8\'c1\'ee
+\f1 (Directives)
+\f0 \'ca\'c7
+\f1  Vue
+\f0 .js\'c4\'a3\'b0\'e5\'d6\'d0\'d7\'ee\'b3\'a3\'d3\'c3\'b5\'c4\'d2\'bb\'cf\'ee\'b9\'a6\'c4\'dc\'a3\'ac\'cb\'fc\'b4\'f8\'d3\'d0\'c7\'b0\'d7\'ba
+\f1  v-
+\f0 \'a3\'ac
+\f1  
+\f0 \'d4\'da\'c7\'b0\'ce\'c4\'ce\'d2\'c3\'c7\'d2\'d1\'be\'ad\'ca\'b9\'d3\'c3
+\f1  
+\f0 \'b9\'fd\'b2\'bb\'c9\'d9\'d6\'b8\'c1\'ee\'c1\'cb\'a3\'ac\'b1\'c8\'c8\'e7
+\f1  v-if
+\f0 \'a1\'a2
+\f1  v-html
+\f0 \'a1\'a2
+\f1  v-pre
+\f0 \'b5\'c8\'a1\'a3\'d6\'b8\'c1\'ee\'b5\'c4\'d6\'f7\'d2\'aa\'d6\'b0\'d4\'f0\'be\'cd\'ca\'c7\'b5\'b1\'c6\'e4\'b1\'ed\'b4\'ef\'ca\'bd\'b5\'c4\'d6\'b5\'b8\'c4\'b1\'e4\'ca\'b1\'a3\'ac\'cf\'e0\'d3\'a6\'b5\'d8 \'bd\'ab\'c4\'b3\'d0\'a9\'d0\'d0\'ce\'aa\'d3\'a6\'d3\'c3\'b5\'bd DOM \'c9\'cf\'a1\'a3\'c0\'fd\'c8\'e7\'d6\'ae\'c7\'b0\'b5\'c4v-if\'d6\'b8\'c1\'ee\'a3\'ac\'d4\'danumber>1\'ca\'b1\'a3\'acDOM\'c9\'cf\'b5\'c4\'b6\'d4\'d3\'a6Element\'bb\'e1\'cf\'d4\'ca\'be\'a3\'ac\'b7\'f1\'d4\'f2\'bb\'e1\'d2\'fe\'b2\'d8\'a1\'a3\'a1\'be\'ca\'fd\'be\'dd\'c7\'fd\'b6\'af DOM \'ca\'c7 Vue.js \'b5\'c4\'ba\'cb\'d0\'c4\'c0\'ed\'c4\'ee\'a3\'ac\'cb\'f9\'d2\'d4\'b2\'bb\'b5\'bd\'cd\'f2\'b2\'bb\'b5\'c3\'d2\'d1\'ca\'b1\'b2\'bb\'d2\'aa\'d6\'f7\'b6\'af\'b2\'d9\'d7\'f7DOM\'a3\'ac\'c4\'e3\'d6\'bb\'d0\'e8\'d2\'aa\'ce\'ac\'bb\'a4\'ba\'c3\'ca\'fd\'be\'dd\'a3\'ac DOM\'b5\'c4\'ca\'c2Vue\'bb\'e1 \'b0\'ef\'c4\'e3\'d3\'c5\'d1\'c5\'b5\'c4\'b4\'a6\'c0\'ed\'a1\'a3\'a1\'bf\
+\'d5\'e2\'c0\'ef\'b2\'bb\'bb\'e1\'bd\'e9\'c9\'dc\'cb\'f9\'d3\'d0\'b5\'c4\'d6\'b8\'c1\'ee\'a3\'ac\'b1\'f0\'d7\'c5\'bc\'b1\'a3\'ac\'b0\'b4\'c9\'e6\'bc\'b0\'b5\'c4\'b5\'e3\'c2\'fd\'c2\'fd\'c0\'b4\'bd\'e9\'c9\'dc\'a3\'ac\'d5\'e2\'c0\'ef\'cf\'c8\'bd\'e9\'c9\'dcv-bind\'d3\'ebv-on\'a1\'a3\
+v-bind \'b5\'c4\'bb\'f9\'b1\'be\'d3\'c3\'cd\'be\'ca\'c7\'b6\'af\'cc\'ac\'b8\'fc\'d0\'c2 HTML \'d4\'aa\'cb\'d8\'c9\'cf\'b5\'c4\'ca\'f4\'d0\'d4\'a3\'ac\'b1\'c8\'c8\'e7 id\'a1\'a2class\'b5\'c8\'a1\'a3\
+v-on \'d3\'c3\'c0\'b4\'b0\'f3\'b6\'a8\'ca\'c2\'bc\'fe\'bc\'e0\'cc\'fd\'c6\'f7\'a1\'a3\'cb\'fc\'bf\'c9\'d2\'d4\'bc\'e0\'cc\'fd\'d4\'ad\'c9\'fa\'b5\'c4 DOM \'ca\'c2\'bc\'fe\'a3\'ac\'b3\'fd\'c1\'cb click \'cd\'e2\'a3\'ac\'bb\'b9\'d3\'d0 dblclick\'a1\'a2 keyup, mousemove \'b5\'c8\'a1\'a3\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 004\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+    \cf2 <\cf4 style\cf2 >\cf5 \
+        \cf11 a\cf5  \{\
+            \cf6 display\cf5 : block;\
+        \}\
+        \cf11 img\cf5  \{\
+            \cf6 width\cf5 : \cf10 90px\cf5 ;\
+            \cf6 height\cf5 : \cf10 90px\cf5 ;\
+            \cf6 display\cf5 : block;\
+            \cf6 margin\cf5 : \cf10 20px\cf5 ;\
+        \}\
+    \cf2 </\cf4 style\cf2 >\cf5 \
+    \cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \
+            \cf8 <!-- v-bind
+\f0 \'a3\'ac\'c8\'e7\'b9\'fb\'b2\'bb\'bc\'d3v-bind\'a3\'ac\'c4\'c7\'c3\'b4href\'be\'cd\'ca\'c7\'b8\'f6\'b3\'a3\'c1\'bf\'a3\'ac\'bc\'d3\'c1\'cbv-bind\'d6\'ae\'ba\'f3\'a3\'achref\'be\'cd\'b6\'d4\'d3\'a6Vue\'ca\'b5\'c0\'fd\'b5\'c4url\'b1\'e4\'c1\'bf\'a3\'ac\'bb\'e1\'cb\'e6\'d7\'c5\'b1\'e4\'c1\'bf\'d6\'b5\'b5\'c4\'b8\'c4\'b1\'e4\'b6\'f8\'b8\'c4\'b1\'e4
+\f2  -->\cf5 \
+            \cf2 <\cf4 a\cf5  \cf6 v-bind:href\cf5 =\cf7 "url"\cf5  \cf6 target\cf5 =\cf7 "blank"\cf2 >
+\f0 \cf5 \'d5\'e2\'ca\'c7\'d2\'bb\'b8\'f6
+\f2 v-bind
+\f0 \'c1\'b4\'bd\'d3
+\f2 \cf2 </\cf4 a\cf2 >\cf5 \
+            \cf2 <\cf4 img\cf5  \cf6 v-bind:src\cf5 =\cf7 "imgURL"\cf5  \cf6 v-if\cf5 =\cf7 "seen"\cf2 >\cf5 \
+            \cf8 <!-- v-on -->\cf5 \
+            \cf2 <\cf4 button\cf5  \cf6 v-on:click\cf5 =\cf7 "toggleImg"\cf2 >\cf5 \{\{ tips \}\}\cf2 </\cf4 button\cf2 >\cf5 \
+\
+            \cf8 <!-- 
+\f0 \'a1\'be\'d3\'ef\'b7\'a8\'cc\'c7\'a1\'bf\'ca\'c7\'d6\'b8\'d4\'da\'b2\'bb\'d3\'b0\'cf\'ec\'b9\'a6\'c4\'dc\'b5\'c4\'c7\'e9\'bf\'f6\'cf\'c2\'a3\'ac\'cc\'ed\'bc\'d3\'c4\'b3\'d6\'d6\'b7\'bd\'b7\'a8\'ca\'b5\'cf\'d6\'cd\'ac\'d1\'f9\'b5\'c4\'d0\'a7\'b9\'fb\'a3\'ac\'b4\'d3\'b6\'f8\'b7\'bd\'b1\'e3\'b3\'cc\'d0\'f2\'bf\'aa\'b7\'a2\'a1\'a3
+\f2  -->\cf5 \
+            \cf8 <!-- img
+\f0 \'d4\'aa\'cb\'d8\'b4\'fa\'c2\'eb\'b5\'c8\'cd\'ac\'d3\'da
+\f2  <img :src="imgURL" v-if="seen"> -->\cf5 \
+            \cf8 <!-- button
+\f0 \'d4\'aa\'cb\'d8\'b4\'fa\'c2\'eb\'b5\'c8\'cd\'ac\'d3\'da
+\f2  <button @click="toggleImg">\{\{ tips \}\}</button> -->\cf5 \
+        \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf2 >\cf5 \
+        \cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                url: \cf7 "http://www.4399.com"\cf5 ,\
+                imgURL: \cf7 "../image/a.jpg"\cf5 ,\
+                seen: \cf4 true\cf5 ,\
+                tips: \cf7 "
+\f0 \'b5\'e3\'bb\'f7\'d2\'fe\'b2\'d8\'cd\'bc\'c6\'ac
+\f2 "\cf5 \
+            \},\
+            \cf8 // methods
+\f0 \'ca\'f4\'d0\'d4\'a3\'ac\'cb\'fc\'c0\'ef\'c3\'e6\'b5\'c4\'ba\'af\'ca\'fd\'b1\'bb
+\f2 Vue
+\f0 \'b1\'e4\'c1\'bf\'b4\'fa\'c0\'ed\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f2 app.toggleImg
+\f0 \'bd\'f8\'d0\'d0\'b7\'c3\'ce\'ca\'a3\'ac\'b8\'fa
+\f2 data
+\f0 \'ca\'fd\'be\'dd\'cf\'e0\'cd\'ac
+\f2 \cf5 \
+            methods: \{\
+                toggleImg: \cf4 function\cf5  () \{\
+                    \cf4 this\cf5 .seen = !\cf4 this\cf5 .seen;\
+                    \cf4 this\cf5 .tips = \cf4 this\cf5 .seen ? \cf7 "
+\f0 \'b5\'e3\'bb\'f7\'d2\'fe\'b2\'d8\'cd\'bc\'c6\'ac
+\f2 "\cf5  : \cf7 "
+\f0 \'b5\'e3\'bb\'f7\'cf\'d4\'ca\'be\'cd\'bc\'c6\'ac
+\f2 "\cf5 ;\
+                \}\
+            \}\
+        \});\
+    \cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'d7\'a2\'a1\'bfv-model\'d6\'b8\'c1\'ee\'cb\'e4\'c8\'bb\'ca\'c7\'ce\'d2\'c3\'c7\'b5\'da\'d2\'bb\'b8\'f6\'b4\'fa\'c2\'eb\'ca\'be\'c0\'fd\'d6\'d0\'be\'cd\'d3\'c3\'b5\'bd\'b5\'c4\'d6\'b8\'c1\'ee\'a3\'ac\'b5\'ab\'ca\'c7\'cf\'d6\'d4\'da\'b2\'c5\'bf\'c9\'d2\'d4\'bd\'cf\'ba\'c3\'b5\'c4\'bd\'e2\'ca\'cd\'cb\'fc\'b5\'c4\'d7\'f7\'d3\'c3\'a1\'a3 v-model \'d6\'b8\'c1\'ee\'d4\'da <input> (<input> \'b1\'ea\'c7\'a9\'d3\'d0\'b6\'e0\'d6\'d6\'c0\'e0\'d0\'cd\'a3\'ac\'c8\'e7 button\'a1\'a2select \'b5\'c8\'b5\'c8)\'bc\'b0 <textarea> \'d4\'aa\'cb\'d8\'c9\'cf\'bd\'f8\'d0\'d0\'cb\'ab\'cf\'f2\'ca\'fd\'be\'dd\'b0\'f3\'b6\'a8\'a3\'ac\'cb\'fc\'b8\'ba\'d4\'f0\'bc\'e0\'cc\'fd\'d3\'c3\'bb\'a7\'b5\'c4\'ca\'e4\'c8\'eb\'ca\'c2\'bc\'fe\'d2\'d4\'b8\'fc\'d0\'c2\'ca\'fd\'be\'dd\'a1\'a3
+\f1 \
+\
+6. 
+\f0 \'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\
+\'b2\'e5\'d6\'b5\'bf\'c9\'d2\'d4\'d7\'f6\'bc\'f2\'b5\'a5\'b5\'c4\'d4\'cb\'cb\'e3\'a3\'ac\'b5\'ab\'ca\'c7\'cb\'fc\'b2\'a2\'b2\'bb\'d6\'a7\'b3\'d6\'d3\'ef\'be\'e4\'a3\'ac\'b8\'b4\'d4\'d3\'b5\'c4\'b6\'e0\'d3\'ef\'be\'e4\'b4\'fa\'c2\'eb\'b8\'fc\'bc\'d3\'c3\'bb\'b7\'a8\'d6\'b4\'d0\'d0\'a3\'ac\'cb\'f9\'d2\'d4\'d4\'da\'b4\'a6\'c0\'ed\'d5\'e2\'d2\'bb\'c0\'e0\'ca\'fd\'be\'dd\'ca\'b1\'a3\'ac\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'be\'cd\'c6\'f0\'c1\'cb\'ba\'dc\'ba\'c3\'b5\'c4\'d7\'f7\'d3\'c3\'a1\'a3\'bc\'f2\'b5\'a5\'ca\'b5\'c0\'fd\'c8\'e7\'cf\'c2\'a3\'ba\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 005\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+    \cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf2 >\cf5 \{\{ reverseString \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf2 >\cf5 \
+        \cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                string: \cf7 "Hello Vue!"\cf5 \
+            \},\
+            computed: \{\
+                reverseString: \cf4 function\cf5  () \{\
+                    \cf4 return\cf5  \cf4 this\cf5 .string.split(\cf7 ''\cf5 ).reverse().join(\cf7 ''\cf5 );\
+                \}\
+            \}\
+        \});\
+    \cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+
+\f0 \'d4\'da\'d2\'bb\'b8\'f6\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'c0\'ef\'bf\'c9\'d2\'d4\'cd\'ea\'b3\'c9\'b8\'f7\'d6\'d6\'b8\'b4\'d4\'d3\'b5\'c4\'c2\'df\'bc\'ad\'a3\'ac\'b0\'fc\'c0\'a8\'d4\'cb\'cb\'e3\'a1\'a2\'ba\'af\'ca\'fd\'b5\'f7\'d3\'c3\'b5\'c8\'a3\'ac\'d6\'bb\'d2\'aa\'d7\'ee\'d6\'d5\'b7\'b5\'bb\'d8\'d2\'bb\'b8\'f6\'bd\'e1\'b9\'fb\'be\'cd\'bf\'c9\'d2\'d4\'a1\'a3\'b3\'fd\'c1\'cb\'c9\'cf\'c0\'fd\'bc\'f2\'b5\'a5\'b5\'c4\'d3\'c3\'b7\'a8\'a3\'ac\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'bb\'b9\'bf\'c9\'d2\'d4\'d2\'c0\'c0\'b5\'b6\'e0\'b8\'f6 Vue \'ca\'b5\'c0\'fd\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'d6\'bb\'d2\'aa\'c6\'e4\'d6\'d0\'c8\'ce\'d2\'bb\'ca\'fd\'be\'dd\'b1\'e4\'bb\'af\'a3\'ac\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'be\'cd\'bb\'e1\'d6\'d8\'d0\'c2\'d6\'b4\'d0\'d0\'a3\'ac\'ca\'d3\'cd\'bc\'d2\'b2\'bb\'e1\'b8\'fc\'d0\'c2\'a1\'a3\'c0\'fd\'c8\'e7\'a3\'ac\'cf\'c2\'c3\'e6\'b5\'c4\'ca\'be\'c0\'fd\'d5\'b9\'ca\'be\'b5\'c4\'ca\'c7\'d4\'da\'b9\'ba\'ce\'ef\'b3\'b5\'c4\'da\'c1\'bd\'b8\'f6\'b0\'fc\'b9\'fc\'b5\'c4\'ce\'ef\'c6\'b7\'d7\'dc\'bc\'db\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 ></\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+    \cf2 <\cf4 div\cf5  \cf6 id\cf5 = \cf7 "app"\cf2 >\cf5 \
+        
+\f0 \'d7\'dc\'bc\'db
+\f2 : \{\{ prices \}\}\
+    \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+    \cf2 <\cf4 script\cf2 >\cf5 \
+        \cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                package1: [\
+                    \{\
+                        name: \cf7 'iPhone7'\cf5 ,\
+                        price: \cf10 6288\cf5 ,\
+                        count: \cf10 1\cf5 \
+                    \},\
+                    \{\
+                        name: \cf7 'iPad'\cf5 ,\
+                        price: \cf10 2688\cf5 ,\
+                        count: \cf10 2\cf5 \
+                    \}\
+                ],\
+                package2: [\
+                    \{\
+                        name: \cf7 'iPhoneXs'\cf5 ,\
+                        price: \cf10 10888\cf5 ,\
+                        count: \cf10 1\cf5 \
+                    \}\
+                ]\
+            \},\
+            computed: \{\
+                prices: \cf4 function\cf5  () \{\
+                    \cf4 var\cf5  totalPrice = \cf10 0\cf5 ;\
+                    \cf4 for\cf5  (\cf4 var\cf5  i = \cf10 0\cf5 ; i < \cf4 this\cf5 .package1.length; i++) \{\
+                        \cf4 var\cf5  item = \cf4 this\cf5 .package1[i];\
+                        totalPrice += item[\cf7 'price'\cf5 ] * item[\cf7 'count'\cf5 ];\
+                    \}\
+                    \cf4 for\cf5  (\cf4 var\cf5  i = \cf10 0\cf5 ; i < \cf4 this\cf5 .package2.length; i++) \{\
+                        \cf4 var\cf5  item = \cf4 this\cf5 .package2[i];\
+                        totalPrice += item[\cf7 'price'\cf5 ] * item[\cf7 'count'\cf5 ];\
+                    \}\
+                    \cf4 return\cf5  totalPrice;\
+                \}\
+            \}\
+        \});\
+    \cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+
+\f0 \'c3\'bf\'d2\'bb\'b8\'f6\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'b6\'bc\'b0\'fc\'ba\'ac\'d2\'bb\'b8\'f6
+\f1 ge
+\f0 tt
+\f1 er
+\f0 \'ba\'cd\'d2\'bb\'b8\'f6
+\f1  setter
+\f0 \'a3\'ac\'cf\'c2\'c3\'e6\'b5\'c4\'ca\'be\'c0\'fd\'d6\'d0\'d1\'dd\'ca\'be\'c1\'cbsetter\'b7\'bd\'b7\'a8\'b5\'c4\'ca\'b9\'d3\'c3
+\f1 :\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 007-
+\f0 \'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4
+\f2 setter\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf2 >
+\f0 \cf5 \'d0\'d5\'c3\'fb\'a3\'ba
+\f2 \{\{ fullname \}\}
+\f0 \'a3\'ac\'d0\'d5\'a3\'ba
+\f2 \{\{ firstname \}\}
+\f0 \'a3\'ac\'c3\'fb\'a3\'ba
+\f2 \{\{ lastname \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 v-model\cf5 =\cf7 "fullname"\cf5  \cf6 type\cf5 =\cf7 "text"\cf5  \cf6 placeholder\cf5 =\cf7 "
+\f0 \'d5\'e2\'c0\'ef\'bf\'c9\'d2\'d4\'ca\'e4\'c8\'eb\'c3\'fb\'d7\'d6\'c8\'ab\'b3\'c6
+\f2 "\cf2 >\cf5 \
+    \cf2 </\cf4 div\cf2 >\cf5 \
+    \cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "anotherApp"\cf2 >\cf5 \
+        \{\{ reversename \}\}\
+    \cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                firstname: \cf7 ''\cf5 ,\
+                lastname: \cf7 ''\cf5 \
+            \},\
+            computed: \{\
+                \cf8 // 
+\f0 \'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'bf\'c9\'d2\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'ba\'af\'ca\'fd\'b1\'e4\'c1\'bf\'a3\'ac\'d2\'b2\'bf\'c9\'d2\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'ba\'af\'ca\'fd\'bc\'af\'ba\'cf\'b1\'e4\'c1\'bf
+\f2 \cf5 \
+                fullname: \{\
+                    get: \cf4 function\cf5  () \{\
+                        \cf4 return\cf5  \cf4 this\cf5 .firstname + \cf7 ' '\cf5  + \cf4 this\cf5 .lastname;\
+                    \},\
+                    set: \cf4 function\cf5  (newValue) \{\
+                        \cf4 var\cf5  names = newValue.split(\cf7 ' '\cf5 );\
+                        \cf4 if\cf5  (names.length > \cf10 1\cf5 ) \{\
+                            \cf4 this\cf5 .firstname = names[\cf10 0\cf5 ];\
+                            \cf4 this\cf5 .lastname = names[names.length - \cf10 1\cf5 ];\
+                        \}\
+                    \}\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+        \cf4 var\cf5  anotherApp = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#anotherApp"\cf5 ,\
+            computed: \{\
+                \cf8 // 
+\f0 \'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'b2\'bb\'bd\'f6\'bf\'c9\'d2\'d4\'d2\'c0\'c0\'b5\'b5\'b1\'c7\'b0
+\f2 Vue
+\f0 \'ca\'b5\'c0\'fd\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'bb\'b9\'bf\'c9\'d2\'d4\'d2\'c0\'c0\'b5\'c6\'e4\'cb\'fb
+\f2 Vue
+\f0 \'ca\'b5\'c0\'fd\'b5\'c4\'ca\'fd\'be\'dd
+\f2 \cf5 \
+                reversename: \cf4 function\cf5  () \{\
+                    \cf4 return\cf5  app.fullname.split(\cf7 ''\cf5 ).reverse().join(\cf7 ''\cf5 );\
+                \}\
+            \}\
+        \});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'d7\'a2\'a1\'bf\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'ca\'c7\'bb\'f9\'d3\'da\'cb\'fc\'b5\'c4\'d2\'c0\'c0\'b5\'ca\'f4\'d0\'d4\'bd\'f8\'d0\'d0\'bb\'ba\'b4\'e6\'b5\'c4\'a3\'ac\'d2\'bb\'b8\'f6\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'cb\'f9\'d2\'c0\'c0\'b5\'b5\'c4\'ca\'f4\'d0\'d4\'b7\'a2\'c9\'fa\'b1\'e4\'bb\'af\'ca\'b1\'a3\'ac\'cb\'fc\'b2\'c5\'bb\'e1\'d6\'d8\'d0\'c2\'c8\'a1\'d6\'b5\'a1\'a3
+\f1 \
+\
+7. v-bind
+\f0 :
+\f1 class
+\f0 \'a1\'a2:class\'a3\'acv-bind:style\'a1\'a2:style\'a3\'ac\'b6\'d4\'d4\'ad\'c9\'faclass\'ba\'cdstyle\'b5\'c4\'c7\'bf\'bb\'af\'d3\'a6\'d3\'c3\
+
+\f1 7.1 v-bind
+\f0 :
+\f1 class
+\f0 \'a1\'a2:class\'b5\'c4\'bb\'f9\'b1\'be\'ca\'b9\'d3\'c3\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+    \cf2 <\cf4 title\cf2 >\cf5 008-
+\f0 \'d4\'f6\'c7\'bf
+\f2 class\cf2 </\cf4 title\cf2 >\cf5 \
+    \cf2 <\cf4 style\cf2 >\cf5 \
+        \cf11 #app\cf5  > \cf11 div\cf5  \{\
+            \cf6 width\cf5 : \cf10 100px\cf5 ;\
+            \cf6 height\cf5 : \cf10 100px\cf5 ;\
+            \cf6 background-color\cf5 : gray;\
+            \cf6 margin\cf5 : \cf10 20px\cf5 ;\
+        \}\
+        \cf11 #app\cf5  > \cf11 div.red\cf5  \{\
+            \cf6 background-color\cf5 : red;\
+        \}\
+        \cf11 #app\cf5  > \cf11 div.blue\cf5  \{\
+            \cf6 background-color\cf5 : blue;\
+        \}\
+        \cf11 #app\cf5  > \cf11 div.higher\cf5  \{\
+            \cf6 height\cf5 : \cf10 150px\cf5 ;\
+        \}\
+        \cf11 #app\cf5  > \cf11 div.wider\cf5  \{\
+            \cf6 width\cf5 : \cf10 150px\cf5 ;\
+        \}\
+    \cf2 </\cf4 style\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'d5\'e2\'c0\'ef\'b5\'c4\'ca\'be\'c0\'fd\'cb\'b5\'c3\'f7\'a3\'ac\'b1\'ea\'c7\'a9\'ca\'f4\'d0\'d4\'d6\'b5\'b2\'bb\'bd\'f6\'bf\'c9\'d2\'d4\'ca\'c7\'b3\'a3\'c1\'bf\'a1\'a2\'b5\'a5\'b8\'f6\'b1\'e4\'c1\'bf\'a1\'a2\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ac\'bb\'b9\'bf\'c9\'d2\'d4\'ca\'c7\'bc\'af\'ba\'cf\'b1\'e4\'c1\'bf
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-bind:class\cf5 =\cf7 "\{'red':isRed, 'wider':isWider\}"\cf2 ></\cf4 div\cf2 >\cf5 \
+\
+        \cf8 <!-- v-bind:class, :class
+\f0 \'bf\'c9\'d2\'d4\'d3\'eb\'d4\'ad\'c9\'fa
+\f2 class
+\f0 \'b9\'b2\'b4\'e6
+\f2  -->\cf5 \
+        \cf8 <!-- 
+\f0 \'b5\'b1
+\f2 :class
+\f0 \'d6\'d0\'b5\'c4\'bc\'fc\'d6\'b5\'b6\'d4\'d6\'b5\'ce\'aa\'d5\'e6\'ca\'b1\'a3\'ac\'b8\'c3
+\f2 class
+\f0 \'d6\'b5\'be\'cd\'b1\'bb\'e4\'d6\'c8\'be\'b5\'bd\'d4\'ad\'c9\'fa
+\f2 class
+\f0 \'d6\'d0
+\f2  -->\cf5 \
+        \cf8 <!-- 
+\f0 \'cf\'c2\'c3\'e6\'d5\'e2\'b8\'f6
+\f2 isBlue
+\f0 \'ce\'aa
+\f2 false
+\f0 \'ca\'b1\'a3\'ac
+\f2 blue
+\f0 \'d5\'e2\'b8\'f6
+\f2 class
+\f0 \'d6\'b5\'be\'cd\'b2\'bb\'bb\'e1\'b1\'bb\'e4\'d6\'c8\'be\'bd\'f8\'d4\'ad\'c9\'fa
+\f2 class
+\f0 \'d6\'d0\'a3\'ac\'cf\'c2\'c3\'e6\'d5\'e2\'b8\'f6
+\f2 div
+\f0 \'bf\'f2\'be\'cd\'b2\'bb\'bb\'e1\'b1\'bb\'e4\'d6\'c8\'be\'ce\'aa\'c0\'b6\'c9\'ab
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 :class\cf5 =\cf7 "\{'blue':isBlue\}"\cf5  \cf6 class\cf5 =\cf7 "higher"\cf2 ></\cf4 div\cf2 >\cf5 \
+\
+        \cf8 <!-- 
+\f0 \'b5\'b1
+\f2 class
+\f0 \'d6\'b5\'ba\'dc\'b6\'e0\'ca\'b1\'a3\'ac\'c4\'e3\'bf\'c9\'d2\'d4\'d3\'c3\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ac\'c9\'f5\'d6\'c1\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 :class\cf5 =\cf7 "computedClass"\cf2 ></\cf4 div\cf2 >\cf5 \
+\
+        \cf8 <!-- :class
+\f0 \'b5\'c4\'d6\'b5\'bb\'b9\'bf\'c9\'d2\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'ca\'fd\'d7\'e9
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 :class\cf5 =\cf7 "['wider', higherTag, isRed ? 'red' : 'blue']"\cf2 ></\cf4 div\cf2 >\cf5 \
+\
+        \cf2 <\cf4 input\cf5  \cf6 @click\cf5 =\cf7 "toggleState"\cf5  \cf6 type\cf5 =\cf7 "button"\cf5  \cf6 value\cf5 =\cf7 "
+\f0 \'b5\'e3\'bb\'f7\'c7\'d0\'bb\'bb\'d7\'b4\'cc\'ac
+\f2 "\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                isRed: \cf4 true\cf5 ,\
+                isWider: \cf4 true\cf5 ,\
+                isBlue: \cf4 false\cf5 ,\
+                higherTag: \cf7 'higher'\cf5 \
+            \},\
+            computed: \{\
+                computedClass: \cf4 function\cf5  () \{\
+                    \cf4 return\cf5  \{\cf7 'red'\cf5 :(\cf4 this\cf5 .isRed && \cf4 this\cf5 .isBlue), \cf7 'blue'\cf5 :!(\cf4 this\cf5 .isRed && \cf4 this\cf5 .isBlue), \cf7 'wider'\cf5 :\cf4 true\cf5 , \cf7 'higher'\cf5 :\cf4 true\cf5 \};\
+                \}\
+            \},\
+            methods: \{\
+                toggleState: \cf4 function\cf5  () \{\
+                    \cf4 this\cf5 .isRed = !\cf4 this\cf5 .isRed;\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+7.2 \'d4\'da\'d7\'e9\'bc\'fe\'d6\'d0\'ca\'b9\'d3\'c3
+\f1 v-bind:class
+\f0 \'a1\'a2
+\f1 :class\
+
+\f0 \'d7\'e9\'bc\'fe\'b6\'a8\'d2\'e5\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf5 \cb3 \expnd0\expndtw0\kerning0
+Vue.component('my-component', \{\
+    template: '\cf2 <\cf4 p\cf5  \cf6 class\cf5 =\cf7 "article"\cf2 ></\cf4 p\cf2 >\cf5 '\
+\});
+\f1\fs40 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \'ca\'b9\'d3\'c3\'d7\'e9\'bc\'fe\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+    \cf2 <\cf4 my-component\cf5  \cf6 :class\cf5 =\cf7 "\{'acttive':isActive\}"\cf2 ></\cf4 my-component\cf2 >\cf5 \
+\cf2 </\cf4 div\cf2 >\cf5 \
+\cf2 <\cf4 script\cf2 >\cf5 \
+    \cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+        el: \cf7 "#app"\cf5 ,\
+        data: \{\
+            isActive: \cf4 true\cf5 \
+        \}\
+    \});\
+\cf2 </\cf4 script\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'d7\'ee\'d6\'d5\'e4\'d6\'c8\'be\'bd\'e1\'b9\'fb\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<\cf4 p\cf5  \cf6 class\cf5 =\cf7 "article active"\cf2 >
+\f0 \cf5 \'d2\'bb\'d0\'a9\'ce\'c4\'b1\'be
+\f2 \cf2 </\cf4 p\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'d7\'a2\'a1\'bf\'d5\'e2\'d6\'d6\'d3\'c3\'b7\'a8\'bd\'f6\'ca\'ca\'d3\'c3\'d3\'da\'d7\'d4\'b6\'a8\'d2\'e5\'d7\'e9\'bc\'fe\'b5\'c4\'d7\'ee\'cd\'e2\'b2\'e3\'ca\'c7\'d2\'bb\'b8\'f6\'b8\'f9\'d4\'aa\'cb\'d8\'a3\'ac\'b7\'f1\'d4\'f2\'bb\'e1\'ce\'de\'d0\'a7\'a1\'a3
+\f1 \
+\
+
+\f0 7.3 v-bind:style\'a1\'a2:style\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 009-
+\f0 \'d4\'f6\'c7\'bf
+\f2 style\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'d2\'bb\'d0\'a9\'d7\'a2\'d2\'e2\'b5\'e3\'b8\'fa\'d4\'f6\'c7\'bf
+\f2 class
+\f0 \'cf\'e0\'cd\'ac\'a3\'ac\'b2\'bb\'d4\'d9\'d7\'b8\'ca\'f6\'a3\'ac\'d5\'e2\'c0\'ef\'d6\'bb\'b1\'b8\'d7\'a2\'d2\'bb\'cf\'c2\'d4\'f6\'c7\'bf
+\f2 style
+\f0 \'cc\'d8\'d3\'d0\'b5\'c4\'b5\'e3
+\f2  -->\cf5 \
+        \cf8 <!-- 1.
+\f0 \'b3\'a3\'c1\'bf\'c8\'e7
+\f2 100px
+\f0 \'d4\'da\'d4\'f6\'c7\'bf
+\f2 style
+\f0 \'d6\'d0\'d2\'aa\'d3\'c3\'d2\'fd\'ba\'c5\'b0\'fc\'c0\'a8\'c6\'f0\'c0\'b4\'a3\'ac\'b1\'ed\'ca\'be\'cb\'fc\'ca\'c7\'d2\'bb\'b8\'f6\'b3\'a3\'c1\'bf
+\f2  -->\cf5 \
+        \cf8 <!-- 2.
+\f0 \'c0\'e0\'cb\'c6
+\f2 font-size
+\f0 \'d5\'e2\'d6\'d6
+\f2 style
+\f0 \'ca\'f4\'d0\'d4\'bc\'c8\'bf\'c9\'d2\'d4\'ba\'e1\'cf\'df\'b7\'d6\'b8\'f4\'b7\'a8\'c3\'fc\'c3\'fb\'a3\'ac\'d2\'b2\'bf\'c9\'d2\'d4\'d3\'c3\'cd\'d5\'b7\'e5\'c3\'fc\'c3\'fb\'b7\'a8\'c3\'fc\'c3\'fb\'a3\'ac\'d7\'ee\'d6\'d5\'b5\'c4\'e4\'d6\'c8\'be\'bd\'e1\'b9\'fb\'b6\'bc\'ca\'c7
+\f2 font-size -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 style\cf5 =\cf7 "width: 300px"\cf5  \cf6 :style\cf5 =\cf7 "\{'height': '100px', 'fontSize':fontSize+'px'\}"\cf2 >\cf5 Hello Vue!\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'b8\'fc\'cd\'c6\'bc\'f6\'d3\'c3\'ca\'f4\'d0\'d4\'bb\'f2\'d5\'df\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'a3\'ac\'b1\'e3\'d3\'da\'ce\'ac\'bb\'a4
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 :style\cf5 =\cf7 "styles"\cf2 >
+\f0 \cf5 \'ce\'d2\'b5\'c4
+\f2 style
+\f0 \'ca\'c7\'cd\'a8\'b9\'fd\'ca\'f4\'d0\'d4\'b5\'c3\'b5\'bd\'b5\'c4
+\f2 \cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'d4\'f6\'c7\'bf
+\f2 style
+\f0 \'bb\'b9\'bf\'c9\'d2\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'bc\'af\'ba\'cf
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 :style\cf5 =\cf7 "[styleA, styleB]"\cf2 >
+\f0 \cf5 \'ce\'d2\'b5\'c4
+\f2 style
+\f0 \'ca\'c7\'cd\'a8\'b9\'fd\'b6\'e0\'b8\'f6\'bc\'c6\'cb\'e3\'ca\'f4\'d0\'d4\'d0\'ce\'b3\'c9\'b5\'c4\'ca\'fd\'d7\'e9\'bc\'af\'ba\'cf\'b5\'c3\'b5\'bd\'b5\'c4
+\f2 \cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                fontSize: \cf10 66\cf5 ,\
+                styles: \{\
+                        \cf8 // 
+\f0 \'d5\'e2\'c0\'ef\'b5\'c4
+\f2 red
+\f0 \'d2\'bb\'b6\'a8\'d2\'aa\'d0\'b4\'b3\'c9\'d7\'d6\'b7\'fb\'b4\'ae\'a3\'ac\'b2\'bb\'c4\'dc\'b2\'bb\'bc\'d3\'d2\'fd\'ba\'c5\'a3\'ac\'d5\'e2\'ca\'c7
+\f2 js
+\f0 \'d6\'d0\'a3\'ac\'b2\'bb\'ca\'c7
+\f2 css
+\f0 \'c0\'ef
+\f2 \cf5 \
+                        color: \cf7 'red'\cf5 ,\
+                        fontSize: \cf10 24\cf5  + \cf7 'px'\cf5 \
+                    \}\
+            \},\
+            computed: \{\
+                styleA: \cf4 function\cf5  () \{\
+                    \cf4 return\cf5  \{\
+                        color: \cf7 'blue'\cf5 \
+                    \}\
+                \},\
+                styleB: \cf4 function\cf5  () \{\
+                    \cf4 return\cf5  \{\
+                        fontSize: \cf10 20\cf5  + \cf7 'px'\cf5 \
+                    \}\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+8. v-cloak
+\f0 \'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'d6\'b5\'a3\'ac\'c5\'e4\'ba\'cf
+\f1 display: none
+\f0 \'ca\'b9\'d3\'c3\'a3\'ac\'bd\'e2\'be\'f6
+\f1 js
+\f0 \'ce\'b4\'bc\'d3\'d4\'d8\'cd\'ea\'b1\'cf\'ca\'b1\'d2\'b3\'c3\'e6\'cf\'d4\'ca\'be
+\f1 \{\{ message \}\}
+\f0 \'d5\'e2\'d6\'d6\'c0\'e0\'d0\'cd\'b5\'c4\'b2\'e5\'d6\'b5\'ce\'c4\'b1\'be\'ce\'ca\'cc\'e2\'a1\'a3
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+    \cf2 <\cf4 title\cf2 >\cf5 010-
+\f0 \'c4\'da\'d6\'c3\'d6\'b8\'c1\'ee
+\f2 \cf2 </\cf4 title\cf2 >\cf5 \
+    \cf2 <\cf4 style\cf2 >\cf5 \
+        [\cf6 v-cloak\cf5 ] \{\
+            \cf6 display\cf5 : none;\
+        \}\
+    \cf2 </\cf4 style\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- js
+\f0 \'bc\'d3\'d4\'d8\'cd\'ea\'d6\'ae\'c7\'b0\'a3\'ac\'b1\'bb\'b1\'ea\'bc\'c7\'ce\'aa
+\f2 v-cloak
+\f0 \'a3\'ac\'cd\'a8\'b9\'fd
+\f2 css
+\f0 \'c9\'e8\'d6\'c3\'ce\'aa\'d2\'fe\'b2\'d8
+\f2  -->\cf5 \
+        \cf8 <!-- 
+\f0 \'b5\'b1
+\f2 js
+\f0 \'bc\'d3\'d4\'d8\'cd\'ea\'d6\'ae\'ba\'f3\'a3\'ac
+\f2 v-cloak
+\f0 \'b1\'ea\'d6\'be\'bb\'e1\'b1\'bb\'d2\'c6\'b3\'fd\'a3\'ac\'ca\'b9\'c6\'e4\'cf\'d4\'ca\'be\'b3\'f6\'c0\'b4
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-cloak\cf2 >\cf5 \{\{ message \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                message: \cf7 "
+\f0 \'d5\'e2\'ca\'c7\'d2\'bb\'b6\'ce\'ce\'c4\'b1\'be
+\f2 "\cf5 \
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'d7\'a2\'a1\'bf\'ba\'f3\'c3\'e6\'bd\'f8\'bd\'d7\'c6\'aa\'bd\'ab\'bd\'e9\'c9\'dc webpack\'ba\'cdvue-router\'ca\'b1\'a3\'ac\'cf\'ee\'c4\'bf\'b5\'c4HTML \'bd\'e1\'b9\'b9\'d6\'bb\'d3\'d0\'d2\'bb\'b8\'f6\'bf\'d5\'b5\'c4div\'d4\'aa\'cb\'d8\'a3\'ac\'ca\'a3\'d3\'e0\'b5\'c4\'c4\'da\'c8\'dd\'b6\'bc\'ca\'c7\'d3\'c9\'c2\'b7\'d3\'c9\'c8\'a5\'b9\'d2\'d4\'d8\'b2\'bb\'cd\'ac\'d7\'e9\'bc\'fe\'cd\'ea\'b3\'c9\'b5\'c4\'a3\'ac\'cb\'f9\'d2\'d4\'b2\'bb\'d4\'d9\'d0\'e8\'d2\'aa v-cloak\'a1\'a3
+\f1 \
+\
+9. v-once
+\f0 \'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'d6\'b5\'a3\'ac\'d7\'f7\'d3\'c3\'ca\'c7\'b6\'a8\'d2\'e5\'cb\'fc\'b5\'c4\'d4\'aa\'cb\'d8\'bb\'f2\'d7\'e9\'bc\'fe\'d6\'bb\'e4\'d6\'c8\'be\'d2\'bb\'b4\'ce\'a3\'ac\'b0\'fc\'c0\'a8\'d4\'aa\'cb\'d8\'bb\'f2\'d7\'e9\'bc\'fe\'b5\'c4\'cb\'f9\'d3\'d0\'d7\'d3\'bd\'da\'b5\'e3\'a1\'a3\'ca\'d7\'b4\'ce\'e4\'d6\'c8\'be\'ba\'f3\'a3\'ac\'b2\'bb\'d4\'d9\'cb\'e6\'ca\'fd\'be\'dd\'b5\'c4\'b1\'e4\'bb\'af\'d6\'d8\'d0\'c2\'e4\'d6\'c8\'be\'a3\'ac\'bd\'ab\'b1\'bb\'ca\'d3\'ce\'aa\'be\'b2\'cc\'ac\'c4\'da\'c8\'dd\'a1\'a3v-once\'d4\'da\'d2\'b5\'ce\'f1\'d6\'d0\'d2\'b2\'ba\'dc\'c9\'d9\'ca\'b9\'d3\'c3\'a3\'ac\'b5\'b1\'c4\'e3\'d0\'e8\'d2\'aa\'bd\'f8\'d2\'bb\'b2\'bd\'d3\'c5\'bb\'af\'d0\'d4\'c4\'dc\'ca\'b1\'a3\'ac\'bf\'c9\'c4\'dc\'bb\'e1\'d3\'c3\'b5\'bd\'a1\'a3\
+\
+10. v-if\'a1\'a2v-else\'a1\'a2v-else-if\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+    \cf2 <\cf4 title\cf2 >\cf5 012-v-if\cf2 </\cf4 title\cf2 >\cf5 \
+    \cf2 <\cf4 style\cf2 >\cf5 \
+        \cf11 p\cf5 , \cf11 div\cf5 , \cf11 input\cf5  \{\
+            \cf6 display\cf5 : inline-block;\
+        \}\
+    \cf2 </\cf4 style\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'b5\'b1\'b2\'bb\'c9\'e8\'d6\'c3
+\f2 key
+\f0 \'d6\'b5\'a3\'ac\'d4\'da\'c7\'d0\'bb\'bb\'ca\'e4\'c8\'eb\'c0\'e0\'d0\'cd\'ca\'b1\'a3\'ac
+\f2 placeholder
+\f0 \'ca\'f4\'d0\'d4\'c4\'dc\'b9\'bb\'d5\'fd\'b3\'a3\'c7\'d0\'bb\'bb\'a3\'ac\'b5\'ab\'ca\'c7\'c8\'e7\'b9\'fb\'d3\'c3\'bb\'a7\'d2\'d1\'be\'ad\'ca\'e4\'c8\'eb\'ce\'c4\'b1\'be\'c4\'da\'c8\'dd\'a3\'ac\'b2\'a2\'b2\'bb\'c4\'dc\'b1\'bb\'c7\'e5\'bf\'d5
+\f2  -->\cf5 \
+        \cf8 <!-- 
+\f0 \'d5\'e2\'ca\'c7\'d3\'c9\'d3\'da
+\f2 Vue
+\f0 \'b8\'b4\'d3\'c3\'d6\'ae\'c7\'b0\'e4\'d6\'c8\'be\'b5\'c4
+\f2 input
+\f0 \'b5\'bc\'d6\'c2\'b5\'c4\'a3\'ac\'ce\'aa\'c3\'bf\'b8\'f6\'ce\'c4\'b1\'be\'bf\'f2\'bc\'d3\'c9\'cf
+\f2 key
+\f0 \'d6\'b5\'d6\'ae\'ba\'f3\'a3\'ac\'be\'cd\'bf\'c9\'d2\'d4\'b7\'c0\'d6\'b9\'b1\'bb\'b8\'b4\'d3\'c3
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-if\cf5 =\cf7 "type === 'username'"\cf5  \cf6 key\cf5 =\cf7 "username-input-key"\cf2 >\cf5 \
+            \cf2 <\cf4 p\cf2 >
+\f0 \cf5 \'d3\'c3\'bb\'a7\'c3\'fb\'a3\'ba
+\f2 \cf2 </\cf4 p\cf2 >\cf5 \
+            \cf2 <\cf4 input\cf5  \cf6 type\cf5 =\cf7 "text"\cf5  \cf6 placeholder\cf5 =\cf7 "
+\f0 \'c7\'eb\'ca\'e4\'c8\'eb\'d3\'c3\'bb\'a7\'c3\'fb
+\f2 "\cf2 >\cf5 \
+        \cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-else-if\cf5 =\cf7 "type === 'email'"\cf5  \cf6 key\cf5 =\cf7 "email-input-key"\cf2 >\cf5 \
+            \cf2 <\cf4 p\cf2 >
+\f0 \cf5 \'d3\'ca
+\f2  
+\f0 \'cf\'e4\'a3\'ba
+\f2 \cf2 </\cf4 p\cf2 >\cf5 \
+            \cf2 <\cf4 input\cf5  \cf6 type\cf5 =\cf7 "text"\cf5  \cf6 placeholder\cf5 =\cf7 "
+\f0 \'c7\'eb\'ca\'e4\'c8\'eb\'d3\'ca\'cf\'e4
+\f2 "\cf2 >\cf5 \
+        \cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-else\cf2 >\cf5 \
+            \cf2 <\cf4 p\cf2 >
+\f0 \cf5 \'ca\'d6
+\f2  
+\f0 \'bb\'fa\'a3\'ba
+\f2 \cf2 </\cf4 p\cf2 >\cf5 \
+            \cf2 <\cf4 input\cf5  \cf6 type\cf5 =\cf7 "text"\cf5  \cf6 placeholder\cf5 =\cf7 "
+\f0 \'c7\'eb\'ca\'e4\'c8\'eb\'ca\'d6\'bb\'fa\'ba\'c5
+\f2 "\cf5  \cf6 key\cf5 =\cf7 "mobile-input-key"\cf2 >\cf5 \
+        \cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 @click\cf5 =\cf7 "toggleType"\cf5  \cf6 type\cf5 =\cf7 "button"\cf5  \cf6 value\cf5 =\cf7 "
+\f0 \'c7\'d0\'bb\'bb\'ca\'e4\'c8\'eb\'c0\'e0\'d0\'cd
+\f2 "\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                type: \cf7 'username'\cf5 \
+            \},\
+            methods: \{\
+                toggleType: \cf4 function\cf5  () \{\
+                    \cf4 if\cf5  (\cf4 this\cf5 .type === \cf7 'username'\cf5 ) \{\
+                        \cf4 this\cf5 .type = \cf7 'email'\cf5 ;\
+                    \} \cf4 else\cf5  \cf4 if\cf5  (\cf4 this\cf5 .type === \cf7 'email'\cf5 ) \{\
+                        \cf4 this\cf5 .type = \cf7 'mobile'\cf5 ;\
+                    \} \cf4 else\cf5  \{\
+                        \cf4 this\cf5 .type = \cf7 'username'\cf5 ;\
+                    \}\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+11. v-show
+\f0 \'a3\'ac\'d3\'c3\'b7\'a8\'d3\'eb
+\f1 v-if
+\f0 \'bb\'f9\'b1\'be\'d2\'bb\'d6\'c2\'a3\'ac\'d6\'bb\'b2\'bb\'b9\'fd
+\f1 v-show
+\f0 \'ca\'c7\'b8\'c4\'b1\'e4\'d4\'aa\'cb\'d8\'b5\'c4
+\f1 css
+\f0 \'ca\'f4\'d0\'d4
+\f1 display
+\f0 \'a1\'a3\'b5\'b1
+\f1 v-show
+\f0 \'b5\'c4\'d6\'b5\'ce\'aa
+\f1 true
+\f0 \'ca\'b1\'a3\'ac\'b5\'b1\'c7\'b0\'bd\'da\'b5\'e3\'b5\'c4
+\f1 display
+\f0 \'ca\'f4\'d0\'d4\'ce\'aa\'cf\'d4\'ca\'be\'ca\'f4\'d0\'d4\'a3\'bb\'b5\'b1
+\f1 v-show
+\f0 \'b5\'c4\'d6\'b5\'ce\'aa
+\f1 false
+\f0 \'ca\'b1\'a3\'ac\'b5\'b1\'c7\'b0\'bd\'da\'b5\'e3\'b5\'c4
+\f1 display
+\f0 \'ca\'f4\'d0\'d4\'ce\'aa
+\f1 none
+\f0 \'a3\'ac\'d5\'b9\'ca\'be\'ce\'b4\'d2\'fe\'b2\'d8\'a1\'a3\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 011-v-show\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 @click\cf5 =\cf7 "onClickButton(0)"\cf5  \cf6 type\cf5 =\cf7 "button"\cf5  \cf6 value\cf5 =\cf7 "
+\f0 \'c2\'b7\'b7\'c9
+\f2 "\cf2 >\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 @click\cf5 =\cf7 "onClickButton(1)"\cf5  \cf6 type\cf5 =\cf7 "button"\cf5  \cf6 value\cf5 =\cf7 "
+\f0 \'cb\'f7\'c2\'a1
+\f2 "\cf2 >\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 @click\cf5 =\cf7 "onClickButton(2)"\cf5  \cf6 type\cf5 =\cf7 "button"\cf5  \cf6 value\cf5 =\cf7 "
+\f0 \'c9\'bd\'d6\'ce
+\f2 "\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-show\cf5 =\cf7 "index === 0"\cf2 >\cf5 \{\{ lufei \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-show\cf5 =\cf7 "index === 1"\cf2 >\cf5 \{\{ suolong \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-show\cf5 =\cf7 "index === 2"\cf2 >\cf5 \{\{ shanzhi \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                lufei: \cf7 "
+\f0 \'c3\'c9\'c6\'e6
+\f2 \'b7D\'b7
+\f0 \'c2\'b7\'b7\'c9\'a3\'ac\'c8\'d5\'b1\'be\'c2\'fe\'bb\'ad\'a1\'b6\'ba\'bd\'ba\'a3\'cd\'f5\'a1\'b7\'b5\'c4\'d6\'f7\'bd\'c7\'a3\'ac\'cd\'e2\'ba\'c5
+\f2 \'93
+\f0 \'b2\'dd\'c3\'b1
+\f2 \'94
+\f0 \'c2\'b7\'b7\'c9\'a3\'ac\'b2\'dd\'c3\'b1\'ba\'a3\'d4\'f4\'cd\'c5\'a1\'a2\'b2\'dd\'c3\'b1\'b4\'f3\'b4\'ac\'cd\'c5\'b4\'ac\'b3\'a4\'a3\'ac\'bc\'ab\'b6\'f1\'b5\'c4\'ca\'c0\'b4\'fa\'d6\'ae\'d2\'bb\'a1\'a3\'cf\'f0\'bd\'ba\'b9\'fb\'ca\'b5\'c4\'dc\'c1\'a6\'d5\'df\'a3\'ac\'d0\'fc\'c9\'cd\'bd\'f0
+\f2 15
+\f0 \'d2\'da\'b1\'b4\'c0\'ef\'a1\'a3\'c3\'ce\'cf\'eb\'ca\'c7\'d5\'d2\'b5\'bd\'b4\'ab\'cb\'b5\'d6\'d0\'b5\'c4
+\f2 One Piece
+\f0 \'a3\'ac\'b3\'c9\'ce\'aa\'ba\'a3\'d4\'f4\'cd\'f5\'a1\'a3
+\f2 "\cf5 ,\
+                suolong: \cf7 "
+\f0 \'c2\'de\'c2\'de\'c5\'b5\'d1\'c7
+\f2 \'b7
+\f0 \'cb\'f7\'c2\'a1\'a1\'a3\'c8\'cb\'b3\'c6\'a3\'ba\'ba\'a3\'d4\'f4\'c1\'d4\'c8\'cb\'a1\'a3\'c8\'d5\'b1\'be\'c2\'fe\'bb\'ad\'a1\'b6\'ba\'a3\'d4\'f4\'cd\'f5\'a1\'b7\'bc\'b0\'d1\'dc\'c9\'fa\'d7\'f7\'c6\'b7\'d6\'d0\'b5\'c4\'bd\'c7\'c9\'ab\'a1\'a3
+\f2 \'93
+\f0 \'b2\'dd\'c3\'b1\'d2\'bb\'bb\'ef
+\f2 \'94
+\f0 \'b5\'c4\'d5\'bd\'b6\'b7\'d4\'b1
+\f2  [1]  
+\f0 \'a3\'ac\'ca\'c7\'ca\'b9\'d3\'c3\'c8\'fd\'b0\'d1\'b5\'b6\'d5\'bd\'b6\'b7\'b5\'c4\'c8\'fd\'b5\'b6\'c1\'f7\'b5\'b6\'bf\'cd\'a1\'a3\'c1\'bd\'c4\'ea\'c7\'b0\'bc\'af\'bd\'e1\'cf\'e3\'b2\'a8\'b5\'d8\'c8\'ba\'b5\'ba\'b5\'c4\'b1\'bb\'b3\'c6\'d6\'ae\'ce\'aa
+\f2 \'93
+\f0 \'bc\'ab\'b6\'f1\'b5\'c4\'ca\'c0\'b4\'fa
+\f2 \'94
+\f0 \'b5\'c4\'ca\'ae\'d2\'bb\'b3\'ac\'d0\'c2\'d0\'c7\'d6\'ae\'d2\'bb\'a3\'ac\'d4\'da\'b3\'ac\'d0\'c2\'d0\'c7\'d6\'d0\'c9\'cd\'bd\'f0\'c5\'c5\'c3\'fb\'b5\'da\'ca\'ae\'ce\'bb\'a1\'a3
+\f2 "\cf5 ,\
+                shanzhi: \cf7 "
+\f0 \'c9\'bd\'d6\'ce\'a3\'ac\'c8\'d5\'b1\'be\'c2\'fe\'bb\'ad\'a1\'b6\'ba\'bd\'ba\'a3\'cd\'f5\'a1\'b7\'bc\'b0\'d1\'dc\'c9\'fa\'d7\'f7\'c6\'b7\'d6\'d0\'b5\'c4\'bd\'c7\'c9\'ab\'a1\'a3\'b2\'dd\'c3\'b1\'d2\'bb\'bb\'ef\'b3\'f8\'ca\'a6\'a3\'ac\'bd\'f0\'b7\'a2\'a3\'ac\'d3\'d0\'d7\'c5\'be\'ed\'c7\'fa\'c3\'bc\'c3\'ab\'a3\'ac\'d3\'c0\'d4\'b6\'d5\'da\'d7\'a1\'b0\'eb\'b1\'df\'c1\'b3\'b5\'c4\'bc\'d2\'bb\'ef\'a3\'ac\'cf\'e3\'d1\'cc\'b2\'bb\'c0\'eb\'bf\'da\'a3\'ac\'d7\'ee\'b0\'ae\'c5\'ae\'c8\'cb\'a3\'ac\'ba\'dc\'bb\'a8\'d0\'c4\'b5\'ab\'ba\'dc\'d3\'d0\'b7\'e7\'b6\'c8\'a3\'ac\'ba\'a3\'d4\'f4\'d6\'d0\'b5\'c4\'c9\'f0\'ca\'bf\'a1\'a3
+\f2 "\cf5 ,\
+                index: \cf10 0\cf5 \
+            \},\
+            methods: \{\
+                onClickButton: \cf4 function\cf5  (param) \{\
+                    \cf4 this\cf5 .index = param;\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'d7\'a2v-if\'ba\'cdv-show\'b5\'c4\'d1\'a1\'d4\'f1\'a1\'bfv-if\'ba\'cdv-show\'be\'df\'d3\'d0\'c0\'e0\'cb\'c6\'b5\'c4\'b9\'a6\'c4\'dc\'a3\'ac\'b2\'bb\'b9\'fdv-if\'b2\'c5\'ca\'c7\'d5\'e6\'d5\'fd\'b5\'c4\'cc\'f5\'bc\'fe\'e4\'d6\'c8\'be\'a3\'ac\'cb\'fc\'bb\'e1\'b8\'f9\'be\'dd\'b1\'ed\'b4\'ef\'ca\'bd\'ca\'ca\'b5\'b1\'b5\'d8\'cf\'fa\'bb\'d9\'bb\'f2\'d6\'d8\'bd\'a8\'d4\'aa\'cb\'d8\'bc\'b0\'b0\'f3\'b6\'a8\'b5\'c4\'ca\'c2\'bc\'fe\'bb\'f2\'d7\'d3\'d7\'e9\'bc\'fe\'a1\'a3\'c8\'f4\'b1\'ed\'b4\'ef\'ca\'bd\'b3\'f5\'ca\'bc\'d6\'b5\'ce\'aa false\'a3\'ac\'d4\'f2\'d2\'bb\'bf\'aa\'ca\'bc\'d4\'aa\'cb\'d8/\'d7\'e9\'bc\'fe\'b2\'a2\'b2\'bb\'bb\'e1\'e4\'d6\'c8\'be\'a3\'ac\'d6\'bb \'d3\'d0\'b5\'b1\'cc\'f5\'bc\'fe\'b5\'da\'d2\'bb\'b4\'ce\'b1\'e4\'ce\'aa\'d5\'e6\'ca\'b1\'b2\'c5\'bf\'aa\'ca\'bc\'b1\'e0\'d2\'eb\'a1\'a3\'b6\'f8 v-show \'d6\'bb\'ca\'c7\'bc\'f2\'b5\'a5\'b5\'c4css \'ca\'f4\'d0\'d4\'c7\'d0\'bb\'bb\'a3\'ac\'ce\'de\'c2\'db\'cc\'f5\'bc\'fe\'d5\'e6\'d3\'eb\'b7\'f1\'a3\'ac\'b6\'bc\'bb\'e1\'b1\'bb\'b1\'e0\'d2\'eb\'a1\'a3\'cb\'f9\'d2\'d4\'a3\'acv-if\'b8\'fc\'ca\'ca\'ba\'cf\'cc\'f5\'bc\'fe\'b2\'bb\'be\'ad\'b3\'a3\'b8\'c4\'b1\'e4\'b5\'c4\'b3\'a1\'be\'b0\'a3\'ac\'d2\'f2\'ce\'aa\'cb\'fc\'c7\'d0\'bb\'bb\'bf\'aa\'cf\'fa\'cf\'e0\'b6\'d4\'bd\'cf\'b4\'f3\'a3\'ac\'b6\'f8 v-show\'ca\'ca\'d3\'c3\'d3\'da\'c6\'b5\'b7\'b1\'c7\'d0\'bb\'bb\'cc\'f5\'bc\'fe\'a1\'a3
+\f1 \
+\
+12. v-for\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 013-v-for\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- v-for for integer -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-for\cf5 =\cf7 "number in 10"\cf2 >\cf5 \{\{ number \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- v-for for array -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-for\cf5 =\cf7 "friend in friends"\cf2 >\cf5 \{\{ friend \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+        \cf8 <!-- v-for for object, (value, key), not (key, value) -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 v-for\cf5 =\cf7 "(value, key) in me"\cf2 >\cf5 \{\{ key \}\} : \{\{ value \}\}\cf2 </\cf4 div\cf2 >\cf5 \
+\
+        \cf8 <!-- todo list demo -->\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 v-model\cf5 =\cf7 "preTodo"\cf5  \cf6 type\cf5 =\cf7 "text"\cf5  \cf6 placeholder\cf5 =\cf7 "
+\f0 \'c7\'eb\'ca\'e4\'c8\'eb\'d2\'bb\'cf\'ee\'b4\'fd\'b0\'ec\'ca\'c2\'cf\'ee
+\f2 "\cf2 >\cf5 \
+        \cf2 <\cf4 input\cf5  \cf6 @click\cf5 =\cf7 "submitTodo"\cf5  \cf6 type\cf5 =\cf7 "button"\cf5  \cf6 value\cf5 =\cf7 "
+\f0 \'cc\'e1\'bd\'bb
+\f2 "\cf2 >\cf5 \
+        \cf2 <\cf4 ul\cf2 >\cf5 \
+            \cf8 <!-- v-for="todo in todos" || v-for="(todo, index) in todos" -->\cf5 \
+            \cf2 <\cf4 li\cf5  \cf6 v-for\cf5 =\cf7 "(todo, index) in todos"\cf2 >\cf5 \{\{ index \}\} - \{\{ todo \}\}\cf2 </\cf4 li\cf2 >\cf5 \
+        \cf2 </\cf4 ul\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            data: \{\
+                friends: [\cf7 "Zhang"\cf5 , \cf7 "Wang"\cf5 , \cf7 "Lee"\cf5 , \cf7 "Lou"\cf5 ],\
+                me: \{ name:\cf7 "Andy"\cf5 , age:\cf10 30\cf5 , height:\cf10 176.0\cf5  \},\
+                preTodo: \cf7 ""\cf5 ,\
+                todos: []\
+            \},\
+            methods: \{\
+                submitTodo: \cf4 function\cf5  () \{\
+                    \cf4 if\cf5  (\cf4 this\cf5 .preTodo.length > \cf10 0\cf5 ) \{\
+                        \cf4 this\cf5 .todos.push(\cf4 this\cf5 .preTodo);\
+                        \cf4 this\cf5 .preTodo = \cf7 ""\cf5 ;\
+                    \}\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'d7\'a2\'a1\'bf\'ca\'fd\'d7\'e9\'b8\'fc\'d0\'c2\'ca\'b1\'a3\'ac\'c7\'eb\'b5\'f7\'d3\'c3\'ca\'fd\'d7\'e9\'b5\'c4\'b7\'bd\'b7\'a8\'bd\'f8\'d0\'d0\'b8\'fc\'d0\'c2\'a3\'ac\'d2\'d4\'cf\'c2\'b1\'e4\'b6\'af\'b5\'c4\'ca\'fd\'d7\'e9\'d6\'d0\'a3\'ac Vue \'ca\'c7\'b2\'bb\'c4\'dc\'bc\'ec\'b2\'e2\'b5\'bd\'b5\'c4\'a3\'ac\'d2\'b2\'b2\'bb\'bb\'e1\'b4\'a5\'b7\'a2\'ca\'d3\'cd\'bc\'b8\'fc\'d0\'c2\'a3\'ba\
+	\'a1\'a4 \'cd\'a8\'b9\'fd\'cb\'f7\'d2\'fd\'d6\'b1\'bd\'d3\'c9\'e8\'d6\'c3\'cf\'ee\'a3\'ac\'b1\'c8\'c8\'e7 app.todos[3] = "......";   ==> \'d3\'a6\'b5\'b1\'d5\'e2\'d1\'f9 Vue.set(app.todos, 3, "......"); \'bb\'f2\'d5\'df\'b8\'fc\'cd\'a8\'d3\'c3\'b5\'c4\'b7\'bd\'b7\'a8 app.todos.splice(3, 1, "......");\
+	\'a1\'a4 \'d0\'de\'b8\'c4\'ca\'fd\'d7\'e9\'b3\'a4\'b6\'c8\'a3\'ac\'b1\'c8\'c8\'e7 app.todos.length= 1;              ==> \'d3\'a6\'b8\'c3\'d5\'e2\'d1\'f9 app.todos.splice(1);\
+\'a1\'be\'b3\'a3\'d3\'c3\'ca\'fd\'d7\'e9\'b8\'fc\'d0\'c2\'b7\'bd\'b7\'a8\'a1\'bf\
+	\'b8\'c4\'b1\'e4\'b5\'b1\'c7\'b0\'ca\'fd\'d7\'e9\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ba\
+	\'a1\'a4 push()\
+	\'a1\'a4 pop()\
+	\'a1\'a4 shift()  // \'d3\'c3\'d3\'da\'b0\'d1\'ca\'fd\'d7\'e9\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'b4\'d3\'c6\'e4\'d6\'d0\'c9\'be\'b3\'fd\'a3\'ac\'b2\'a2\'b7\'b5\'bb\'d8\'b5\'da\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'b5\'c4\'d6\'b5\'a1\'a3\
+	\'a1\'a4 unshift()  // \'cf\'f2\'ca\'fd\'d7\'e9\'b5\'c4\'bf\'aa\'cd\'b7\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6\'bb\'f2\'b8\'fc\'b6\'e0\'d4\'aa\'cb\'d8,\'b2\'a2\'b7\'b5\'bb\'d8\'d0\'c2\'b5\'c4\'b3\'a4\'b6\'c8\'a1\'a3\
+	\'a1\'a4 splice()  // \'b4\'d3\'ca\'fd\'d7\'e9\'d6\'d0\'cc\'ed\'bc\'d3/\'c9\'be\'b3\'fd\'cf\'ee\'c4\'bf\'a3\'ac\'c8\'bb\'ba\'f3\'b7\'b5\'bb\'d8\'b1\'bb\'c9\'be\'b3\'fd\'b5\'c4\'cf\'ee\'c4\'bf\'a1\'a3arrayObject.splice(index,howmany,item1,.....,itemX)\'a3\'acindex \'d5\'fb\'ca\'fd\'a3\'ac\'b9\'e6\'b6\'a8\'cc\'ed\'bc\'d3/\'c9\'be\'b3\'fd\'cf\'ee\'c4\'bf\'b5\'c4\'ce\'bb\'d6\'c3\'a3\'ac\'ca\'b9\'d3\'c3\'b8\'ba\'ca\'fd\'bf\'c9\'b4\'d3\'ca\'fd\'d7\'e9\'bd\'e1\'ce\'b2\'b4\'a6\'b9\'e6\'b6\'a8\'ce\'bb\'d6\'c3\'a1\'a3howmany	\'d2\'aa\'c9\'be\'b3\'fd\'b5\'c4\'cf\'ee\'c4\'bf\'ca\'fd\'c1\'bf\'a1\'a3\'c8\'e7\'b9\'fb\'c9\'e8\'d6\'c3\'ce\'aa 0\'a3\'ac\'d4\'f2\'b2\'bb\'bb\'e1\'c9\'be\'b3\'fd\'cf\'ee\'c4\'bf\'a1\'a3item1, ..., itemX \'bf\'c9\'d1\'a1\'a1\'a3\'cf\'f2\'ca\'fd\'d7\'e9\'cc\'ed\'bc\'d3\'b5\'c4\'d0\'c2\'cf\'ee\'c4\'bf\'a1\'a3\
+	\'a1\'a4 sort()\
+	\'a1\'a4 reverse()\
+	\'b2\'fa\'c9\'fa\'d0\'c2\'ca\'fd\'d7\'e9\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ba\
+	\'a1\'a4 filter()\
+	\'a1\'a4 concat()\
+	\'a1\'a4 slice()
+\f1 \
+\
+13. 
+\f0 \'d0\'de\'ca\'ce\'b7\'fb
+\f1 \
+@
+\f0 \'b0\'f3\'b6\'a8\'b5\'c4\'ca\'c2\'bc\'fe\'ba\'f3\'bc\'d3\'d0\'a1\'d4\'b2\'b5\'e3
+\f1 \'93.\'94
+\f0 \'a3\'ac\'d4\'d9\'b8\'fa\'d2\'bb\'b8\'f6\'ba\'f3\'d7\'ba\'c0\'b4\'ca\'b9\'d3\'c3\'d0\'de\'ca\'ce\'b7\'fb\'a1\'a3
+\f1  Vue
+\f0 \'d6\'a7\'b3\'d6\'d2\'d4\'cf\'c2\'d0\'de\'ca\'ce\'b7\'fb
+\f1 :\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \
+\cf2 <\cf4 html\cf2 >\cf5 \
+\cf2 <\cf4 head\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "utf-8"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 title\cf2 >\cf5 0\cf2 </\cf4 title\cf2 >\cf5 \
+\cf2 </\cf4 head\cf2 >\cf5 \
+\cf2 <\cf4 body\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 div\cf5  \cf6 id\cf5 =\cf7 "app"\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'d7\'e8\'d6\'b9\'b5\'a5\'bb\'f7\'ca\'c2\'bc\'fe\'c3\'b0\'c5\'dd
+\f2  -->\cf5 \
+        \cf2 <\cf4 a\cf5  \cf6 @click.stop\cf5 =\cf7 "handle"\cf5  \cf6 href\cf5 =\cf7 "http://www.4399.com"\cf5  \cf6 target\cf5 =\cf7 "blank"\cf2 >\cf5 43999999999999\cf2 </\cf4 a\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'cc\'e1\'bd\'bb\'ca\'c2\'bc\'fe\'b2\'bb\'d4\'d9\'d6\'d8\'d4\'d8\'d2\'b3\'c3\'e6
+\f2  -->\cf5 \
+        \cf2 <\cf4 form\cf5  \cf6 @submit.prevent\cf5 =\cf7 "handle"\cf2 ></\cf4 form\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'d0\'de\'ca\'ce\'b7\'fb\'bf\'c9\'d2\'d4\'b4\'ae\'c1\'aa
+\f2  -->\cf5 \
+        \cf2 <\cf4 a\cf5  \cf6 @click.stop.prevent\cf5 =\cf7 "handle"\cf5  \cf6 href\cf5 =\cf7 "http://www.4399.com"\cf5  \cf6 target\cf5 =\cf7 "blank"\cf2 >\cf5 43999999999999\cf2 </\cf4 a\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'d6\'bb\'d3\'d0\'d0\'de\'ca\'ce\'b7\'fb
+\f2  -->\cf5 \
+        \cf2 <\cf4 form\cf5  \cf6 @submit.prevent\cf2 ></\cf4 form\cf2 >\cf5 \
+        \cf8 <!-- 
+\f0 \'cc\'ed\'bc\'d3\'ca\'c2\'bc\'fe\'d5\'ec\'cc\'fd\'c6\'f7\'ca\'b1\'ca\'b9\'d3\'c3\'ca\'c2\'bc\'fe\'b2\'b6\'bb\'f1\'c4\'a3\'ca\'bd
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 @click.capture\cf5 =\cf7 "handle"\cf2 >
+\f0 \cf5 \'d5\'e2\'c0\'ef\'bf\'c9\'d2\'d4\'b5\'e3\'bb\'f7
+\f2 \cf2 </\cf4 div\cf2 >\cf5  \
+        \cf8 <!-- 
+\f0 \'d6\'bb\'b5\'b1\'ca\'c2\'bc\'fe\'d4\'da\'b8\'c3\'d4\'aa\'cb\'d8\'b1\'be\'c9\'ed
+\f2 (
+\f0 \'b6\'f8\'b2\'bb\'ca\'c7\'d7\'d3\'d4\'aa\'cb\'d8
+\f2 ) 
+\f0 \'b4\'a5\'b7\'a2\'ca\'b1\'b4\'a5\'b7\'a2\'bb\'d8\'b5\'f7
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 @click.self\cf5 =\cf7 "handle"\cf2 >
+\f0 \cf5 \'d5\'e2\'c0\'ef\'d2\'b2\'bf\'c9\'d2\'d4\'b5\'e3\'bb\'f7
+\f2 \cf2 </\cf4 div\cf2 >\cf5  \
+        \cf8 <!-- 
+\f0 \'d6\'bb\'b4\'a5\'b7\'a2\'d2\'bb\'b4\'ce\'a3\'ac\'d7\'e9\'bc\'fe\'cd\'ac\'d1\'f9\'ca\'ca\'d3\'c3
+\f2  -->\cf5 \
+        \cf2 <\cf4 div\cf5  \cf6 @click.once\cf5 =\cf7 "handle"\cf2 >
+\f0 \cf5 \'d5\'e2\'c0\'ef\'bb\'b9\'bf\'c9\'d2\'d4\'b5\'e3\'bb\'f7
+\f2 \cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 </\cf4 div\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf5  \cf6 src\cf5 =\cf7 "../js/vue2.6.6.min.js"\cf2 ></\cf4 script\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\cf2 <\cf4 script\cf5  \cf6 type\cf5 =\cf7 "text/javascript"\cf2 >\cf5 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 var\cf5  app = \cf4 new\cf5  Vue(\{\
+            el: \cf7 "#app"\cf5 ,\
+            methods: \{\
+                handle: \cf4 function\cf5  () \{\
+                    alert(\cf7 'In handel.'\cf5 );\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf2 </\cf4 script\cf2 >\cf5 \
+\cf2 </\cf4 body\cf2 >\cf5 \
+\cf2 </\cf4 html\cf2 >\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'a1\'be\'bc\'fc\'c5\'cc\'b0\'b4\'bc\'fc\'d0\'de\'ca\'ce\'b7\'fb\'a1\'bf\
+\'a1\'a4 .enter\
+\'a1\'a4 .tab\
+\'a1\'a4 .delete (\'b2\'b6\'bb\'f1\'a1\'b0\'c9\'be\'b3\'fd\'a1\'b1\'ba\'cd\'a1\'b0\'cd\'cb\'b8\'f1\'a1\'b1\'bc\'fc)\
+\'a1\'a4 .esc\
+\'a1\'a4 .space\
+\'a1\'a4 .up\
+\'a1\'a4 .down\
+\'a1\'a4 .left\
+\'a1\'a4 .right\
+\'a1\'a4 .ctrl\
+\'a1\'a4 .alt\
+\'a1\'a4 .shift\
+\'a1\'a4 .meta (Mac \'cf\'c2\'ca\'c7 Command \'bc\'fc\'a3\'acWindows \'cf\'c2\'ca\'c7\'b4\'b0\'bf\'da\'bc\'fc)
+\f1 \
+\
+14. 
+\f0 \'b9\'ba\'ce\'ef\'b3\'b5\'ca\'b5\'d5\'bd\'a3\'a8\'bc\'fb\'b4\'fa\'c2\'eb\'a3\'a9\
+\
+15. \'b1\'ed\'b5\'a5\'d3\'ebv-model\
+v-model\'bf\'c9\'d3\'ebinput\'a1\'a2textarea\'a1\'a2select\'bd\'f8\'d0\'d0\'ca\'fd\'be\'dd\'cb\'ab\'cf\'f2\'b0\'f3\'b6\'a8\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 015-v-model
+\f0 \'d3\'eb\'b1\'ed\'b5\'a5
+\f2 \cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf17 \strokec17 <!-- v-model
+\f0 \'d3\'eb
+\f2 value
+\f0 \'c5\'e4\'ba\'cf\'ca\'b9\'d3\'c3\'a3\'ac\'ca\'b5\'cf\'d6\'bb\'a5\'b3\'e2\'b5\'a5\'d1\'a1
+\f2  -->\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "radio"\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "checkedUniversity"\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "Tsinghua"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 label\cf14 \strokec14  \cf15 \strokec15 for\cf14 \strokec14 =\cf16 \strokec16 "Tsinghua"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c7\'e5\'bb\'aa
+\f2 \cf12 \strokec12 </\cf13 \strokec13 label\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 br\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "radio"\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "checkedUniversity"\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "Peking"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 label\cf14 \strokec14  \cf15 \strokec15 for\cf14 \strokec14 =\cf16 \strokec16 "Peking"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'b1\'b1\'b4\'f3
+\f2 \cf12 \strokec12 </\cf13 \strokec13 label\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 br\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "radio"\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "checkedUniversity"\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "Zhejiang"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 label\cf14 \strokec14  \cf15 \strokec15 for\cf14 \strokec14 =\cf16 \strokec16 "Zhejiang"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'d5\'e3\'b4\'f3
+\f2 \cf12 \strokec12 </\cf13 \strokec13 label\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf17 \strokec17 <!-- v-model
+\f0 \'d3\'eb
+\f2 value
+\f0 \'c5\'e4\'ba\'cf\'ca\'b9\'d3\'c3\'a3\'ac\'ca\'b5\'cf\'d6\'b8\'b4\'d1\'a1
+\f2  -->\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "checkbox"\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "foods"\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "steak"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 label\cf14 \strokec14  \cf15 \strokec15 for\cf14 \strokec14 =\cf16 \strokec16 "steak"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c5\'a3\'c5\'c5
+\f2 \cf12 \strokec12 </\cf13 \strokec13 label\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 br\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "checkbox"\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "foods"\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "soup"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 label\cf14 \strokec14  \cf15 \strokec15 for\cf14 \strokec14 =\cf16 \strokec16 "soup"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'cc\'c0
+\f2 \cf12 \strokec12 </\cf13 \strokec13 label\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 br\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "checkbox"\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "foods"\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "vegetable"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 label\cf14 \strokec14  \cf15 \strokec15 for\cf14 \strokec14 =\cf16 \strokec16 "vegetable"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'ca\'df\'b2\'cb
+\f2 \cf12 \strokec12 </\cf13 \strokec13 label\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf17 \strokec17 <!-- v-model
+\f0 \'b0\'f3\'b6\'a8\'ca\'f4\'d0\'d4\'a3\'ac\'ca\'b5\'cf\'d6\'cf\'c2\'c0\'ad\'b2\'cb\'b5\'a5\'b9\'a6\'c4\'dc
+\f2  -->\cf14 \strokec14 \
+            \cf17 \strokec17 <!-- <option>
+\f0 \'c8\'e7\'b9\'fb\'ba\'ac\'d3\'d0
+\f2 value
+\f0 \'ca\'f4\'d0\'d4\'a3\'ac
+\f2 v-model
+\f0 \'bb\'e1\'d3\'c5\'cf\'c8\'c6\'a5\'c5\'e4
+\f2 value
+\f0 \'b5\'c4\'d6\'b5\'a3\'bb\'c8\'e7\'b9\'fb\'c3\'bb\'d3\'d0\'a3\'ac\'be\'cd\'bb\'e1\'d6\'b1\'bd\'d3\'c6\'a5\'c5\'e4
+\f2 <option>
+\f0 \'b5\'c4
+\f2 text
+\f0 \'a1\'a3
+\f2  -->\cf14 \strokec14 \
+            \cf17 \strokec17 <!-- 
+\f0 \'b1\'c8\'c8\'e7\'d1\'a1\'d6\'d0\'b5\'da\'b6\'fe\'cf\'ee\'ca\'b1\'a3\'ac
+\f2 selected
+\f0 \'b5\'c4\'d6\'b5\'ca\'c7
+\f2 28
+\f0 \'a3\'ac\'b6\'f8\'b2\'bb\'ca\'c7
+\f2 \'93
+\f0 \'b6\'fe\'ca\'ae\'b0\'cb\'cb\'ea
+\f2 \'94 -->\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 select\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "selectedAge"\cf12 \strokec12 >\cf14 \strokec14 \
+                \cf12 \strokec12 <\cf13 \strokec13 option\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'ca\'ae\'b0\'cb\'cb\'ea
+\f2 \cf12 \strokec12 </\cf13 \strokec13 option\cf12 \strokec12 >\cf14 \strokec14 \
+                \cf12 \strokec12 <\cf13 \strokec13 option\cf14 \strokec14  \cf15 \strokec15 value\cf14 \strokec14 =\cf16 \strokec16 "28"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'b6\'fe\'ca\'ae\'b0\'cb\'cb\'ea
+\f2 \cf12 \strokec12 </\cf13 \strokec13 option\cf12 \strokec12 >\cf14 \strokec14 \
+                \cf12 \strokec12 <\cf13 \strokec13 option\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c8\'fd\'ca\'ae\'b0\'cb\'cb\'ea
+\f2 \cf12 \strokec12 </\cf13 \strokec13 option\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 </\cf13 \strokec13 select\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\
+        \cf17 \strokec17 <!-- 
+\f0 \'d0\'de\'ca\'ce\'b7\'fb
+\f2  -->\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- .lazy
+\f0 \'a3\'ac
+\f2 lazyMessage
+\f0 \'b2\'a2\'b2\'bb\'ca\'c7\'ca\'b5\'ca\'b1\'b8\'c4\'b1\'e4\'b5\'c4\'a3\'ac\'b6\'f8\'ca\'c7\'d4\'da\'ca\'a7\'bd\'b9\'bb\'f2\'b0\'b4\'bb\'d8\'b3\'b5\'ca\'b1\'b2\'c5\'b8\'fc\'d0\'c2\'a1\'a3
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text"\cf14 \strokec14  \cf15 \strokec15 v-model.lazy\cf14 \strokec14 =\cf16 \strokec16 "lazyMessage"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \{\{ lazyMessage \}\}\cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- .trim
+\f0 \'a3\'ac\'bf\'c9\'d2\'d4\'d7\'d4\'b6\'af\'b9\'fd\'c2\'cb\'ca\'e4\'c8\'eb\'b5\'c4\'ca\'d7\'ce\'b2\'bf\'d5\'b8\'f1\'a3\'a8
+\f2 input
+\f0 \'bf\'f2\'d6\'d0\'ca\'d7\'ce\'b2\'d2\'c0\'c8\'bb\'bf\'c9\'d2\'d4\'ca\'e4\'c8\'eb\'bf\'d5\'b8\'f1\'a3\'ac\'b5\'ab\'ca\'c7
+\f2 trimMessage
+\f0 \'ca\'c7\'c8\'a5\'bf\'d5\'b8\'f1\'b5\'c4\'a3\'a9
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text"\cf14 \strokec14  \cf15 \strokec15 v-model.trim\cf14 \strokec14 =\cf16 \strokec16 "trimMessage"\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \{\{ trimMessage \}\}\cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            data: \{\
+                checkedUniversity: \cf16 \strokec16 "Tsinghua"\cf14 \strokec14 ,\
+                foods: [],\
+                selectedAge: \cf18 \strokec18 28\cf14 \strokec14 ,\
+                lazyMessage: \cf16 \strokec16 ""\cf14 \strokec14 ,\
+                trimMessage: \cf16 \strokec16 ""\cf14 \strokec14 \
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+        setInterval(\cf13 \strokec13 function\cf14 \strokec14  () \{\
+            console.log(app.checkedUniversity);\
+            console.log(app.foods);\
+            console.log(app.selectedAge);\
+        \},\cf18 \strokec18 3000\cf14 \strokec14 );\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+16. 
+\f0 \'d7\'e9\'bc\'fe
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 016-
+\f0 \'d7\'e9\'bc\'fe
+\f2 \cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-1\cf12 \strokec12 ></\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-2\cf12 \strokec12 ></\cf13 \strokec13 my-component-2\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'d2\'d4\'cf\'c2\'d5\'e2\'d6\'d6\'d0\'b4\'b7\'a8\'ca\'c7\'b2\'bb\'bf\'c9\'d0\'d0\'b5\'c4\'a3\'ac\'cb\'e4\'c8\'bb
+\f2 div
+\f0 \'c4\'da\'c8\'dd\'d4\'da\'d2\'b3\'c3\'e6\'c9\'cf\'d5\'b9\'ca\'be\'a3\'ac\'b5\'ab\'ca\'c7\'b5\'f7\'ca\'d4\'bf\'c9\'d2\'d4\'bf\'b4\'b5\'bd\'d7\'e9\'bc\'fe\'c4\'da\'c8\'dd\'b1\'bb\'e4\'d6\'c8\'be\'b5\'bd\'c1\'cb
+\f2 table
+\f0 \'b1\'ea\'c7\'a9\'cd\'e2\'b2\'e3
+\f2  -->\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- html
+\f0 \'b9\'e6\'b6\'a8
+\f2 table
+\f0 \'b1\'ea\'c7\'a9\'c4\'da\'b9\'e6\'b6\'a8\'d6\'bb\'d4\'ca\'d0\'ed\'ca\'c7
+\f2 <tr>
+\f0 \'a1\'a2
+\f2 <td>
+\f0 \'a1\'a2
+\f2 <th>
+\f0 \'b5\'c8\'d5\'e2\'d0\'a9\'b1\'ed\'b8\'f1\'d4\'aa\'cb\'d8
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 table\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 my-component-1\cf12 \strokec12 ></\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 table\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'bd\'e2\'be\'f6\'b0\'ec\'b7\'a8\'c8\'e7\'cf\'c2\'a3\'ba\'ca\'b9\'d3\'c3\'cc\'d8\'ca\'e2\'b5\'c4
+\f2 is
+\f0 \'ca\'f4\'d0\'d4\'c0\'b4\'b9\'d2\'d4\'d8\'d7\'e9\'bc\'fe
+\f2  -->\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- tbody
+\f0 \'d4\'da\'e4\'d6\'c8\'be\'ca\'b1\'a3\'ac\'bb\'e1\'b1\'bb\'cc\'e6\'bb\'bb\'ce\'aa\'d7\'e9\'bc\'fe\'b5\'c4\'c4\'da\'c8\'dd\'a1\'a3\'b3\'a3\'bc\'fb\'b5\'c4\'cf\'de\'d6\'c6\'d4\'aa\'cb\'d8\'bb\'b9\'d3\'d0
+\f2 <ul>
+\f0 \'a1\'a2
+\f2 <ol>
+\f0 \'a1\'a2
+\f2 <select>  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 table\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 tbody\cf14 \strokec14  \cf15 \strokec15 is\cf14 \strokec14 =\cf16 \strokec16 "my-component-1"\cf12 \strokec12 ></\cf13 \strokec13 tbody\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 table\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-3\cf12 \strokec12 ></\cf13 \strokec13 my-component-3\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-3\cf12 \strokec12 ></\cf13 \strokec13 my-component-3\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-3\cf12 \strokec12 ></\cf13 \strokec13 my-component-3\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'a1\'be
+\f2 1
+\f0 \'a1\'bf\'c8\'ab\'be\'d6\'d7\'a2\'b2\'e1\'d7\'e9\'bc\'fe
+\f2 \cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-1'\cf14 \strokec14 , \{\
+            \cf17 \strokec17 // template
+\f0 \'b5\'c4
+\f2 DOM
+\f0 \'bd\'e1\'b9\'b9\'b1\'d8\'d0\'eb\'b1\'bb\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'b0\'fc\'ba\'ac\'a3\'ac\'c8\'e7\'b9\'fb\'d6\'b1\'bd\'d3\'d0\'b4\'b3\'c9
+\f2 \'93
+\f0 \'d5\'e2\'c0\'ef\'ca\'c7\'d7\'e9\'bc\'fe\'b5\'c4\'c4\'da\'c8\'dd
+\f2 \'94
+\f0 \'a3\'ac\'b2\'bb\'b4\'f8
+\f2 \'93<div></div>\'94
+\f0 \'ca\'c7\'ce\'de\'b7\'a8\'e4\'d6\'c8\'be\'b5\'c4
+\f2 \cf14 \strokec14 \
+            template: \cf16 \strokec16 "<div>
+\f0 \'d7\'e9\'bc\'fe\'c4\'da\'c8\'dd
+\f2 </div>"\cf14 \strokec14 \
+        \});\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            components: \{\
+                \cf17 \strokec17 // 
+\f0 \'a1\'be
+\f2 2
+\f0 \'a1\'bf\'be\'d6\'b2\'bf\'d7\'a2\'b2\'e1\'d7\'e9\'bc\'fe
+\f2 \cf14 \strokec14 \
+                \cf16 \strokec16 'my-component-2'\cf14 \strokec14 : \{\
+                    template: \cf16 \strokec16 "<div>
+\f0 \'d5\'e2\'ca\'c7\'d2\'bb\'b8\'f6\'be\'d6\'b2\'bf\'d7\'a2\'b2\'e1\'b5\'c4\'d7\'e9\'bc\'fe
+\f2 </div>"\cf14 \strokec14 \
+                \},\
+                \cf16 \strokec16 'my-component-3'\cf14 \strokec14 : \{\
+                    template: \cf16 \strokec16 "<div><button @click='counter++'>\{\{ counter \}\}</button></div>"\cf14 \strokec14 ,\
+                    \cf17 \strokec17 // data
+\f0 \'b1\'d8\'d0\'eb\'ca\'c7\'ba\'af\'ca\'fd\'a3\'ac\'c8\'bb\'ba\'f3\'bd\'ab\'ca\'fd\'be\'dd
+\f2 return
+\f0 \'b3\'f6\'c8\'a5
+\f2 \cf14 \strokec14 \
+                    data: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                        \cf13 \strokec13 return\cf14 \strokec14  \{\
+                            counter: \cf18 \strokec18 0\cf14 \strokec14 \
+                        \}\
+                    \}\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+17.props 
+\f0 \'a1\'be\'d5\'e2\'c0\'ef\'d0\'e8\'d2\'aa\'bf\'bc\'c2\'c7\'c3\'f7\'b0\'d7\'d2\'bb\'b8\'f6\'ce\'ca\'cc\'e2\'a3\'ba\'ca\'b2\'c3\'b4\'ca\'c7\'b8\'b8\'d7\'e9\'bc\'fe\'a3\'ac\'ca\'b2\'c3\'b4\'ca\'c7\'d7\'d3\'d7\'e9\'bc\'fe\'a3\'bf\'c4\'c4\'c0\'ef\'ca\'c7\'b8\'b8\'d7\'e9\'bc\'fe\'b5\'c4\'d7\'f7\'d3\'c3\'d3\'f2\'a3\'ac\'c4\'c4\'c0\'ef\'ca\'c7\'d7\'d3\'d7\'e9\'bc\'fe\'b5\'c4\'d7\'f7\'d3\'c3\'d3\'f2\'a3\'bf\'a1\'bf
+\f1 \
+
+\f0 \'b8\'b8\'d7\'e9\'bc\'fe\'b5\'c4\'c4\'a3\'b0\'e5\'d6\'d0\'b0\'fc\'ba\'ac\'d7\'d3\'d7\'e9\'bc\'fe\'a3\'ac\'b8\'b8\'d7\'e9\'bc\'fe\'d2\'aa\'d5\'fd\'cf\'f2\'b5\'d8\'cf\'f2\'d7\'d3\'d7\'e9\'bc\'fe\'b4\'ab\'b5\'dd\'ca\'fd\'be\'dd\'bb\'f2\'b2\'ce\'ca\'fd\'a3\'ac\'d7\'d3\'d7\'e9\'bc\'fe\'bd\'d3\'ca\'d5\'b5\'bd\'ba\'f3\'b8\'f9\'be\'dd\'b2\'ce\'ca\'fd\'b5\'c4\'b2\'bb\'cd\'ac\'c0\'b4\'e4\'d6\'c8\'be\'b2\'bb\'cd\'ac\'b5\'c4\'c4\'da\'c8\'dd\'bb\'f2\'d6\'b4\'d0\'d0\'b2\'d9\'d7\'f7\'a1\'a3\'d5\'e2\'b8\'f6\'d5\'fd\'cf\'f2\'b4\'ab\'b5\'dd\'ca\'fd\'be\'dd\'b5\'c4\'b9\'fd\'b3\'cc\'be\'cd\'ca\'c7\'cd\'a8\'b9\'fd
+\f1 props
+\f0 \'c0\'b4\'ca\'b5\'cf\'d6\'b5\'c4\'a1\'a3\
+\'a1\'be\'d7\'a2\'a1\'bf\'d5\'fd\'cf\'f2\'b4\'ab\'b5\'dd\'a3\'ac\'d3\'c9\'ca\'b9\'d3\'c3\'b7\'bd\'b8\'f8\'b1\'bb\'ca\'b9\'d3\'c3\'b7\'bd\'b4\'ab\'b5\'dd\'ca\'fd\'be\'dd\'a3\'ac\'c0\'e0\'cb\'c6iOS\'c0\'ef\'c3\'e6A\'d2\'b3\'c3\'e6present\'b3\'f6B\'d2\'b3\'c3\'e6\'a3\'acA\'d2\'b3\'c3\'e6\'b8\'f8B\'d2\'b3\'c3\'e6\'b4\'ab\'b5\'dd\'b2\'ce\'ca\'fd\'b5\'c4\'b9\'fd\'b3\'cc\'a3\'ac\'cb\'f9\'d2\'d4\'d5\'e2\'b8\'f6props\'cd\'c6\'b2\'e2\'ca\'c7properties\'b5\'c4\'bc\'f2\'d0\'b4\'d0\'ce\'ca\'bd\'a1\'a3
+\f1 \
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 017-props\cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'b2\'ce\'ca\'fd
+\f2 property
+\f0 \'b1\'bb\'b0\'f3\'b6\'a8\'c1\'cb\'b8\'b8\'bc\'b6
+\f2 superProperty
+\f0 \'ca\'f4\'d0\'d4
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-1\cf14 \strokec14  \cf15 \strokec15 :property\cf14 \strokec14 =\cf16 \strokec16 "superProperty"\cf12 \strokec12 ></\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'ca\'b9\'d3\'c3
+\f2 v-bind
+\f0 \'b0\'f3\'b6\'a8\'d6\'ae\'ba\'f3\'b5\'c4\'ca\'f4\'d0\'d4\'ce\'aa\'b1\'e4\'c1\'bf\'a3\'ac\'ca\'c7\'be\'df\'d3\'d0\'c0\'e0\'d0\'cd\'b5\'c4\'a3\'ac\'b2\'bb\'ca\'b9\'d3\'c3
+\f2 v-bind
+\f0 \'b0\'f3\'b6\'a8\'b5\'c4\'ca\'f4\'d0\'d4\'ce\'aa\'d7\'d6\'b7\'fb\'b4\'ae\'b3\'a3\'c1\'bf
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-2\cf14 \strokec14  \cf15 \strokec15 name\cf14 \strokec14 =\cf16 \strokec16 "Andy"\cf14 \strokec14  \cf15 \strokec15 :age\cf14 \strokec14 =\cf16 \strokec16 "30"\cf14 \strokec14  \cf15 \strokec15 :propB\cf14 \strokec14 =\cf16 \strokec16 "22"\cf12 \strokec12 ></\cf13 \strokec13 my-component-2\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-1'\cf14 \strokec14 , \{\
+            \cf17 \strokec17 // 
+\f0 \'c9\'f9\'c3\'f7\'ca\'b9\'d3\'c3\'b8\'c3\'d7\'e9\'bc\'fe\'d0\'e8\'d2\'aa\'b4\'ab\'b9\'fd\'c0\'b4\'b5\'c4\'b2\'ce\'ca\'fd
+\f2 \cf14 \strokec14 \
+            props: [\cf16 \strokec16 'property'\cf14 \strokec14 ],\
+            template: \cf16 \strokec16 "<div>\{\{ property \}\}</div>"\cf14 \strokec14 \
+        \});\
+        Vue.component(\cf16 \strokec16 'my-component-2'\cf14 \strokec14 , \{\
+            \cf17 \strokec17 // props
+\f0 \'b3\'fd\'c1\'cb\'d7\'d6\'b7\'fb\'b4\'ae\'ca\'fd\'d7\'e9\'a3\'ac\'bb\'b9\'bf\'c9\'d2\'d4\'ca\'c7\'b6\'d4\'cf\'f3\'c0\'e0\'d0\'cd\'a3\'ac\'b6\'f8\'c7\'d2\'b8\'fc\'cd\'c6\'bc\'f6\'d5\'e2\'d6\'d6\'d0\'b4\'b7\'a8\'a3\'ac\'cb\'fc\'bf\'c9\'d2\'d4\'bd\'f8\'d0\'d0\'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\'d1\'e9\'d6\'a4
+\f2 \cf14 \strokec14 \
+            props: \{\
+                name: String,\
+                age: Number,\
+                sex: Boolean,\
+                propA: [String, Number], \cf17 \strokec17 // 
+\f0 \'b1\'d8\'d0\'eb\'ca\'c7\'d7\'d6\'b7\'fb\'b4\'ae\'bb\'f2\'ca\'fd\'d7\'d6\'c0\'e0\'d0\'cd
+\f2 \cf14 \strokec14 \
+                propB: \{            \cf17 \strokec17 // 
+\f0 \'b1\'d8\'d0\'eb\'ca\'c7\'ca\'fd\'d7\'d6\'c0\'e0\'d0\'cd\'a3\'ac\'c7\'d2\'b1\'d8\'b4\'ab
+\f2 \cf14 \strokec14 \
+                    type: Number,\
+                    required: \cf13 \strokec13 true\cf14 \strokec14 \
+                \},\
+                propC: \{             \cf17 \strokec17 // 
+\f0 \'b1\'d8\'d0\'eb\'ca\'c7
+\f2 Boolean
+\f0 \'c0\'e0\'d0\'cd\'a3\'ac\'c8\'b1\'ca\'a1\'d6\'b5\'ce\'aa
+\f2 true\cf14 \strokec14 \
+                    type: Boolean,\
+                    default: \cf13 \strokec13 true\cf14 \strokec14 \
+                \},\
+                propD: \{            \cf17 \strokec17 // 
+\f0 \'b5\'b1\'b8\'f8\'ca\'fd\'d7\'e9\'bb\'f2\'b6\'d4\'cf\'f3\'c0\'e0\'d0\'cd\'d6\'b5\'cc\'e1\'b9\'a9\'c8\'b1\'ca\'a1\'d6\'b5\'ca\'b1\'a3\'ac\'b1\'d8\'d0\'eb\'cd\'a8\'b9\'fd\'ba\'af\'ca\'fd\'b7\'b5\'bb\'d8
+\f2 \cf14 \strokec14 \
+                    type: Object,\
+                    default: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                        \cf13 \strokec13 return\cf14 \strokec14  \{\};\
+                    \}\
+                \},\
+                propE: \{            \cf17 \strokec17 // 
+\f0 \'bf\'c9\'d2\'d4\'d7\'d4\'b6\'a8\'d2\'e5\'ba\'cf\'b7\'a8\'d0\'d4\'d1\'e9\'d6\'a4\'ba\'af\'ca\'fd
+\f2 \cf14 \strokec14 \
+                    validator: \cf13 \strokec13 function\cf14 \strokec14  (value) \{\
+                        \cf13 \strokec13 return\cf14 \strokec14  value > \cf18 \strokec18 10\cf14 \strokec14 ;\
+                    \}\
+                \}\
+            \},\
+            template: \cf16 \strokec16 "<div>name:\{\{name\}\}-age:\{\{computedAge\}\}-sex:\{\{sex\}\}-A:\{\{propA\}\}-B:\{\{propB\}\}-C:\{\{propC\}\}-D:\{\{propD\}\}-E:\{\{propE\}\}</div>"\cf14 \strokec14 ,\
+            computed: \{\
+                computedAge: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                    console.log(\cf13 \strokec13 typeof\cf14 \strokec14  \cf13 \strokec13 this\cf14 \strokec14 .age);\
+                    \cf13 \strokec13 return\cf14 \strokec14  \cf13 \strokec13 this\cf14 \strokec14 .age + \cf18 \strokec18 3\cf14 \strokec14 ;\
+                \}\
+            \}\
+        \});\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            data: \{\
+                superProperty: \cf16 \strokec16 "
+\f0 \'d5\'e2\'ca\'c7\'ce\'d2\'d2\'aa\'b4\'ab\'b9\'fd\'c8\'a5\'b5\'c4\'b2\'ce\'ca\'fd
+\f2 "\cf14 \strokec14 \
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+18. 
+\f0 emit\
+\'d7\'d3\'d7\'e9\'bc\'fe\'cf\'f2\'b8\'b8\'d7\'e9\'bc\'fe\'b4\'ab\'b2\'ce\'a3\'ac\'b7\'b4\'cf\'f2\'b4\'ab\'d6\'b5\'a1\'a3\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 018-emit
+\f0 \'ca\'b5\'cf\'d6\'d7\'d3\'d7\'e9\'bc\'fe\'cf\'f2\'b8\'b8\'d7\'e9\'bc\'fe\'b4\'ab\'b2\'ce
+\f2 -
+\f0 \'b7\'b4\'cf\'f2\'b4\'ab\'d6\'b5
+\f2 \cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'b8\'b8\'d7\'e9\'bc\'fe\'d3\'c3
+\f2 v-on:increase
+\f0 \'ba\'cd
+\f2 v-on:reduce
+\f0 \'bd\'f8\'d0\'d0
+\f2 increse
+\f0 \'ba\'cd
+\f2 reduce
+\f0 \'ca\'c2\'bc\'fe\'bc\'e0\'cc\'fd
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-1\cf14 \strokec14  \cf15 \strokec15 @increase\cf14 \strokec14 =\cf16 \strokec16 "handelChange"\cf14 \strokec14  \cf15 \strokec15 @reduce\cf14 \strokec14 =\cf16 \strokec16 "handelChange"\cf12 \strokec12 ></\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- v-model
+\f0 \'d2\'bb\'b0\'e3\'b1\'bb\'d3\'c3\'d4\'da
+\f2 input
+\f0 \'a1\'a2
+\f2 textarea
+\f0 \'a1\'a2
+\f2 select
+\f0 \'b5\'c8\'b5\'d8\'b7\'bd
+\f2  -->\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'d3\'c3\'d4\'da\'d7\'e9\'bc\'fe\'d6\'d0\'ca\'b1\'a3\'ac\'c6\'e4\'cb\'ab\'cf\'f2\'b0\'f3\'b6\'a8\'b5\'c4\'ca\'f4\'d0\'d4\'ce\'aa\'d7\'e9\'bc\'fe\'d7\'ee\'cd\'e2\'b2\'e3\'b1\'ea\'c7\'a9\'b5\'c4
+\f2 value
+\f0 \'d6\'b5
+\f2  -->\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'d7\'e9\'bc\'fe\'b0\'b4\'c5\'a5\'b5\'e3\'bb\'f7\'a3\'ac\'b8\'c4\'b1\'e4\'c1\'cb\'d7\'ee\'cd\'e2\'b2\'e3\'b1\'ea\'c7\'a9\'b5\'c4
+\f2 value
+\f0 \'d6\'b5\'a3\'ac
+\f2 inputTotal
+\f0 \'b5\'c4\'d6\'b5\'cd\'a8\'b9\'fd
+\f2 v-model
+\f0 \'cb\'ab\'cf\'f2\'b0\'f3\'b6\'a8\'a3\'ac\'d2\'b2\'b7\'a2\'c9\'fa\'c1\'cb\'b8\'c4\'b1\'e4
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-2\cf14 \strokec14  \cf15 \strokec15 v-model\cf14 \strokec14 =\cf16 \strokec16 "inputTotal"\cf12 \strokec12 ></\cf13 \strokec13 my-component-2\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-1'\cf14 \strokec14 , \{\
+            template: \cf16 \strokec16 "\\\cf14 \strokec14 \
+\cf16 \strokec16             <div>\\\cf14 \strokec14 \
+\cf16 \strokec16                 <button @click='onIncrease'>+1</button>\\\cf14 \strokec14 \
+\cf16 \strokec16                 <button @click='onReduce'>-1</button>\\\cf14 \strokec14 \
+\cf16 \strokec16             </div>\\\cf14 \strokec14 \
+\cf16 \strokec16             "\cf14 \strokec14 ,\
+            data: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf13 \strokec13 return\cf14 \strokec14  \{\
+                    counter: \cf18 \strokec18 0\cf14 \strokec14 \
+                \}\
+            \},\
+            methods: \{\
+                onIncrease: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                    \cf13 \strokec13 this\cf14 \strokec14 .counter++;\
+                    \cf17 \strokec17 // $emit()
+\f0 \'b4\'a5\'b7\'a2\'ca\'c2\'bc\'fe
+\f2 \cf14 \strokec14 \
+                    \cf17 \strokec17 // $emit()
+\f0 \'b7\'bd\'b7\'a8\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'b2\'ce\'ca\'fd\'ca\'c7\'d7\'d4\'b6\'a8\'d2\'e5\'ca\'c2\'bc\'fe\'b5\'c4\'c3\'fb\'b3\'c6\'a3\'ac\'ba\'f3\'c3\'e6\'b5\'c4\'b2\'ce\'ca\'fd\'b6\'bc\'ca\'c7\'d2\'aa\'b4\'ab\'b5\'dd\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'bf\'c9\'d2\'d4\'b2\'bb\'cc\'ee\'bb\'f2\'cc\'ee\'d0\'b4\'b6\'e0\'b8\'f6\'a1\'a3
+\f2 \cf14 \strokec14 \
+                    \cf13 \strokec13 this\cf14 \strokec14 .$emit(\cf16 \strokec16 'increase'\cf14 \strokec14 , \cf13 \strokec13 this\cf14 \strokec14 .counter);\
+                \},\
+                onReduce: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                    \cf13 \strokec13 this\cf14 \strokec14 .counter--;\
+                    \cf13 \strokec13 this\cf14 \strokec14 .$emit(\cf16 \strokec16 'reduce'\cf14 \strokec14 , \cf13 \strokec13 this\cf14 \strokec14 .counter);\
+                \}\
+            \}\
+        \});\
+        Vue.component(\cf16 \strokec16 'my-component-2'\cf14 \strokec14 , \{\
+            template:  \cf16 \strokec16 "\\\cf14 \strokec14 \
+\cf16 \strokec16             <div>\\\cf14 \strokec14 \
+\cf16 \strokec16                 <button @click='onIncrease'>input +1</button>\\\cf14 \strokec14 \
+\cf16 \strokec16             </div>\\\cf14 \strokec14 \
+\cf16 \strokec16             "\cf14 \strokec14 ,\
+            data: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf13 \strokec13 return\cf14 \strokec14  \{\
+                    counter: \cf18 \strokec18 0\cf14 \strokec14 \
+                \}\
+            \},\
+            methods: \{\
+                onIncrease: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                    \cf13 \strokec13 this\cf14 \strokec14 .counter++;\
+                    \cf17 \strokec17 // 
+\f0 \'b4\'a5\'b7\'a2
+\f2 input
+\f0 \'ca\'c2\'bc\'fe\'a3\'ac\'b8\'c4\'b1\'e4\'b5\'c4\'ca\'c7\'d7\'ee\'cd\'e2\'b2\'e3
+\f2 template
+\f0 \'cd\'e2\'b2\'e3
+\f2 div
+\f0 \'b5\'c4
+\f2 value
+\f0 \'ca\'f4\'d0\'d4\'a3\'ac
+\f2 value
+\f0 \'d6\'b5\'b1\'bb\'b8\'c4\'b1\'e4\'ce\'aa
+\f2 this.counter\cf14 \strokec14 \
+                    \cf13 \strokec13 this\cf14 \strokec14 .$emit(\cf16 \strokec16 'input'\cf14 \strokec14 , \cf13 \strokec13 this\cf14 \strokec14 .counter);\
+                \}\
+            \}\
+        \});\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 '#app'\cf14 \strokec14 ,\
+            data: \{\
+                inputTotal: \cf18 \strokec18 0\cf14 \strokec14 \
+            \},\
+            methods: \{\
+                handelChange: \cf13 \strokec13 function\cf14 \strokec14  (change) \{\
+                    console.log(change);\
+                    console.log(\cf13 \strokec13 this\cf14 \strokec14 .inputTotal);\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+19. bus\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 019-bus\cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \{\{ message \}\}\
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-1\cf12 \strokec12 ></\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'bf\'d5
+\f2 Vue
+\f0 \'ca\'b5\'c0\'fd\'a3\'ac\'bd\'ab\'bb\'e1\'d7\'f7\'ce\'aa\'cf\'fb\'cf\'a2\'d6\'d0\'bc\'e4\'c8\'cb
+\f2 \cf14 \strokec14 \
+        \cf13 \strokec13 var\cf14 \strokec14  bus = \cf13 \strokec13 new\cf14 \strokec14  Vue();\
+        \cf17 \strokec17 // 
+\f0 \'d7\'a2\'b2\'e1\'d7\'e9\'bc\'fe
+\f2 \cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-1'\cf14 \strokec14 , \{\
+            template: \cf16 \strokec16 '<button @click="handleEvent">
+\f0 \'b5\'e3\'bb\'f7\'b4\'ab\'b5\'dd\'ca\'c2\'bc\'fe
+\f2 </button>'\cf14 \strokec14 ,\
+            methods: \{\
+                handleEvent: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                    \cf17 \strokec17 // 
+\f0 \'cd\'a8\'b9\'fd\'cf\'fb\'cf\'a2\'d6\'d0\'bc\'e4\'c8\'cb\'cc\'e1\'bd\'bb
+\f2 onMessage
+\f0 \'cf\'fb\'cf\'a2\'a3\'ac\'b2\'a2\'c7\'d2\'b4\'ab\'b2\'ce
+\f2 \cf14 \strokec14 \
+                    bus.$emit(\cf16 \strokec16 'onMessage'\cf14 \strokec14 , \cf16 \strokec16 '
+\f0 \'c0\'b4\'d7\'d4\'d7\'e9\'bc\'fe
+\f2 my-component-1
+\f0 \'b5\'c4\'c4\'da\'c8\'dd
+\f2 '\cf14 \strokec14 );\
+                \}\
+            \}\
+        \});\
+        \cf17 \strokec17 // 
+\f0 \'d6\'f7
+\f2 app
+\f0 \'b6\'d4\'cf\'f3
+\f2 \cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            data: \{\
+                message: \cf16 \strokec16 '
+\f0 \'b3\'f5\'ca\'bc\'ce\'c4\'b1\'be\'c4\'da\'c8\'dd
+\f2 '\cf14 \strokec14 \
+            \},\
+            mounted: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf13 \strokec13 var\cf14 \strokec14  _this = \cf13 \strokec13 this\cf14 \strokec14 ;\
+                \cf17 \strokec17 // 
+\f0 \'d4\'da
+\f2 app
+\f0 \'b3\'f5\'ca\'bc\'bb\'af\'ca\'b1\'a3\'ac\'cd\'a8\'b9\'fd\'cf\'fb\'cf\'a2\'d6\'d0\'bc\'e4\'c8\'cb\'d7\'a2\'b2\'e1\'bc\'e0\'cc\'fd
+\f2 onMessage
+\f0 \'cf\'fb\'cf\'a2
+\f2 \cf14 \strokec14 \
+                bus.$on(\cf16 \strokec16 'onMessage'\cf14 \strokec14 , \cf13 \strokec13 function\cf14 \strokec14  (msg) \{\
+                    _this.message = msg;\
+                \});\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+        \cf17 \strokec17 // 
+\f0 \'a1\'be\'d7\'a2\'a1\'bf\'d5\'e2\'ca\'b1\'ba\'f2\'ce\'d2\'c3\'c7\'b7\'a2\'cf\'d6
+\f2 Vue
+\f0 \'d5\'e2\'b8\'f6\'ba\'af\'ca\'fd\'a3\'ac\'bb\'f2\'d5\'df\'b8\'fc\'ba\'c3\'c0\'ed\'bd\'e2\'b5\'c4\'cb\'b5\'a3\'ac
+\f2 Vue
+\f0 \'d5\'e2\'b8\'f6\'c0\'e0\'d3\'d0\'ba\'dc\'b6\'e0\'d7\'f7\'d3\'c3\'a3\'ac\'c4\'bf\'c7\'b0\'ce\'d2\'c3\'c7\'d3\'c3\'b5\'bd\'b5\'c4\'d7\'f7\'d3\'c3\'d3\'d0\'a3\'ba
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 1.
+\f0 \'cd\'a8\'b9\'fd\'d1\'a1\'d4\'f1\'c6\'f7\'b0\'f3\'b6\'a8\'d2\'bb\'b8\'f6\'bd\'da\'b5\'e3\'a3\'ac\'b6\'d4\'b8\'c3\'bd\'da\'b5\'e3\'cf\'c2\'b5\'c4\'d7\'d3\'bd\'da\'b5\'e3\'a1\'a2\'cb\'ef\'d7\'d3\'bd\'da\'b5\'e3\'b5\'c4\'ca\'fd\'be\'dd\'ba\'cd\'bd\'da\'b5\'e3\'ca\'f4\'d0\'d4\'b5\'c8\'bd\'f8\'d0\'d0\'c8\'ab\'be\'d6\'b9\'dc\'c0\'ed\'d3\'eb\'ca\'c2\'bc\'fe\'b4\'a6\'c0\'ed
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 2.
+\f0 \'cd\'a8\'b9\'fd\'c0\'e0\'b7\'bd\'b7\'a8
+\f2 Vue.component()
+\f0 \'bd\'f8\'d0\'d0\'d7\'e9\'bc\'fe\'d7\'a2\'b2\'e1
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 3.
+\f0 \'d7\'f7\'ce\'aa\'cf\'fb\'cf\'a2
+\f2 bus
+\f0 \'ca\'b9\'d3\'c3\'a3\'ac\'b3\'a3\'d3\'c3\'b7\'bd\'b7\'a8
+\f2 bus.$emit()
+\f0 \'a1\'a2
+\f2 bus.$on()\cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'d7\'dc\'bd\'e1\'c0\'b4\'cb\'b5\'a3\'ac
+\f2 Vue
+\f0 \'d5\'e2\'b8\'f6\'ba\'af\'ca\'fd\'ca\'c7
+\f2 Vue.js
+\f0 \'b5\'c4\'ba\'cb\'d0\'c4\'a3\'ac\'b9\'a6\'c4\'dc\'b6\'bc\'ce\'a7\'c8\'c6\'d5\'e2\'d2\'bb\'b8\'f6\'ba\'af\'ca\'fd\'d5\'b9\'bf\'aa
+\f2 \cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+20.
+\f0  \'b8\'b8\'d7\'d3\'c1\'b4\
+\'d4\'da\'d7\'d3\'d7\'e9\'bc\'fe\'d6\'d0\'ca\'b9\'d3\'c3this.$parent.A\'bf\'c9\'d6\'b1\'bd\'d3\'b7\'c3\'ce\'ca\'b8\'b8\'d7\'e9\'bc\'fe\'b5\'c4A\'ca\'f4\'d0\'d4\'a3\'bb\'d4\'da\'b8\'b8\'d7\'e9\'bc\'fe\'d6\'d0\'ca\'b9\'d3\'c3this.$children\'b7\'c3\'ce\'ca\'cb\'fc\'b5\'c4\'cb\'f9\'d3\'d0\'d7\'d3\'d7\'e9\'bc\'fe\'a3\'ac\'d2\'b2\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fdref\'b1\'ea\'c7\'a9\'ca\'f4\'d0\'d4\'b8\'f8\'d7\'d3\'d7\'e9\'bc\'fe\'a1\'b0\'c8\'a1\'b8\'f6\'c3\'fb\'a1\'b1\'a3\'ac\'c8\'e7<my-component ref="part1"></my-component>\'a3\'ac\'d5\'e2\'ca\'b1\'ba\'f2\'a3\'ac\'d4\'da\'b8\'b8\'d7\'e9\'bc\'fe\'d6\'d0\'ca\'b9\'d3\'c3this.$refs.part1.B\'be\'cd\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'b7\'c3\'ce\'capart1\'d7\'d3\'d7\'e9\'bc\'fe\'b5\'c4B\'ca\'f4\'d0\'d4\'a1\'a3\
+\'b2\'bb\'b9\'fd\'b8\'b8\'d7\'d3\'c1\'b4\'d0\'ce\'ca\'bd\'b5\'c4\'cd\'a8\'d0\'c5\'a3\'ac\'f1\'ee\'ba\'cf\'d0\'d4\'ba\'dc\'b8\'df\'a3\'ac\'b2\'a2\'b2\'bb\'cd\'c6\'bc\'f6\'ca\'b9\'d3\'c3\'a3\'ac\'d5\'e2\'c0\'ef\'d2\'b2\'b2\'bb\'d7\'f6\'b4\'fa\'c2\'eb\'ca\'be\'c0\'fd\'c1\'cb\'a1\'a3\
+\
+21. slot\'a3\'a8\'b2\'e5\'b2\'db\'a3\'a9\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 020-slot\cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'a1\'be
+\f2 1
+\f0 \'a1\'bf
+\f2 slot
+\f0 \'b5\'c4\'bb\'f9\'b1\'be\'ca\'b9\'d3\'c3
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c4\'da\'c8\'dd
+\f2 1\cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c4\'da\'c8\'dd
+\f2 2\cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 my-component-1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'a1\'be
+\f2 2
+\f0 \'a1\'bf
+\f2 slot
+\f0 \'b8\'f9\'be\'dd\'c3\'fb\'b3\'c6\'c4\'dc\'b9\'bb\'b6\'d4\'d3\'a6\'b2\'e5\'c8\'eb
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-2\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf14 \strokec14  \cf15 \strokec15 slot\cf14 \strokec14 =\cf16 \strokec16 "header"\cf12 \strokec12 >\cf14 \strokec14 slot
+\f0 \'ce\'aa
+\f2 header
+\f0 \'b5\'c4\'c4\'da\'c8\'dd
+\f2 \cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c3\'bb\'d3\'d0\'c3\'fb\'b3\'c6\'b5\'c4\'c4\'da\'c8\'dd
+\f2 \cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 p\cf14 \strokec14  \cf15 \strokec15 slot\cf14 \strokec14 =\cf16 \strokec16 "footer"\cf12 \strokec12 >\cf14 \strokec14 slot
+\f0 \'ce\'aa
+\f2 footer
+\f0 \'b5\'c4\'c4\'da\'c8\'dd
+\f2 \cf12 \strokec12 </\cf13 \strokec13 p\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 my-component-2\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'a1\'be
+\f2 3
+\f0 \'a1\'bf\'cd\'a8\'b9\'fd
+\f2 scope
+\f0 \'c9\'f9\'c3\'f7\'d7\'f7\'d3\'c3\'d3\'f2\'a3\'ac\'cd\'a8\'b9\'fd\'d7\'f7\'d3\'c3\'d3\'f2\'bf\'c9\'d2\'d4\'b7\'c3\'ce\'ca\'d7\'f7\'d3\'c3\'d3\'f2\'cf\'c2\'b5\'c4\'b1\'e4\'c1\'bf
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component-3\cf12 \strokec12 >\cf14 \strokec14 \
+            \cf12 \strokec12 <\cf13 \strokec13 template\cf14 \strokec14  \cf15 \strokec15 scope\cf14 \strokec14 =\cf16 \strokec16 "child"\cf12 \strokec12 >\cf14 \strokec14 \{\{ child.childMessage \}\} -- \{\{ child.someData \}\}\cf12 \strokec12 </\cf13 \strokec13 template\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 </\cf13 \strokec13 my-component-3\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'c8\'ab\'be\'d6\'b6\'a8\'d2\'e5\'d7\'e9\'bc\'fe
+\f2 \cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-1'\cf14 \strokec14 , \{\
+            \cf17 \strokec17 // 
+\f0 \'d2\'bb\'b8\'f6
+\f2 slot
+\f0 \'be\'cd\'ca\'c7\'d2\'bb\'b8\'f6
+\f2 \'93
+\f0 \'b2\'e5\'b2\'db
+\f2 \'94
+\f0 \'a3\'ac\'b8\'b8\'d7\'e9\'bc\'fe\'d6\'d0\'b5\'c4\'cb\'f9\'d3\'d0\'c4\'da\'c8\'dd\'a3\'ac\'d7\'f7\'ce\'aa\'d2\'bb\'cf\'ee\'d4\'aa\'cb\'d8\'b2\'e5\'c8\'eb\'d2\'bb\'b8\'f6\'b2\'e5\'b2\'db
+\f2 \cf14 \strokec14 \
+            \cf17 \strokec17 // 
+\f0 \'cf\'c2\'c0\'fd\'d6\'d0\'d3\'d0
+\f2 2
+\f0 \'b8\'f6\'b2\'e5\'b2\'db\'a3\'ac\'b8\'b8\'d7\'e9\'bc\'fe\'d6\'d0\'b5\'c4\'c4\'da\'c8\'dd
+\f2 1
+\f0 \'ba\'cd\'c4\'da\'c8\'dd
+\f2 2
+\f0 \'d7\'f7\'ce\'aa\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'a3\'ac\'bb\'e1\'b1\'bb\'b2\'e5\'c8\'eb\'c1\'bd\'b4\'ce
+\f2 \cf14 \strokec14 \
+            template: \cf16 \strokec16 '\\\cf14 \strokec14 \
+\cf16 \strokec16                 <div>\\\cf14 \strokec14 \
+\cf16 \strokec16                     <slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                         <p>
+\f0 \'c8\'e7\'b9\'fb\'b8\'b8\'d7\'e9\'bc\'fe\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'a3\'ac\'d5\'e2\'c0\'ef\'ca\'c7\'c4\'ac\'c8\'cf\'ca\'b5\'cf\'d6
+\f2 1</p>\\\cf14 \strokec14 \
+\cf16 \strokec16                     </slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                     <slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                         <p>
+\f0 \'c8\'e7\'b9\'fb\'b8\'b8\'d7\'e9\'bc\'fe\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'a3\'ac\'d5\'e2\'c0\'ef\'ca\'c7\'c4\'ac\'c8\'cf\'ca\'b5\'cf\'d6
+\f2 2</p>\\\cf14 \strokec14 \
+\cf16 \strokec16                     </slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                 </div>'\cf14 \strokec14 ,\
+        \});\
+        \cf17 \strokec17 // 
+\f0 \'b4\'f8\'d3\'d0\'c3\'fb\'b3\'c6\'b5\'c4\'b2\'e5\'b2\'db
+\f2 \cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-2'\cf14 \strokec14 , \{\
+            template: \cf16 \strokec16 '\\\cf14 \strokec14 \
+\cf16 \strokec16                 <div>\\\cf14 \strokec14 \
+\cf16 \strokec16                     <slot name="header">\\\cf14 \strokec14 \
+\cf16 \strokec16                         <p>
+\f0 \'c8\'e7\'b9\'fb\'b8\'b8\'d7\'e9\'bc\'fe\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'a3\'ac\'d5\'e2\'c0\'ef\'ca\'c7\'c4\'ac\'c8\'cf\'ca\'b5\'cf\'d6
+\f2 -header</p>\\\cf14 \strokec14 \
+\cf16 \strokec16                     </slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                     <slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                         <p>
+\f0 \'c8\'e7\'b9\'fb\'b8\'b8\'d7\'e9\'bc\'fe\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'a3\'ac\'d5\'e2\'c0\'ef\'ca\'c7\'c4\'ac\'c8\'cf\'ca\'b5\'cf\'d6
+\f2 </p>\\\cf14 \strokec14 \
+\cf16 \strokec16                     </slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                     <slot name="footer">\\\cf14 \strokec14 \
+\cf16 \strokec16                         <p>
+\f0 \'c8\'e7\'b9\'fb\'b8\'b8\'d7\'e9\'bc\'fe\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'a3\'ac\'d5\'e2\'c0\'ef\'ca\'c7\'c4\'ac\'c8\'cf\'ca\'b5\'cf\'d6
+\f2 -footer</p>\\\cf14 \strokec14 \
+\cf16 \strokec16                     </slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                 </div>'\cf14 \strokec14 ,\
+            mounted: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf17 \strokec17 // 
+\f0 \'a1\'be
+\f2 4
+\f0 \'a1\'bf\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f2 this.$slots
+\f0 \'b7\'c3\'ce\'ca\'b5\'bd
+\f2 slot\cf14 \strokec14 \
+                \cf13 \strokec13 var\cf14 \strokec14  header = \cf13 \strokec13 this\cf14 \strokec14 .$slots.header;\
+                console.log(header[\cf18 \strokec18 0\cf14 \strokec14 ].elm.innerHTML);\
+            \}\
+        \});\
+        \cf17 \strokec17 // 
+\f0 \'d7\'f7\'d3\'c3\'d3\'f2\'b2\'e5\'b2\'db
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'d7\'f7\'d3\'c3\'d3\'f2\'b2\'e5\'b2\'db\'bf\'c9\'d2\'d4\'ca\'b5\'cf\'d6\'d7\'d3\'d7\'e9\'bc\'fe\'b8\'f8\'b8\'b8\'d7\'e9\'bc\'fe\'b4\'ab\'b2\'ce
+\f2 \cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'my-component-3'\cf14 \strokec14 , \{\
+            template: \cf16 \strokec16 '\\\cf14 \strokec14 \
+\cf16 \strokec16                 <div>\\\cf14 \strokec14 \
+\cf16 \strokec16                     <slot childMessage="
+\f0 \'d5\'e2\'ca\'c7\'d7\'d3\'d7\'e9\'bc\'fe\'b5\'c4\'cf\'fb\'cf\'a2
+\f2 " :someData="someData">\\\cf14 \strokec14 \
+\cf16 \strokec16                         <p>
+\f0 \'c8\'e7\'b9\'fb\'b8\'b8\'d7\'e9\'bc\'fe\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'a3\'ac\'d5\'e2\'c0\'ef\'ca\'c7\'c4\'ac\'c8\'cf\'ca\'b5\'cf\'d6
+\f2 </p>\\\cf14 \strokec14 \
+\cf16 \strokec16                     </slot>\\\cf14 \strokec14 \
+\cf16 \strokec16                 </div>\\\cf14 \strokec14 \
+\cf16 \strokec16                 '\cf14 \strokec14 ,\
+            data: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf13 \strokec13 return\cf14 \strokec14  \{\
+                    someData: \cf16 \strokec16 "
+\f0 \'d5\'e2\'ca\'c7\'d7\'f7\'d3\'c3\'d3\'f2\'b2\'e5\'b2\'db\'c0\'ef\'b5\'c4
+\f2 someData
+\f0 \'ca\'f4\'d0\'d4
+\f2 "\cf14 \strokec14 \
+                \}\
+            \}\
+        \});\
+        \cf17 \strokec17 // 
+\f0 \'d6\'f7\'d2\'aa
+\f2 app
+\f0 \'b6\'d4\'cf\'f3
+\f2 \cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+22. 
+\f0 \'b5\'dd\'b9\'e9\'d7\'e9\'bc\'fe
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 23. \'b6\'af\'cc\'ac\'d7\'e9\'bc\'fe\
+24. \'d2\'ec\'b2\'bd\'d7\'e9\'bc\'fe\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 021-
+\f0 \'d7\'e9\'bc\'fe\'b5\'c4\'b8\'df\'bc\'b6\'d3\'c3\'b7\'a8
+\f2 \cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 h1\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'b5\'dd\'b9\'e9\'d7\'e9\'bc\'fe\'a3\'ba
+\f2 \cf12 \strokec12 </\cf13 \strokec13 h1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'a1\'be
+\f2 1
+\f0 \'a1\'bf\'b5\'dd\'b9\'e9\'d7\'e9\'bc\'fe
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 recursive-component\cf14 \strokec14  \cf15 \strokec15 :count\cf14 \strokec14 =\cf16 \strokec16 "1"\cf12 \strokec12 ></\cf13 \strokec13 recursive-component\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 h1\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'b6\'af\'cc\'ac\'d7\'e9\'bc\'fe\'a3\'ba
+\f2 \cf12 \strokec12 </\cf13 \strokec13 h1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'a1\'be
+\f2 2
+\f0 \'a1\'bf\'b6\'af\'cc\'ac\'d7\'e9\'bc\'fe
+\f2  -->\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'b9\'d8\'bc\'fc\'b5\'e3\'a3\'ba
+\f2 1.component
+\f0 \'b7\'ba\'d0\'cd\'d7\'e9\'bc\'fe\'b1\'ea\'c7\'a9
+\f2  2.is
+\f0 \'ca\'f4\'d0\'d4\'b0\'f3\'b6\'a8\'d7\'e9\'bc\'fe\'c3\'fb\'b3\'c6
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 component\cf14 \strokec14  \cf15 \strokec15 :is\cf14 \strokec14 =\cf16 \strokec16 "currentComponent"\cf12 \strokec12 ></\cf13 \strokec13 component\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 button\cf14 \strokec14  \cf15 \strokec15 @click\cf14 \strokec14 =\cf16 \strokec16 "handleClick('A')"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c7\'d0\'bb\'bb\'b5\'bd
+\f2 A
+\f0 \'d7\'e9\'bc\'fe
+\f2 \cf12 \strokec12 </\cf13 \strokec13 button\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 button\cf14 \strokec14  \cf15 \strokec15 @click\cf14 \strokec14 =\cf16 \strokec16 "handleClick('B')"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c7\'d0\'bb\'bb\'b5\'bd
+\f2 B
+\f0 \'d7\'e9\'bc\'fe
+\f2 \cf12 \strokec12 </\cf13 \strokec13 button\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 button\cf14 \strokec14  \cf15 \strokec15 @click\cf14 \strokec14 =\cf16 \strokec16 "handleClick('C')"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'c7\'d0\'bb\'bb\'b5\'bd
+\f2 C
+\f0 \'d7\'e9\'bc\'fe
+\f2 \cf12 \strokec12 </\cf13 \strokec13 button\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 h1\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'d2\'ec\'b2\'bd\'d7\'e9\'bc\'fe\'a3\'ba
+\f2 \cf12 \strokec12 </\cf13 \strokec13 h1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 <!-- 
+\f0 \'a1\'be
+\f2 3
+\f0 \'a1\'bf\'d2\'ec\'b2\'bd\'d7\'e9\'bc\'fe
+\f2  -->\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 asynchronize-component\cf12 \strokec12 ></\cf13 \strokec13 asynchronize-component\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14     \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        Vue.component(\cf16 \strokec16 'recursive-component'\cf14 \strokec14 , \{\
+            name: \cf16 \strokec16 'recursive-component'\cf14 \strokec14 ,\
+            props: \{\
+                count: \{\
+                    type: Number,\
+                    default: \cf18 \strokec18 1\cf14 \strokec14 \
+                \}\
+            \},\
+            \cf17 \strokec17 // template
+\f0 \'d6\'d0\'cd\'a8\'b9\'fd\'cc\'ed\'bc\'d3\'d7\'d4\'bc\'ba\'b1\'ea\'c7\'a9\'a3\'ac\'ca\'b5\'cf\'d6\'b5\'dd\'b9\'e9\'a3\'ac\'d2\'bb\'b6\'a8\'d2\'aa\'d7\'a2\'d2\'e2\'b5\'dd\'b9\'e9\'bd\'e1\'ca\'f8\'cc\'f5\'bc\'fe\'bf\'d8\'d6\'c6\'ba\'c3
+\f2 \cf14 \strokec14 \
+            template: \cf16 \strokec16 '\\\cf14 \strokec14 \
+\cf16 \strokec16                 <div class="child">
+\f0 \'d5\'e2\'c0\'ef\'ca\'c7\'b1\'bb\'b5\'dd\'b9\'e9\'b5\'c4\'c4\'da\'c8\'dd
+\f2 \\\cf14 \strokec14 \
+\cf16 \strokec16                     <recursive-component :count="count + 1" v-if="count < 3">\\\cf14 \strokec14 \
+\cf16 \strokec16                     </recursive-component>\\\cf14 \strokec14 \
+\cf16 \strokec16                 </div>\\\cf14 \strokec14 \
+\cf16 \strokec16                 '\cf14 \strokec14 \
+        \});\
+        Vue.component(\cf16 \strokec16 'asynchronize-component'\cf14 \strokec14 , \cf13 \strokec13 function\cf14 \strokec14  (resolve, reject) \{\
+            \cf17 \strokec17 // 
+\f0 \'c4\'a3\'c4\'e2\'d2\'ec\'b2\'bd\'bb\'f1\'c8\'a1\'d7\'e9\'bc\'fe\'c4\'da\'c8\'dd
+\f2 \cf14 \strokec14 \
+            window.setTimeout(\cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf17 \strokec17 // 
+\f0 \'bb\'f1\'c8\'a1\'b3\'c9\'b9\'a6\'a3\'ac\'b5\'f7\'d3\'c3
+\f2 resolve
+\f0 \'b7\'bd\'b7\'a8\'bd\'f8\'d0\'d0\'d7\'e9\'bc\'fe\'c4\'da\'c8\'dd\'bb\'d8\'b5\'f7
+\f2 \cf14 \strokec14 \
+                resolve(\{\
+                    template: \cf16 \strokec16 '<div>
+\f0 \'ce\'d2\'ca\'c7\'d2\'ec\'b2\'bd\'e4\'d6\'c8\'be\'b5\'c4\'d7\'e9\'bc\'fe
+\f2 </div>'\cf14 \strokec14 \
+                \});\
+                \cf17 \strokec17 // 
+\f0 \'bb\'f1\'c8\'a1\'ca\'a7\'b0\'dc\'a3\'ac\'b5\'f7\'d3\'c3
+\f2 reject
+\f0 \'b7\'bd\'b7\'a8\'bd\'f8\'d0\'d0\'d4\'ad\'d2\'f2\'bb\'d8\'b5\'f7
+\f2 \cf14 \strokec14 \
+                \cf17 \strokec17 //reject('reason');\cf14 \strokec14 \
+            \}, \cf18 \strokec18 3000\cf14 \strokec14 );\
+        \});\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            components: \{\
+                componentA: \{\
+                    template: \cf16 \strokec16 "<div>
+\f0 \'d7\'e9\'bc\'fe
+\f2 A</div>"\cf14 \strokec14 \
+                \},\
+                componentB: \{\
+                    template: \cf16 \strokec16 "<div>
+\f0 \'d7\'e9\'bc\'fe
+\f2 B</div>"\cf14 \strokec14 \
+                \},\
+                componentC: \{\
+                    template: \cf16 \strokec16 "<div>
+\f0 \'d7\'e9\'bc\'fe
+\f2 C</div>"\cf14 \strokec14 \
+                \}\
+            \},\
+            data: \{\
+                currentComponent: \cf16 \strokec16 'componentA'\cf14 \strokec14 \
+            \},\
+            methods: \{\
+                handleClick: \cf13 \strokec13 function\cf14 \strokec14  (param) \{\
+                    \cf13 \strokec13 this\cf14 \strokec14 .currentComponent = \cf16 \strokec16 'component'\cf14 \strokec14  + param;\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 25. 
+\f0 \'c4\'da\'c1\'aa\'c4\'a3\'b0\'e5
+\f1  inline-template
+\f0 \'a3\'a8\'b2\'bb\'cd\'c6\'bc\'f6\'ca\'b9\'d3\'c3\'a3\'a9\
+\
+26. $nextTick\
+\'bc\'d9\'c9\'e8\'d2\'bb\'b8\'f6\'bd\'da\'b5\'e3\'d4\'da\'bf\'aa\'ca\'bc\'b5\'c4\'ca\'b1\'ba\'f2\'ca\'c7v-if\'d2\'fe\'b2\'d8\'b5\'c4\'a3\'a8\'d2\'fe\'b2\'d8\'b5\'c4\'ca\'b1\'ba\'f2\'c3\'bb\'d3\'d0\'b1\'bb\'b4\'b4\'bd\'a8\'a3\'a9\'a3\'ac\'b5\'e3\'bb\'f7\'b0\'b4\'c5\'a5\'ba\'f3\'c9\'e8\'d6\'c3\'c6\'e4\'cf\'d4\'ca\'be\'a1\'a3\'c8\'e7\'b9\'fb\'ce\'d2\'c3\'c7\'cf\'a3\'cd\'fb\'bb\'f1\'c8\'a1\'b8\'c3\'bd\'da\'b5\'e3\'b5\'c4\'ca\'f4\'d0\'d4\'a3\'ac\'d4\'da\'cb\'fc\'d2\'fe\'b2\'d8\'b5\'c4\'ca\'b1\'ba\'f2\'ca\'c7\'bb\'f1\'c8\'a1\'b2\'bb\'b5\'bd\'b5\'c4\'a3\'a8\'d2\'f2\'ce\'aa\'cb\'fc\'bb\'b9\'c3\'bb\'d3\'d0\'b1\'bb\'b4\'b4\'bd\'a8\'a3\'a9\'a1\'a3\'c4\'c7\'c3\'b4\'ce\'d2\'c3\'c7\'d7\'d4\'c8\'bb\'be\'cd\'cf\'eb\'b5\'bd\'a3\'ac\'cf\'c8\'d0\'de\'b8\'c4v-if\'b6\'d4\'d3\'a6\'b5\'c4Boolean\'ca\'f4\'d0\'d4\'a3\'ac\'d4\'d9\'bb\'f1\'c8\'a1\'ce\'d2\'c3\'c7\'d0\'e8\'d2\'aa\'b5\'c4\'ca\'fd\'be\'dd\'a1\'a3\'b5\'ab\'ca\'c7\'d5\'e2\'d1\'f9\'d2\'c0\'c8\'bb\'ca\'c7\'b2\'bb\'bf\'c9\'d2\'d4\'b5\'c4\'a1\'a3\
+\'d2\'f2\'ce\'aaVue\'b1\'be\'d6\'ca\'c9\'cf\'b2\'a2\'b2\'bb\'ca\'c7\'ca\'b5\'ca\'b1\'b8\'fc\'d0\'c2DOM\'d4\'aa\'cb\'d8\'b5\'c4\'a3\'ac\'b6\'f8\'ca\'c7\'bb\'e1\'bf\'aa\'c6\'f4\'d2\'bb\'b8\'f6\'c8\'ce\'ce\'f1\'b6\'d3\'c1\'d0\'a3\'ac\'bb\'ba\'b3\'e5\'d4\'da\'cd\'ac\'d2\'bb\'ca\'c2\'bc\'fe\'d1\'ad\'bb\'b7\'d6\'d0\'b7\'a2\'c9\'fa\'b5\'c4\'cb\'f9\'d3\'d0\'ca\'fd\'be\'dd\'b8\'c4\'b1\'e4\'a1\'a3\'d4\'da\'bb\'ba\'b3\'e5\'ca\'b1\'bb\'e1\'c8\'a5\'b3\'fd\'d6\'d8\'b8\'b4\'ca\'fd\'be\'dd\'a3\'ac\'b4\'d3\'b6\'f8\'b1\'dc\'c3\'e2\'b2\'bb\'b1\'d8\'d2\'aa\'b5\'c4\'bc\'c6\'cb\'e3\'ba\'cd DOM \'b2\'d9\'d7\'f7\'a1\'a3\'c8\'bb\'ba\'f3\'a3\'ac\'d4\'da\'cf\'c2\'d2\'bb\'b8\'f6\'ca\'c2\'bc\'fe\'d1\'ad\'bb\'b7 tick\'d6\'d0\'a3\'acVue \'cb\'a2\'d0\'c2\'b6\'d3\'c1\'d0\'be\'ae\'d6\'b4\'d0\'d0\'ca\'b5\'bc\'ca\'bc\'ba\'c8\'a5\'d6\'d8\'b5\'c4\'b9\'a4\'d7\'f7\'a1\'a3\'cb\'f9\'d2\'d4\'c8\'e7\'b9\'fb\'c4\'e3\'d3\'c3\'d2\'bb\'b8\'f6for\'d1\'ad\'bb\'b7\'c0\'b4\'b6\'af\'cc\'ac\'b8\'c4\'b1\'e4\'ca\'fd\'be\'dd 100\'b4\'ce\'a3\'ac\'c6\'e4\'ca\'b5\'cb\'fc\'d6\'bb\'bb\'e1\'d3\'a6\'d3\'c3\'d7\'ee\'ba\'f3\'d2\'bb\'b4\'ce\'b8\'c4\'b1\'e4\'a3\'ac\'c8\'e7\'b9\'fb\'c3\'bb\'d3\'d0\'d5\'e2\'d6\'d6\'bb\'fa\'d6\'c6\'a3\'acDOM \'be\'cd\'d2\'aa\'d6\'d8\'bb\'e6100\'b4\'ce\'a3\'ac\'d5\'e2\'b9\'cc\'c8\'bb\'ca\'c7\'d2\'bb\'b8\'f6\'ba\'dc\'b4\'f3\'b5\'c4\'bf\'aa\'cf\'fa\'a1\'a3\
+\'d5\'e2\'ca\'b1\'ba\'f2\'ce\'d2\'c3\'c7\'be\'cd\'d0\'e8\'d2\'aa$nextTick\'a3\'ac\'cb\'fc\'b1\'ea\'d6\'be\'d7\'c5\'d6\'ae\'c7\'b0\'b5\'c4DOM\'b2\'d9\'d7\'f7\'d2\'d1\'be\'ad\'d6\'b4\'d0\'d0\'cd\'ea\'b1\'cf\'a1\'a3\
+\'a1\'be\'d7\'a2\'a1\'bf\'d5\'e2\'d3\'d0\'b5\'e3\'c0\'e0\'cb\'c6\'d3\'daRunLoop\'bb\'fa\'d6\'c6\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 022-nextTick\cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "testElement"\cf14 \strokec14  \cf15 \strokec15 v-if\cf14 \strokec14 =\cf16 \strokec16 "isShow"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'ce\'d2\'bf\'aa\'ca\'bc\'b5\'c4\'ca\'b1\'ba\'f2\'ca\'c7\'b1\'bb\'d2\'fe\'b2\'d8\'b5\'c4\'c5\'b6
+\f2 \cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 button\cf14 \strokec14  \cf15 \strokec15 @click\cf14 \strokec14 =\cf16 \strokec16 "handleClick"\cf12 \strokec12 >
+\f0 \cf14 \strokec14 \'b5\'e3\'bb\'f7\'cf\'d4\'ca\'be\'b1\'bb\'d2\'fe\'b2\'d8\'b5\'c4\'c4\'da\'c8\'dd
+\f2 \cf12 \strokec12 </\cf13 \strokec13 button\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            data: \{\
+                isShow: \cf13 \strokec13 false\cf14 \strokec14 \
+            \},\
+            methods: \{\
+                handleClick: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                    \cf13 \strokec13 this\cf14 \strokec14 .isShow = !\cf13 \strokec13 this\cf14 \strokec14 .isShow;\
+                    \cf17 \strokec17 // 
+\f0 \'d6\'b1\'bd\'d3\'bb\'f1\'c8\'a1\'bb\'e1\'b1\'a8\'b4\'ed
+\f2  TypeError: Cannot read property 'innerHTML' of null\cf14 \strokec14 \
+                    \cf17 \strokec17 // var testElement = document.getElementById("testElement");\cf14 \strokec14 \
+                    \cf17 \strokec17 // console.log(testElement.innerHTML);\cf14 \strokec14 \
+                    \cf13 \strokec13 this\cf14 \strokec14 .$nextTick(\cf13 \strokec13 function\cf14 \strokec14  () \{\
+                        \cf13 \strokec13 var\cf14 \strokec14  testElement = document.getElementById(\cf16 \strokec16 "testElement"\cf14 \strokec14 );\
+                        console.log(testElement.innerHTML);\
+                    \});\
+                \}\
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+27. \'ca\'d6\'b6\'af\'b9\'d2\'d4\'d8\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 023-
+\f0 \'ca\'d6\'b6\'af\'b9\'d2\'d4\'d8
+\f2 Vue
+\f0 \'ca\'b5\'c0\'fd
+\f2 \cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \{\{ message \}\}\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "delay-mounted"\cf12 \strokec12 ></\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "delay-mounted-extend"\cf12 \strokec12 ></\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'b4\'b4\'bd\'a8
+\f2 Vue
+\f0 \'ca\'b5\'c0\'fd\'a3\'ac\'b2\'a2\'c7\'d2\'b3\'f5\'ca\'bc\'bb\'af\'b9\'d2\'d4\'d8\'b5\'bd
+\f2 #app
+\f0 \'bd\'da\'b5\'e3\'c9\'cf
+\f2 \cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 ,\
+            data: \{\
+                message: \cf16 \strokec16 "
+\f0 \'ce\'d2\'ca\'c7\'c6\'d5\'cd\'a8\'b9\'d2\'d4\'d8\'a3\'a8\'b4\'b4\'bd\'a8
+\f2 Vue
+\f0 \'b6\'d4\'cf\'f3\'b3\'f5\'ca\'bc\'bb\'af\'b9\'d2\'d4\'d8\'a3\'a9
+\f2 "\cf14 \strokec14 \
+            \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+        \cf17 \strokec17 // 
+\f0 \'ca\'d6\'b6\'af\'b9\'d2\'d4\'d8
+\f2 \cf14 \strokec14 \
+        \cf13 \strokec13 var\cf14 \strokec14  delayMounted = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            template: \cf16 \strokec16 "<div>\{\{ message \}\}</div>"\cf14 \strokec14 ,\
+            data: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf13 \strokec13 return\cf14 \strokec14  \{\
+                    message: \cf16 \strokec16 "
+\f0 \'ce\'d2\'ca\'c7\'b1\'bb\'d1\'d3\'b3\'d9\'b9\'d2\'d4\'d8\'b5\'c4\'cf\'fb\'cf\'a2
+\f2 1"\cf14 \strokec14 \
+                \}\
+            \}\
+        \});\
+        delayMounted.$mount(\cf16 \strokec16 "#delay-mounted"\cf14 \strokec14 );\
+        \cf17 \strokec17 // 
+\f0 \'ca\'d6\'b6\'af\'b9\'d2\'d4\'d8\'a3\'ac
+\f2 extend
+\f0 \'a3\'ac\'a1\'b6
+\f2 Vue.js
+\f0 \'ca\'b5\'d5\'bd\'a1\'b7\'ca\'be\'c0\'fd
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'a1\'be\'d7\'a2\'a3\'ac\'ce\'b4\'be\'ad\'bf\'bc\'d6\'a4\'a1\'bf\'b8\'f6\'c8\'cb\'be\'f5\'b5\'c3\'d5\'e2\'ca\'c7\'b6\'d4
+\f2 Vue
+\f0 \'b5\'c4\'d7\'d3\'c0\'e0\'bb\'af\'a3\'ac\'cd\'a8\'b9\'fd
+\f2 extend
+\f0 \'b7\'bd\'b7\'a8\'a3\'ac\'b4\'b4\'bd\'a8
+\f2 Vue
+\f0 \'b5\'c4\'d2\'bb\'b8\'f6\'d7\'d3\'c0\'e0\'a3\'a8
+\f2 js
+\f0 \'d6\'d0\'c3\'bb\'d3\'d0\'c0\'e0\'b5\'c4\'bb\'b0\'a3\'ac\'c4\'c7\'be\'cd\'ca\'c7\'bc\'cc\'b3\'d0\'c1\'b4\'d7\'d3\'d4\'aa\'cb\'d8\'a3\'a9
+\f2 \cf14 \strokec14 \
+        \cf13 \strokec13 var\cf14 \strokec14  MyCom = Vue.extend(\{\
+            template: \cf16 \strokec16 '<div>Hello: \{\{ message \}\}</div>'\cf14 \strokec14 ,\
+            data: \cf13 \strokec13 function\cf14 \strokec14  () \{\
+                \cf13 \strokec13 return\cf14 \strokec14  \{\
+                    message: \cf16 \strokec16 "
+\f0 \'ce\'d2\'ca\'c7\'b1\'bb\'d1\'d3\'b3\'d9\'b9\'d2\'d4\'d8\'b5\'c4\'cf\'fb\'cf\'a2
+\f2 2"\cf14 \strokec14 \
+                \}\
+            \}\
+        \});\
+        \cf13 \strokec13 var\cf14 \strokec14  myVue = \cf13 \strokec13 new\cf14 \strokec14  MyCom();\
+        myVue.$mount(\cf16 \strokec16 "#delay-mounted-extend"\cf14 \strokec14 );\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+28. \'d7\'d4\'b6\'a8\'d2\'e5\'d6\'b8\'c1\'ee\
+\'d7\'d4\'b6\'a8\'d2\'e5\'d6\'b8\'c1\'ee\'b5\'c4\'c9\'fa\'c3\'fc\'d6\'dc\'c6\'da\'ba\'af\'ca\'fd\'a3\'ba\
+\'a1\'a4 bind: \'d6\'bb\'b5\'f7\'d3\'c3\'d2\'bb\'b4\'ce\'a3\'ac\'d6\'b8\'c1\'ee\'b5\'da\'d2\'bb\'b4\'ce\'b0\'f3\'b6\'a8\'b5\'bd\'d4\'aa\'cb\'d8\'ca\'b1\'b5\'f7\'d3\'c3\'a3\'ac\'d3\'c3\'d5\'e2\'b8\'f6\'b9\'b3\'d7\'d3\'ba\'af\'ca\'fd\'bf\'c9\'d2\'d4\'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'d4\'da\'b0\'f3\'b6\'a8\'ca\'b1\'d6\'b4\'d0\'d0\'d2\'bb\'b4\'ce\'b5\'c4\'b3\'f5\'ca\'bc\'bb\'af\'b6\'af\'d7\'f7\'a1\'a3\
+\'a1\'a4 inserted: \'b1\'bb\'b0\'f3\'b6\'a8\'d4\'aa\'cb\'d8\'b2\'e5\'c8\'eb\'b8\'b8\'bd\'da\'b5\'e3\'ca\'b1\'b5\'f7\'d3\'c3\'a3\'a8\'b8\'b8\'bd\'da\'b5\'e3\'b4\'e6\'d4\'da\'bc\'b4\'bf\'c9\'b5\'f7\'d3\'c3\'a3\'ac\'b2\'bb\'b1\'d8\'b4\'e6\'d4\'da\'d3\'dadocument\'d6\'d0\'a3\'a9\'a1\'a3 \
+\'a1\'a4 update: \'b1\'bb\'b0\'f3\'b6\'a8\'d4\'aa\'cb\'d8\'cb\'f9\'d4\'da\'b5\'c4\'c4\'a3\'b0\'e5\'b8\'fc\'d0\'c2\'ca\'b1\'b5\'f7\'d3\'c3\'a3\'ac\'b6\'f8\'b2\'bb\'c2\'db\'b0\'f3\'b6\'a8\'d6\'b5\'ca\'c7\'b7\'f1\'b1\'e4\'bb\'af\'a1\'a3\'cd\'a8\'b9\'fd\'b1\'c8\'bd\'cf\'b8\'fc\'d0\'c2\'c7\'b0\'ba\'f3\'b5\'c4\'b0\'f3\'b6\'a8\'d6\'b5\'a3\'ac\'bf\'c9\'d2\'d4\'ba\'f6\'c2\'d4\'b2\'bb\'b1\'d8\'d2\'aa\'b5\'c4\'c4\'a3\'b0\'e5\'b8\'fc\'d0\'c2\'a1\'a3\
+\'a1\'a4 componentUpdated: \'b1\'bb\'b0\'f3\'b6\'a8\'d4\'aa\'cb\'d8\'cb\'f9\'d4\'da\'c4\'a3\'b0\'e5\'cd\'ea\'b3\'c9\'d2\'bb\'b4\'ce\'b8\'fc\'d0\'c2\'d6\'dc\'c6\'da\'ca\'b1\'b5\'f7\'d3\'c3\'a1\'a3\
+\'a1\'a4 unbind: \'d6\'bb\'b5\'f7\'d3\'c3\'d2\'bb\'b4\'ce\'a3\'ac\'d6\'b8\'c1\'ee\'d3\'eb\'d4\'aa\'cb\'d8\'bd\'e2\'b0\'f3\'ca\'b1\'b5\'f7\'d3\'c3 \'a1\'a3\
+\'c3\'bf\'b8\'f6\'c9\'fa\'c3\'fc\'d6\'dc\'c6\'da\'ba\'af\'ca\'fd\'b6\'bc\'d3\'d0\'bc\'b8\'b8\'f6\'bf\'c9\'d3\'c3\'b5\'c4\'b2\'ce\'ca\'fd\'a3\'ba\
+\'a1\'a4 el\'a3\'ba\'d6\'b8\'c1\'ee\'cb\'f9\'b0\'f3\'b6\'a8\'b5\'c4\'d4\'aa\'cb\'d8\'a3\'ac\'bf\'c9\'d2\'d4\'d3\'c3\'c0\'b4\'d6\'b1\'bd\'d3\'b2\'d9\'d7\'f7DOM\'a1\'a3\
+\'a1\'a4 binding\'a3\'ba\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3\'a3\'ac\'b0\'fc\'ba\'ac\'d2\'d4\'cf\'c2\'ca\'f4\'d0\'d4 :\
+	name - \'d6\'b8\'c1\'ee\'c3\'fb\'a3\'ac\'b2\'bb\'b0\'fc\'c0\'a8 v-\'c7\'b0\'d7\'ba\'a1\'a3\
+	value - \'d6\'b8\'c1\'ee\'b5\'c4\'b0\'f3\'b6\'a8\'d6\'b5\'a3\'ac\'c0\'fd\'c8\'e7v-my-directive="1+1"\'a3\'acvalue\'b5\'c4\'d6\'b5\'ca\'c72\'a1\'a3\
+	oldValue - \'d6\'b8\'c1\'ee\'b0\'f3\'b6\'a8\'b5\'c4\'c7\'b0\'d2\'bb\'b8\'f6\'d6\'b5\'a3\'ac\'bd\'f6\'d4\'daupdate\'ba\'cdcomponentUpdated\'b9\'b3\'d7\'d3\'d6\'d0\'bf\'c9\'d3\'c3\'a3\'ac\'ce\'de\'c2\'db\'d6\'b5\'ca\'c7\'b7\'f1\'b8\'c4\'b1\'e4\'b6\'bc\'bf\'c9\'d3\'c3\'a1\'a3\
+	expression - \'b0\'f3\'b6\'a8\'d6\'b5\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'d0\'ce\'ca\'bd\'a3\'ac\'c0\'fd\'c8\'e7v-my-directive="1+1"\'a3\'acexpression\'b5\'c4\'d6\'b5\'ca\'c7'1+1'\'a1\'a3\
+	arg - \'b4\'ab\'b8\'f8\'d6\'b8\'c1\'ee\'b5\'c4\'b2\'ce\'ca\'fd\'a3\'ac\'c0\'fd\'c8\'e7v-my-directive:foo\'a3\'acarg\'b5\'c4\'d6\'b5\'ca\'c7foo\'a1\'a3\
+	modifiers - \'d2\'bb\'b8\'f6\'b0\'fc\'ba\'ac\'d0\'de\'ca\'ce\'b7\'fb\'b5\'c4\'b6\'d4\'cf\'f3\'a3\'ac\'c0\'fd\'c8\'e7v-my-directive.foo.bar\'a3\'ac\'d0\'de\'ca\'ce\'b7\'fb\'b6\'d4\'cf\'f3modifiers\'b5\'c4\'d6\'b5\'ca\'c7\{ foo: true, bar: true \}\'a1\'a3\
+\'a1\'a4 vnode\'a3\'baVue \'b1\'e0\'d2\'eb\'c9\'fa\'b3\'c9\'b5\'c4\'d0\'e9\'c4\'e2\'bd\'da\'b5\'e3\'a3\'ac\'d4\'da\'bd\'f8\'bd\'d7\'c6\'aa\'d6\'d0\'bd\'e9\'c9\'dc\'a1\'a3\
+\'a1\'a4 oldVnode\'a3\'ba\'c9\'cf\'d2\'bb\'b8\'f6\'d0\'e9\'c4\'e2\'bd\'da\'b5\'e3\'bd\'f6\'d4\'daupdate\'ba\'cdcomponentUpdated \'b9\'b3\'d7\'d3\'d6\'d0\'bf\'c9\'d3\'c3 \'a1\'a3\
+\pard\pardeftab720\sl540\partightenfactor0
+
+\f2\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 <!\cf13 \strokec13 DOCTYPE\cf14 \strokec14  \cf15 \strokec15 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 meta\cf14 \strokec14  \cf15 \strokec15 charset\cf14 \strokec14 =\cf16 \strokec16 "utf-8"\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 024-
+\f0 \'d7\'d4\'b6\'a8\'d2\'e5\'d6\'b8\'c1\'ee
+\f2 \cf12 \strokec12 </\cf13 \strokec13 title\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 head\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 <\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 div\cf14 \strokec14  \cf15 \strokec15 id\cf14 \strokec14 =\cf16 \strokec16 "app"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 input\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text"\cf14 \strokec14  \cf15 \strokec15 placeholder\cf14 \strokec14 =\cf16 \strokec16 "
+\f0 \'c7\'eb\'ca\'e4\'c8\'eb\'d0\'a9\'ca\'b2\'c3\'b4
+\f2 ..."\cf14 \strokec14  \cf15 \strokec15 v-my-directive-1\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf12 \strokec12 <\cf13 \strokec13 my-component\cf12 \strokec12 ></\cf13 \strokec13 my-component\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 div\cf12 \strokec12 >\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf14 \strokec14  \cf15 \strokec15 src\cf14 \strokec14 =\cf16 \strokec16 "../js/vue2.6.6.min.js"\cf12 \strokec12 ></\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+    \cf12 \strokec12 <\cf13 \strokec13 script\cf14 \strokec14  \cf15 \strokec15 type\cf14 \strokec14 =\cf16 \strokec16 "text/javascript"\cf12 \strokec12 >\cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'a1\'be
+\f2 1
+\f0 \'a1\'bf\'c4\'bf\'b5\'c4\'a3\'ba\'cf\'a3\'cd\'fb\'b6\'d4
+\f2 DOM
+\f0 \'bd\'f8\'d0\'d0\'b5\'d7\'b2\'e3\'b5\'c4\'b2\'d9\'d7\'f7
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'a1\'be
+\f2 2
+\f0 \'a1\'bf\'d3\'c3\'b7\'a8\'a3\'ba\'b8\'fa\'d7\'a2\'b2\'e1\'d7\'e9\'bc\'fe\'ba\'dc\'c0\'e0\'cb\'c6\'a3\'ac\'b7\'d6\'ce\'aa\'c8\'ab\'be\'d6\'d7\'a2\'b2\'e1\'ba\'cd\'be\'d6\'b2\'bf\'d7\'a2\'b2\'e1
+\f2 \cf14 \strokec14 \
+        \cf17 \strokec17 // 
+\f0 \'a3\'a8
+\f2 1
+\f0 \'a3\'a9\'c8\'ab\'be\'d6\'d7\'a2\'b2\'e1\'d2\'bb\'b8\'f6\'d6\'b8\'c1\'ee
+\f2 \cf14 \strokec14 \
+        Vue.directive(\cf16 \strokec16 'my-directive-1'\cf14 \strokec14 , \{\
+            \cf17 \strokec17 // 
+\f0 \'d6\'b8\'c1\'ee\'c5\'e4\'d6\'c3
+\f2 \cf14 \strokec14 \
+            inserted: \cf13 \strokec13 function\cf14 \strokec14  (element) \{\
+                element.focus();\
+            \}\
+        \});\
+        Vue.component(\cf16 \strokec16 'my-component'\cf14 \strokec14 , \{\
+            template: \cf16 \strokec16 '<div><input type="text" placeholder="
+\f0 \'d7\'e9\'bc\'fe\'c8\'c3\'c4\'e3\'ca\'e4\'c8\'eb\'d0\'a9\'ca\'b2\'c3\'b4
+\f2 ..." v-my-directive-2></div>'\cf14 \strokec14 ,\
+            directives: \{\
+                \cf17 \strokec17 // 
+\f0 \'a3\'a8
+\f2 2
+\f0 \'a3\'a9\'be\'d6\'b2\'bf\'d7\'a2\'b2\'e1\'d2\'bb\'b8\'f6\'d6\'b8\'c1\'ee\'a3\'ac\'d6\'bb\'c4\'dc\'d4\'da\'b5\'b1\'c7\'b0\'d7\'f7\'d3\'c3\'cf\'c2\'ca\'b9\'d3\'c3
+\f2 \cf14 \strokec14 \
+                \cf17 \strokec17 // 
+\f0 \'a1\'be\'d7\'a2\'a1\'bf
+\f2 javascript
+\f0 \'b6\'d4\'cf\'f3\'b5\'c4
+\f2 key
+\f0 \'b6\'bc\'ca\'c7\'d7\'d6\'b7\'fb\'b4\'ae\'a3\'ac\'be\'cd\'cb\'e3\'ca\'c7\'b8\'f8\'b5\'c4\'c6\'e4\'cb\'fc\'c0\'e0\'d0\'cd\'b5\'c4\'d6\'b5\'a3\'ac\'d2\'b2\'bb\'e1\'d7\'d4\'b6\'af\'cd\'a8\'b9\'fd
+\f2 toString()
+\f0 \'d7\'aa\'bb\'bb\'b3\'c9\'d7\'d6\'b7\'fb\'b4\'ae\'a1\'a3
+\f2 \cf14 \strokec14 \
+                \cf17 \strokec17 // 
+\f0 \'d5\'e2\'c0\'ef\'bf\'c9\'d2\'d4\'b2\'bb\'cf\'d4\'ca\'be\'b5\'c4\'d0\'b4\'cb\'ab\'d2\'fd\'ba\'c5\'a3\'ac\'b5\'ab\'ca\'c7
+\f2 js
+\f0 \'c0\'ef\'c3\'e6\'b2\'bb\'d6\'a7\'b3\'d6\'b1\'e4\'c1\'bf\'c3\'fb\'d6\'d0\'b0\'fc\'ba\'ac
+\f2 '-'
+\f0 \'a3\'ac\'bf\'c9\'d2\'d4\'d3\'c3\'cd\'d5\'b7\'e5\'ca\'bd\'c3\'fc\'c3\'fb
+\f2 \cf14 \strokec14 \
+                \cf16 \strokec16 'my-directive-2'\cf14 \strokec14 : \{\
+                    \cf17 \strokec17 // 
+\f0 \'d6\'b8\'c1\'ee\'c5\'e4\'d6\'c3
+\f2 \cf14 \strokec14 \
+                    inserted: \cf13 \strokec13 function\cf14 \strokec14  (element) \{\
+                        element.focus();\
+                    \}\
+                \}\
+            \}\
+        \});\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 \strokec13 var\cf14 \strokec14  app = \cf13 \strokec13 new\cf14 \strokec14  Vue(\{\
+            el: \cf16 \strokec16 "#app"\cf14 \strokec14 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\cf12 \strokec12 </\cf13 \strokec13 script\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 body\cf12 \strokec12 >\cf14 \strokec14 \
+\cf12 \strokec12 </\cf13 \strokec13 html\cf12 \strokec12 >\cf14 \strokec14 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

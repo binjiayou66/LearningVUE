@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>023-手动挂载Vue实例</title>
+</head>
+<body>
+    <div id="app">{{ message }}</div>
+    <div id="delay-mounted"></div>
+    <div id="delay-mounted-extend"></div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        // 创建Vue实例，并且初始化挂载到#app节点上
+		var app = new Vue({
+            el: "#app",
+            data: {
+                message: "我是普通挂载（创建Vue对象初始化挂载）"
+            }
+		});
+        // 手动挂载
+        var delayMounted = new Vue({
+            template: "<div>{{ message }}</div>",
+            data: function () {
+                return {
+                    message: "我是被延迟挂载的消息1"
+                }
+            }
+        });
+        delayMounted.$mount("#delay-mounted");
+        // 手动挂载，extend，《Vue.js实战》示例
+        // 【注，未经考证】个人觉得这是对Vue的子类化，通过extend方法，创建Vue的一个子类（js中没有类的话，那就是继承链子元素）
+        var MyCom = Vue.extend({
+            template: '<div>Hello: {{ message }}</div>',
+            data: function () {
+                return {
+                    message: "我是被延迟挂载的消息2"
+                }
+            }
+        });
+        var myVue = new MyCom();
+        myVue.$mount("#delay-mounted-extend");
+	</script>
+</body>
+</html>

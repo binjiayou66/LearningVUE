@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>018-emit实现子控件向父控件传参-反向传值</title>
+</head>
+<body>
+	<div id="app">
+        <!-- 父组件用v-on:increase和v-on:reduce进行increse和reduce事件监听 -->
+        <my-component-1 @increase="handelChange" @reduce="handelChange"></my-component-1>
+        <!-- v-model一般被用在input、textarea、select等地方 -->
+        <!-- 用在组件中时，其双向绑定的属性为组件最外层标签的value值 -->
+        <!-- 组件按钮点击，改变了最外层标签的value值，inputTotal的值通过v-model双向绑定，也发生了改变 -->
+        <my-component-2 v-model="inputTotal"></my-component-2>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        Vue.component('my-component-1', {
+            template: "\
+            <div>\
+                <button @click='onIncrease'>+1</button>\
+                <button @click='onReduce'>-1</button>\
+            </div>\
+            ",
+            data: function () {
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                onIncrease: function () {
+                    this.counter++;
+                    // $emit()触发事件
+                    // $emit()方法的第一个参数是自定义事件的名称，后面的参数都是要传递的数据，可以不填或填写多个。
+                    this.$emit('increase', this.counter);
+                },
+                onReduce: function () {
+                    this.counter--;
+                    this.$emit('reduce', this.counter);
+                }
+            }
+        });
+        Vue.component('my-component-2', {
+            template:  "\
+            <div>\
+                <button @click='onIncrease'>input +1</button>\
+            </div>\
+            ",
+            data: function () {
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                onIncrease: function () {
+                    this.counter++;
+                    // 触发input事件，改变的是最外层template外层div的value属性，value值被改变为this.counter
+                    this.$emit('input', this.counter);
+                }
+            }
+        });
+		var app = new Vue({
+            el: '#app',
+            data: {
+                inputTotal: 0
+            },
+            methods: {
+                handelChange: function (change) {
+                    console.log(change);
+                    console.log(this.inputTotal);
+                }
+            }
+		});
+	</script>
+</body>
+</html>

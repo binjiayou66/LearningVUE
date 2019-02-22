@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>020-slot</title>
+</head>
+<body>
+	<div id="app">
+        <!-- 【1】slot的基本使用 -->
+        <my-component-1>
+            <p>内容1</p>
+            <p>内容2</p>
+        </my-component-1>
+        <!-- 【2】slot根据名称能够对应插入 -->
+        <my-component-2>
+            <p slot="header">slot为header的内容</p>
+            <p>没有名称的内容</p>
+            <p slot="footer">slot为footer的内容</p>
+        </my-component-2>
+        <!-- 【3】通过scope声明作用域，通过作用域可以访问作用域下的变量 -->
+        <my-component-3>
+            <template scope="child">{{ child.childMessage }} -- {{ child.someData }}</template>
+        </my-component-3>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        // 全局定义组件
+        Vue.component('my-component-1', {
+            // 一个slot就是一个“插槽”，父组件中的所有内容，作为一项元素插入一个插槽
+            // 下例中有2个插槽，父组件中的内容1和内容2作为一个元素，会被插入两次
+            template: '\
+                <div>\
+                    <slot>\
+                        <p>如果父组件没有提供内容，这里是默认实现1</p>\
+                    </slot>\
+                    <slot>\
+                        <p>如果父组件没有提供内容，这里是默认实现2</p>\
+                    </slot>\
+                </div>',
+        });
+        // 带有名称的插槽
+        Vue.component('my-component-2', {
+            template: '\
+                <div>\
+                    <slot name="header">\
+                        <p>如果父组件没有提供内容，这里是默认实现-header</p>\
+                    </slot>\
+                    <slot>\
+                        <p>如果父组件没有提供内容，这里是默认实现</p>\
+                    </slot>\
+                    <slot name="footer">\
+                        <p>如果父组件没有提供内容，这里是默认实现-footer</p>\
+                    </slot>\
+                </div>',
+            mounted: function () {
+                // 【4】可以通过this.$slots访问到slot
+                var header = this.$slots.header;
+                console.log(header[0].elm.innerHTML);
+            }
+        });
+        // 作用域插槽
+        // 作用域插槽可以实现子组件给父组件传参
+        Vue.component('my-component-3', {
+            template: '\
+                <div>\
+                    <slot childMessage="这是子组件的消息" :someData="someData">\
+                        <p>如果父组件没有提供内容，这里是默认实现</p>\
+                    </slot>\
+                </div>\
+                ',
+            data: function () {
+                return {
+                    someData: "这是作用域插槽里的someData属性"
+                }
+            }
+        });
+        // 主要app对象
+		var app = new Vue({
+            el: "#app"
+		});
+	</script>
+</body>
+</html>

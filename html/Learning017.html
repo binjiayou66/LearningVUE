@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>017-props</title>
+</head>
+<body>
+	<div id="app">
+        <!-- 参数property被绑定了父级superProperty属性 -->
+        <my-component-1 :property="superProperty"></my-component-1>
+        <!-- 使用v-bind绑定之后的属性为变量，是具有类型的，不使用v-bind绑定的属性为字符串常量 -->
+        <my-component-2 name="Andy" :age="30" :propB="22"></my-component-2>
+	</div>
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        Vue.component('my-component-1', {
+            // 声明使用该组件需要传过来的参数
+            props: ['property'],
+            template: "<div>{{ property }}</div>"
+        });
+        Vue.component('my-component-2', {
+            // props除了字符串数组，还可以是对象类型，而且更推荐这种写法，它可以进行数据类型验证
+            props: {
+                name: String,
+                age: Number,
+                sex: Boolean,
+                propA: [String, Number], // 必须是字符串或数字类型
+                propB: {            // 必须是数字类型，且必传
+                    type: Number,
+                    required: true
+                },
+                propC: {             // 必须是Boolean类型，缺省值为true
+                    type: Boolean,
+                    default: true
+                },
+                propD: {            // 当给数组或对象类型值提供缺省值时，必须通过函数返回
+                    type: Object,
+                    default: function () {
+                        return {};
+                    }
+                },
+                propE: {            // 可以自定义合法性验证函数
+                    validator: function (value) {
+                        return value > 10;
+                    }
+                }
+            },
+            template: "<div>name:{{name}}-age:{{computedAge}}-sex:{{sex}}-A:{{propA}}-B:{{propB}}-C:{{propC}}-D:{{propD}}-E:{{propE}}</div>",
+            computed: {
+                computedAge: function () {
+                    console.log(typeof this.age);
+                    return this.age + 3;
+                }
+            }
+        });
+		var app = new Vue({
+            el: "#app",
+            data: {
+                superProperty: "这是我要传过去的参数"
+            }
+		});
+	</script>
+</body>
+</html>

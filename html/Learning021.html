@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>021-组件的高级用法</title>
+</head>
+<body>
+	<div id="app">
+        <h1>递归组件：</h1>
+        <!-- 【1】递归组件 -->
+        <recursive-component :count="1"></recursive-component>
+        <h1>动态组件：</h1>
+        <!-- 【2】动态组件 -->
+        <!-- 关键点：1.component泛型组件标签 2.is属性绑定组件名称 -->
+        <component :is="currentComponent"></component>
+        <button @click="handleClick('A')">切换到A组件</button>
+        <button @click="handleClick('B')">切换到B组件</button>
+        <button @click="handleClick('C')">切换到C组件</button>
+        <h1>异步组件：</h1>
+        <!-- 【3】异步组件 -->
+        <asynchronize-component></asynchronize-component>
+    </div>    
+	<script type="text/javascript" src="../js/vue2.6.6.min.js"></script>
+    <script type="text/javascript">
+        Vue.component('recursive-component', {
+            name: 'recursive-component',
+            props: {
+                count: {
+                    type: Number,
+                    default: 1
+                }
+            },
+            // template中通过添加自己标签，实现递归，一定要注意递归结束条件控制好
+            template: '\
+                <div class="child">这里是被递归的内容\
+                    <recursive-component :count="count + 1" v-if="count < 3">\
+                    </recursive-component>\
+                </div>\
+                '
+        });
+        Vue.component('asynchronize-component', function (resolve, reject) {
+            // 模拟异步获取组件内容
+            window.setTimeout(function () {
+                // 获取成功，调用resolve方法进行组件内容回调
+                resolve({
+                    template: '<div>我是异步渲染的组件</div>'
+                });
+                // 获取失败，调用reject方法进行原因回调
+                //reject('reason');
+            }, 3000);
+        });
+		var app = new Vue({
+            el: "#app",
+            components: {
+                componentA: {
+                    template: "<div>组件A</div>"
+                },
+                componentB: {
+                    template: "<div>组件B</div>"
+                },
+                componentC: {
+                    template: "<div>组件C</div>"
+                }
+            },
+            data: {
+                currentComponent: 'componentA'
+            },
+            methods: {
+                handleClick: function (param) {
+                    this.currentComponent = 'component' + param;
+                }
+            }
+		});
+	</script>
+</body>
+</html>
