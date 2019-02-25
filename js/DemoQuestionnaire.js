@@ -7,12 +7,17 @@ Vue.component('question-page', {
     },
     data: function () {
         return {
-            checkedValue: ''
+            checkedValue: '',
+            checkedValues:[]
         }
     },
     methods: {
         nextPage: function () {
-            this.$emit('gonextpage');
+            if (this.checkedValue.length < 1 && this.checkedValues.length < 1) {
+                alert('请做出您的选择');
+                return;
+            }
+            this.$emit('gonextpage', this.checkedValue, this.checkedValues);
         },
         prePage: function () {
             this.$emit('goprepage');
@@ -29,7 +34,7 @@ Vue.component('question-page', {
             <label :for=\"option\">{{ option }}</label>\
         </div>\
         <div v-if=\"questionData.type==='multiple'\" v-for=\"option in questionData.options\">\
-            <input type=\"checkbox\" :value=\"option\">\
+            <input type=\"checkbox\" :value=\"option\" v-model=\"checkedValues\">\
             <label :for=\"option\">{{ option }}</label>\
         </div>\
         <div v-if=\"questionData.type==='input'\">\
@@ -96,9 +101,9 @@ var app = new Vue({
         ],
     },
     methods: {
-        handleNextPage: function () {
+        handleNextPage: function (radioValue, checkboxValue) {
             this.currentPage++;
-            console.log(this.currentPage);
+            console.log(this.currentPage, radioValue, checkboxValue);
         },
         handlePrePage: function () {
             this.currentPage--;
